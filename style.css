@@ -1,0 +1,79 @@
+/* Custom styles for specific circular charts */
+.donut-chart {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut-inner {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #3b1e54;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;                      
+  padding-left: 3rem;                   
+  padding-right: 3rem;
+  border-top-width: 4px;                
+  border-top-color: #e5e7eb66;
+  border-radius: 1rem;
+  text-align: center;
+  width: 100%;                          
+  max-width: 330px;
+  box-shadow: 0 25px 50px -12px #00000040; 
+}
+
+/* LG breakpoint padding (lg:px-14 → 56px left/right) */
+@media (min-width: 1024px) {
+  .card {
+    padding-left: 3.5rem; /* 56px */
+    padding-right: 3.5rem;
+  }
+}
+
+.xxl{
+  max-width: 1152px;
+}
+
+@media (min-width: 1480px) {
+  .xxl {
+    max-width: 1352px;
+  }
+}
+
+.card-header {
+  color: #4c1d95;     /* text-purple-900 */
+  font-size: 24px;    /* text-[24px] */
+  font-weight: 700;   /* font-bold */
+  margin-bottom: 0.5rem; /* mb-2 (8px) */
+}
+
+.text-color{
+  color : skyblue;
+}
+
+/* Hide scrollbar for cleaner preview */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
