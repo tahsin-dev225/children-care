@@ -1,602 +1,1108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kids' Well-being Indicators Clearinghouse</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        roboto: ['Roboto', 'sans-serif'],
-                    },
-                    colors: {
-                        purple: {
-                            900: '#2a1745', // Deep hero purple
-                            800: '#3b1e54', // Main brand purple
-                            700: '#4a2b6b',
-                            100: '#f3f0f7',
-                        },
-                        yellow: {
-                            400: '#ffcf00', // Brand yellow
-                            100: '#fff9db', // Light yellow bg
-                        },
-                        screen:{
-                          mmd: "850px",
-                          mdmd: "950px",
-                          xlg: "1100px",
-                          xll: "1170px",
-                          xxl: "1370px",
-                          xxll: "1470px",
-                        }
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+              roboto: ["Roboto", "sans-serif"],
+            },
+            colors: {
+              purple: {
+                900: "#2a1745", // Deep hero purple
+                800: "#3b1e54", // Main brand purple
+                700: "#4a2b6b",
+                100: "#f3f0f7",
+              },
+              yellow: {
+                400: "#ffcf00", // Brand yellow
+                100: "#fff9db", // Light yellow bg
+              },
+              screen: {
+                mmd: "850px",
+                mdmd: "950px",
+                xlg: "1100px",
+                xll: "1170px",
+                xxl: "1370px",
+                xxll: "1470px",
+              },
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-white text-gray-800 font-sans antialiased overflow-x-hidden">
-  <header class="relative bg-[#43285D] text-white overflow-hidden">
-    <!-- Nav -->
-    <nav class="flex justify-between items-center px-3 py-1 xl:py-2">
+  </head>
+  <body class="bg-white text-gray-800 font-sans antialiased overflow-x-hidden">
+    <header class="relative bg-[#43285D] text-white overflow-hidden">
+      <!-- Nav -->
+      <nav class="flex justify-between items-center px-3 py-1 xl:py-2">
         <div class="flex items-center gap-1.5">
-            <img src="/assets/logo 1.png" alt="Logo" class="h-8 xl:h-10">
-            <img src="/assets/logo 2.png" alt="Logo" class="h-10 xl:h-12">
+          <img src="assets/logo 1.png" alt="Logo" class="h-8 xl:h-10" />
+          <img src="assets/logo 2.png" alt="Logo" class="h-10 xl:h-12" />
         </div>
-        <div class="hidden md:flex items-center gap-6 text-[11px] xl:text-[14px] font-">
-            <a href="#" class="hover:text-yellow-400">About Us</a>
-            <a href="#" class="hover:text-yellow-400">Key Data</a>
-            <a href="#" class="hover:text-yellow-400">Resources</a>
-            <a href="#" class="hover:text-yellow-400">Contact</a>
+        <div
+          class="hidden md:flex items-center gap-6 text-[11px] xl:text-[14px] font-"
+        >
+          <a href="#" class="hover:text-yellow-400">About Us</a>
+          <a href="#" class="hover:text-yellow-400">Key Data</a>
+          <a href="#" class="hover:text-yellow-400">Resources</a>
+          <a href="#" class="hover:text-yellow-400">Contact</a>
         </div>
         <div class="bg-white rounded-full flex items-center pl-3 pr-1 py-[1px]">
-            <input type="text" placeholder="Search...." class="text-gray-700 outline-none text-[10px] lg:text-[13px] w-24 lg:w-32 xl:w-44">
-            <span class="text-purple-900 bg-[#41285F] rounded-full p-0.5">🔍</span>
+          <input
+            type="text"
+            placeholder="Search...."
+            class="text-gray-700 outline-none text-[10px] lg:text-[13px] w-24 lg:w-32 xl:w-44"
+          />
+          <span class="text-purple-900 bg-[#41285F] rounded-full p-0.5"
+            >🔍</span
+          >
         </div>
-    </nav>
-    <!-- Hero Content -->
-    <div class="grid items-center h-screen bg-[url('./assets/hero.png')] bg-cover bg-top  relative z-10  mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-">
-        <div class="flex flex-col md:flex-row  gap-10 items-center">
-            <div class="fonts-roboto">
-                <h4 class="text-yellow-100 uppercase tracking-widest text-sm font-bold mb-2">Council on Children & Families</h4>
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font- leading-tight mb-4">Kids' Well-being <br>Indicators <br>Clearinghouse</h1>
-                <p class="text-lg text-gray-200 mb-8 max-w-md">Explore data and insights to help every New York child thrive.</p>
-                <div class="flex gap-4 flex-col sm:flex-row">
-                    <button class="bg-yellow-400 md:text-sm w-max text-purple-900 px-6 py-1 rounded-full font-semibold hover:bg-yellow-300 transition">Explore Data</button>
-                    <button class="border border-yellow-400 w-max text-yellow-200/90 px-6 py-1 rounded-full font-bold hover:bg-white hover:text-purple-900 transition">Learn More</button>
-                </div>
+      </nav>
+      <!-- Hero Content -->
+      <div
+        class="grid items-center h-screen bg-[url('./assets/hero.png')] bg-cover bg-top relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-"
+      >
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+          <div class="fonts-roboto">
+            <h4
+              class="text-yellow-100 uppercase tracking-widest text-sm font-bold mb-2"
+            >
+              Council on Children & Families
+            </h4>
+            <h1
+              class="text-3xl md:text-4xl lg:text-5xl font- leading-tight mb-4"
+            >
+              Kids' Well-being <br />Indicators <br />Clearinghouse
+            </h1>
+            <p class="text-lg text-gray-200 mb-8 max-w-md">
+              Explore data and insights to help every New York child thrive.
+            </p>
+            <div class="flex gap-4 flex-col sm:flex-row">
+              <button
+                class="bg-yellow-400 md:text-sm w-max text-purple-900 px-6 py-1 rounded-full font-semibold hover:bg-yellow-300 transition"
+              >
+                Explore Data
+              </button>
+              <button
+                class="border border-yellow-400 w-max text-yellow-200/90 px-6 py-1 rounded-full font-bold hover:bg-white hover:text-purple-900 transition"
+              >
+                Learn More
+              </button>
             </div>
-            <div class="flex justify-end relative">
-                <!-- Hero Kid Image -->
-                
-            </div>
+          </div>
+          <div class="flex justify-end relative">
+            <!-- Hero Kid Image -->
+          </div>
         </div>
-    </div>
-  </header>
+      </div>
+    </header>
 
-  <!-- YELLOW NYC BANNER -->
-  <section class="bg-[#FCCD03] pt-16 text-center relative">
-      <div class="max-w-4xl mx-auto px-4 md:w-[65%] lg:w-[45%] py-6 xl:py-10">
-          <h2 class="text-3xl md:text-4xl text-purple-900 font-bold mb-2">NYS By The Numbers</h2>
-          <h3 class="text-2xl md:text-3xl text-purple-900 font-bold mb-4">2024 Snapshot</h3>
-          <p class="text-purple-900 mb-8 max-w-2xl mx-auto">A quick look at child well-being updates, monitoring, and facts about current trends in New York.</p>
-          <button class="bg-purple-800 text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-purple-700 shadow-lg">Learn More...</button>
+    <!-- YELLOW NYC BANNER -->
+    <section class="bg-[#FCCD03] pt-16 xl:pb-8 text-center relative">
+      <div
+        class="max-w-4xl mx-auto px-4 md:w-[65%] lg:w-[45%] py-6 pb-[80px] xl:py-10"
+      >
+        <h2 class="text-3xl md:text-4xl text-purple-900 font-bold mb-2">
+          NYS By The Numbers
+        </h2>
+        <h3 class="text-2xl md:text-3xl text-purple-900 font-bold mb-4">
+          2024 Snapshot
+        </h3>
+        <p class="text-purple-900 mb-8 max-w-2xl mx-auto">
+          A quick look at child well-being updates, monitoring, and facts about
+          current trends in New York.
+        </p>
+        <button
+          class="bg-purple-800 text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-purple-700 shadow-lg"
+        >
+          Learn More...
+        </button>
       </div>
       <!-- Decorative Icon  -->
-      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-          <div class="  rounded-full shadow-lg">
-              <img src="/assets/childhoodpopulation 1.png" alt="Icon" class="w-[100px] h-[100px]">
-          </div>
+      <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2"
+      >
+        <div class="rounded-full shadow-lg">
+          <img
+            src="assets/childhoodpopulation 1.png"
+            alt="Icon"
+            class="w-[100px] h-[100px]"
+          />
+        </div>
       </div>
-  </section>
+    </section>
 
-  <!-- TIMELINE / CONTENT WRAPPER -->
-  <div class="max-w-6xl xl:max-w-7xl xxl  mx-auto px- sm:px- lg:px- md:pt-20 relative">
-      
-      <!--:::: center line:::::-->
-      <img src="/assets/childhood timeline gray.png" alt="Logo"
-      class="hidden md:block absolute top-[240px] md:w-[490px] mmd:w-[520px] -z-10 md:left-[15%] mmd:left-[21%] mdmd:left-[23%] lg:left-[24%] xlg:left-[25%] xl:left-[28%]  h-max"> 
+    <!-- TIMELINE / CONTENT WRAPPER -->
+    <div
+      class="max-w-6xl xl:max-w-7xl xl:mx-auto px-2 md:px-4 md:pt-20 relative"
+    >
+      <!-- Childhood Population 2nd section  -->
+      <section class="relative">
+        <!--===== FULL WIDTH TIMELINE LINE =====-->
+        <div
+          class="hidden md:flex flex-col absolute top-[100px] left-[47%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+        >
+          <svg
+            class="w-[520px] h-auto"
+            viewBox="0 0 1601 4099"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.44"
+              d="M406 5H688C798.457 5 888 94.5431 888 205V931.5C888 1041.96 798.457 1131.5 688 1131.5H185C85.5887 1131.5 5 1212.09 5 1311.5V1433.5C5 1532.91 85.5887 1613.5 185 1613.5H688C798.457 1613.5 888 1703.04 888 1813.5V2563C888 2673.46 977.543 2763 1088 2763H1416C1515.41 2763 1596 2843.59 1596 2943V3088.5C1596 3187.91 1515.41 3268.5 1416 3268.5H1088C977.543 3268.5 888 3358.04 888 3468.5V4099"
+              stroke="#43285D"
+              stroke-width="8"
+            />
+          </svg>
+        </div>
+        <div
+          class="hidden md:flex flex-col absolute top-[100px] left-[47%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+        >
+          <svg
+            class="w-[520px] h-auto"
+            viewBox="0 0 1601 4099"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.44"
+              d="M406 5H688C798.457 5 888 94.5431 888 205V931.5C888 1041.96 798.457 1131.5 688 1131.5H185C85.5887 1131.5 5 1212.09 5 1311.5V1433.5C5 1532.91 85.5887 1613.5 185 1613.5H688C798.457 1613.5 888 1703.04 888 1813.5V2563C888 2673.46 977.543 2763 1088 2763H1416C1515.41 2763 1596 2843.59 1596 2943V3088.5C1596 3187.91 1515.41 3268.5 1416 3268.5H1088C977.543 3268.5 888 3358.04 888 3468.5V4099"
+              stroke="#D0D0CE"
+              stroke-width="12"
+            />
+          </svg>
+        </div>
 
+        <!-- SECTION 1: CHILDHOOD POPULATION -->
+        <div class="text-center pt-[80px] md:pt-0 mb-12">
+          <h2 class="text-3xl xl:text-4xl font-normal text-purple-800">
+            Childhood <span class="font-bold">Population</span>
+          </h2>
+        </div>
 
-      <!-- SECTION 1: CHILDHOOD POPULATION -->
-      <div class="text-center mb-12">
-          <h2 class="text-3xl xl:text-4xl font-normal text-purple-800">Childhood <span class=" font-bold ">Population</span></h2>
-      </div>
-
-      <!-- Row 1 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-5 mmd:mb-8 xll:mb-1 items-center relative">
+        <!-- Row 1 -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 md:mb-5 mmd:mb-8 xll:mb-1 items-center relative"
+        >
           <!-- Left -->
-          <div class="flex flex-col mx-auto  md:pr-12">
-              <div class="bg-white border-4 border-gray-300/20 p-6 ml-6 px-10  md:px-14 rounded-2xl shadow-2xl border-t-4 border-t-gray-200/40 w-full max-w-[360px] text-center">
-                  <h3 class="text-3xl lg:text-5xl xl:text-5xl font-bold text-[#43285D]">3,982,279</h3>
-                  <p class="text-xs font-semibold text-gray-500 my-3">Total Children Ages 0-17<br>Live in New York State</p>
-              </div>
-              <img class="max-w-[200px] my-8 mx-auto" src="/assets/childhoodpopulation 3.png" alt="flower">
+          <div class="flex flex-col mx-5 md:mx-auto md:pr-12">
+            <div
+              class="bg-white border-4 border-gray-300/20 p-6 md:ml-6 px-10 md:px-14 rounded-2xl shadow-2xl border-t-4 border-t-gray-200/40 w-full md:max-w-[360px] text-center"
+            >
+              <h3
+                class="text-3xl lg:text-5xl xl:text-5xl font-bold text-[#43285D]"
+              >
+                3,982,279
+              </h3>
+              <p class="text-xs font-semibold text-gray-500 my-3">
+                Total Children Ages 0-17<br />Live in New York State
+              </p>
+            </div>
+            <img
+              class="max-w-[200px] hidden md:block my-8 mx-auto"
+              src="assets/childhoodpopulation 3.png"
+              alt="flower"
+            />
           </div>
           <!-- Right -->
-          <div class="flex pt-40 mx-auto justify-start md:pl-12">
-              <div class="bg-white p-6 rounded-2xl  shadow-2xl border-t-4 border-t-gray-200/40 w-full max-w-xs flex items-center gap-4 relative">
-                  <!-- ziraf icon -->
-                  <div class="absolute -top-[30%] right-2">
-                        <img src="/assets/childhoodpopulation 2.png" class="w-14 h-20">
-                  </div>
-                  <div>
-                      <h3 class="text-4xl font-bold text-center text-[#43285D]">20%</h3>
-                      <p class="text-xs font-semibold text-gray-500 my-3 text-center">Children make up 20% of the total population of NYS.</p>
-                  </div>
+          <div class="flex md:pt-40 mx-auto justify-start md:pl-12">
+            <div
+              class="bg-white p-6 rounded-2xl shadow-2xl border-t-4 border-t-gray-200/40 w-full max-w-xs flex items-center gap-4 relative"
+            >
+              <!-- ziraf icon -->
+              <div class="absolute -top-[30%] right-2">
+                <img src="assets/childhoodpopulation 2.png" class="w-14 h-20" />
               </div>
+              <div>
+                <h3 class="text-4xl font-bold text-center text-[#43285D]">
+                  20%
+                </h3>
+                <p class="text-xs font-semibold text-gray-500 my-3 text-center">
+                  Children make up 20% of the total population of NYS.
+                </p>
+              </div>
+            </div>
           </div>
-      </div>
+        </div>
 
-      <!-- Row 2 (Trend & Illustration) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12  md:mb-20 lg:mb-16  items-center">
+        <!-- Row 2 (Trend & Illustration) -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-20 lg:mb-16 items-center"
+        >
           <!-- Left: Trend Box -->
           <div class="flex mx-auto relative justify-end md:pr-12">
-             <img src="/assets/childhoodpopulation 4.png" alt="Logo" class="absolute hidden md:block size-[65px] right-10 lg:right-1 -top-[110px] lg:-top-[115px] transform ">
-              <div class="bg-white  p-6 rounded-2xl  shadow-2xl  px-12 lg:px-14 border-t-4 border-t-gray-200/40 w-full max-w-[330px]">
-                  <h4 class="text-purple-900 text-[24px] text-center mx-auto font-bold mb-2">Trend</h4>
-                  <p class="text-xs font-semibold text-gray-500 my-3 text-center">Child share of population stable at near 20% from 2010 to 2024.</p>
-              </div>
+            <img
+              src="assets/childhoodpopulation 4.png"
+              alt="Logo"
+              class="absolute hidden md:block size-[65px] right-10 lg:right-1 -top-[110px] lg:-top-[150px] transform"
+            />
+            <div
+              class="bg-white p-6 rounded-2xl shadow-2xl px-12 lg:px-14 border-t-4 border-t-gray-200/40 w-full max-w-[330px]"
+            >
+              <h4
+                class="text-purple-900 text-[24px] text-center mx-auto font-bold mb-2"
+              >
+                Trend
+              </h4>
+              <p class="text-xs font-semibold text-gray-500 my-3 text-center">
+                Child share of population stable at near 20% from 2010 to 2024.
+              </p>
+            </div>
           </div>
           <!-- Right: Illustration -->
           <div class="flex justify-start md:pl-12 mx-auto">
-              <div class="bg-yellow-100 rounded-full p-8 relative w-64 h-64 flex items-center justify-center">
-                    <img src="/assets/childhoodpopulation 5.png" alt="Kids Illustration" class="w-full h-auto">
-              </div>
+            <div
+              class="bg-yellow-100 rounded-full p-8 relative w-64 h-64 flex items-center justify-center"
+            >
+              <img
+                src="assets/childhoodpopulation 5.png"
+                alt="Kids Illustration"
+                class="w-full h-auto"
+              />
+            </div>
           </div>
-      </div>
+        </div>
 
-      <!-- SECTION 2: CHILD POPULATION BREAKDOWN -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12mb-20">
+        <!-- SECTION 2: CHILD POPULATION BREAKDOWN -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 px-4">
           <!-- Left: Progress Bars -->
           <div class="md:text- md:pr-12">
-              <img src="/assets/childhoodpopulation 6.png" class="mx-auto w-[70px] my-6" alt="">
-              <h3 class="text-purple-800 text-4xl font-normal mx-auto text-center mb-6">Child <span class="font-bold">Population</span></h3>
-              
-              <!-- Bar 1 -->
-              <div class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative">
-                <div class="bg-purple-700 h-full rounded-lg" style="width: 26%;"></div>
-                <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold ">
-                  26%
-                </span>
-              </div>
-              <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">1,018,413 Children Ages 0-5</p>
+            <img
+              src="assets/childhoodpopulation 6.png"
+              class="mx-auto w-[70px] my-6"
+              alt=""
+            />
+            <h3
+              class="text-purple-800 text-4xl font-normal mx-auto text-center mb-6"
+            >
+              Child <span class="font-bold">Population</span>
+            </h3>
 
-              <!-- Bar 2 -->
-              <div class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1  relative">
-                <div class="bg-purple-700 h-full rounded-lg" style="width: 39%;"></div>
-                <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold ">
-                  39%
-                </span>
-              </div>
-              <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">1,556,052 Children Ages 6-11</p>
+            <!-- Bar 1 -->
+            <div
+              class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative"
+            >
+              <div
+                class="bg-purple-700 h-full rounded-lg"
+                style="width: 26%"
+              ></div>
+              <span
+                class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold"
+              >
+                26%
+              </span>
+            </div>
+            <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">
+              1,018,413 Children Ages 0-5
+            </p>
 
-              <!-- Bar 3 -->
-              <div class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1  relative">
-                <div class="bg-purple-700 h-full rounded-lg" style="width: 35%;"></div>
-                <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold ">
-                  35%
-                </span>
-              </div>
-              <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text">1,386,786 Children Ages 12-17</p>
+            <!-- Bar 2 -->
+            <div
+              class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative"
+            >
+              <div
+                class="bg-purple-700 h-full rounded-lg"
+                style="width: 39%"
+              ></div>
+              <span
+                class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold"
+              >
+                39%
+              </span>
+            </div>
+            <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">
+              1,556,052 Children Ages 6-11
+            </p>
+
+            <!-- Bar 3 -->
+            <div
+              class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative"
+            >
+              <div
+                class="bg-purple-700 h-full rounded-lg"
+                style="width: 35%"
+              ></div>
+              <span
+                class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold"
+              >
+                35%
+              </span>
+            </div>
+            <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text">
+              1,386,786 Children Ages 12-17
+            </p>
           </div>
 
           <!-- Right: Trend Box -->
           <div class="md:pl-12 flex items-center mx-auto relative">
-              <div class="bg-white mt-36 p-6 rounded-2xl mr-8 shadow-2xl  px-12 lg:px-14 border-t-4 border-t-gray-200/40 w-full  max-w-[340px] relative">
-                <img src="/assets/childhoodpopulation 4.png" alt="Logo" class="absolute size-[65px]  -left-3 -top-[107px] transform ">
-                  <div class="absolute -top-4 right-4">
-                    <img src="https://placehold.co/30x30/yellow/white?text=Toy" class="w-8">
-                  </div>
-                <h4 class="text-purple-900 font-bold text-[24px] text-center mb-2">Trend</h4>
-                <p class="text-xs font-semibold text-gray-500 text-center my-3">Proportion of younger children (0-5) has gradually declined since 2010.</p>
+            <div
+              class="bg-white md:mt-36 p-6 rounded-2xl md:mr-8 shadow-2xl px-12 lg:px-14 border-t-4 border-t-gray-200/40 w-full max-w-[340px] relative"
+            >
+              <img
+                src="assets/childhoodpopulation 4.png"
+                alt="Logo"
+                class="absolute hidden md:block size-[65px] -left-3 -top-[107px] transform"
+              />
+              <div class="absolute -top-4 right-4">
+                <img
+                  src="https://placehold.co/30x30/yellow/white?text=Toy"
+                  class="w-8"
+                />
               </div>
+              <h4
+                class="text-purple-900 font-bold text-[24px] text-center mb-2"
+              >
+                Trend
+              </h4>
+              <p class="text-xs font-semibold text-gray-500 text-center my-3">
+                Proportion of younger children (0-5) has gradually declined
+                since 2010.
+              </p>
+            </div>
           </div>
-      </div>
+        </div>
+      </section>
 
       <!-- SECTION 3: RACE & ETHNICITY -->
       <div class="text-center mb-12 mt-10 relative">
-          <!-- Center Icon -->
-        <div class="inline-block  rounded-full mb-4 shadow-lg">
-            <img src="/assets/raceandethnicity 1.png" class="w-[80px] ">
+        <!-- Center Icon -->
+        <div class="inline-block rounded-full mb-4 mr-5 shadow-lg">
+          <img src="assets/raceandethnicity 1.png" class="w-[80px]" />
         </div>
-    
+
         <!-- Race and Ethicity -->
-        <div class="relative">
+        <section class="relative">
           <!--:::: center line::: -->
-          <img src="/assets/race timeline gray.png" alt="Logo" class="hidden md:block top-[90px] w-[270px] -z-10 eft-[28.5%] right-[50%] absolute h-max">
-          <h2 class="text-3xl lg:text-5xl my-10 mb-20 font-bold text-center text-purple-800">Race & <span class="font-normal">Ethnicity</span></h2>
-        </div>
-      
-        <div class="grid grid-cols-1 md:grid-cols-2 my-28 items-center">
+
+          <div
+            class="hidden md:flex flex-col absolute top-[100px] md:left-[35%] lg:left-[38%] xl:left-[40%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+          >
+            <svg
+              class="w-[250px] h-auto"
+              width="1511"
+              height="2669"
+              viewBox="0 0 1511 2669"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1505.5 0V287.5C1505.5 397.957 1415.96 487.5 1305.5 487.5H205C94.5431 487.5 5 577.043 5 687.5V1156C5 1266.46 94.5431 1356 205 1356H1305.5C1415.96 1356 1505.5 1445.54 1505.5 1556V2669"
+                stroke="#43285D"
+                stroke-width="8"
+              />
+            </svg>
+          </div>
+          <div
+            class="hidden md:flex flex-col absolute top-[100px] md:left-[35%] lg:left-[38%] xl:left-[40%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+          >
+            <svg
+              class="w-[250px] h-auto"
+              width="1511"
+              height="2669"
+              viewBox="0 0 1511 2669"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1505.5 0V287.5C1505.5 397.957 1415.96 487.5 1305.5 487.5H205C94.5431 487.5 5 577.043 5 687.5V1156C5 1266.46 94.5431 1356 205 1356H1305.5C1415.96 1356 1505.5 1445.54 1505.5 1556V2669"
+                stroke="#D0D0CE"
+                stroke-width="12"
+              />
+            </svg>
+          </div>
+
+          <h2
+            class="text-3xl lg:text-5xl my-10 md:mb-20 font-bold text-center text-purple-800"
+          >
+            Race & <span class="font-normal">Ethnicity</span>
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 md:my-28 items-center">
             <!-- Left: Trend -->
-            <div class="flex mx-auto mt-8 justify-end md:pr-12">
-                  <div class="card">
-                    <h4 class="text-purple-900 text-[24px] font-bold mb-2">Trend</h4>
-                    <p class="text-xs font-semibold text-gray-500 my-3">Hispanic and Asian populations have increased steadily since 2010.</p>
-                </div>
+            <div
+              class="flex mx-auto z-10 pb-10 md:pb-0 md:mt-8 justify-end md:pr-12"
+            >
+              <div class="card">
+                <h4 class="text-purple-900 text-[24px] font-bold mb-2">
+                  Trend
+                </h4>
+                <p class="text-xs font-semibold text-gray-500 my-3">
+                  Hispanic and Asian populations have increased steadily since
+                  2010.
+                </p>
+              </div>
             </div>
 
             <!-- Right: Donut Charts Grid -->
             <div class="md:pl-12 grid grid-cols-3 gap-6">
-                <!-- Chart 1 -->
-                <div class="flex flex-col items-center">
-                    <div class="donut-chart" style="background: conic-gradient(#3b1e54 26%, #e5e7eb 0 100%);">
-                        <div class="donut-inner">26%</div>
-                    </div>
-                    <p class="text-[10px] text-center mt-2 font-semibold">Hispanic/Latino</p>
+              <!-- Chart 1 -->
+              <div class="flex flex-col items-center">
+                <div
+                  class="donut-chart"
+                  style="
+                    background: conic-gradient(#3b1e54 26%, #e5e7eb 0 100%);
+                  "
+                >
+                  <div class="donut-inner">26%</div>
                 </div>
-                  <!-- Chart 2 -->
-                  <div class="flex flex-col items-center">
-                    <div class="donut-chart" style="background: conic-gradient(#3b1e54 14%, #e5e7eb 0 100%);">
-                        <div class="donut-inner">14%</div>
-                    </div>
-                    <p class="text-[10px] text-center mt-2 font-semibold">Black</p>
+                <p class="text-[10px] text-center mt-2 font-semibold">
+                  Hispanic/Latino
+                </p>
+              </div>
+              <!-- Chart 2 -->
+              <div class="flex flex-col items-center">
+                <div
+                  class="donut-chart"
+                  style="
+                    background: conic-gradient(#3b1e54 14%, #e5e7eb 0 100%);
+                  "
+                >
+                  <div class="donut-inner">14%</div>
                 </div>
-                  <!-- Chart 3 -->
-                  <div class="flex flex-col items-center">
-                    <div class="donut-chart" style="background: conic-gradient(#3b1e54 46%, #e5e7eb 0 100%);">
-                        <div class="donut-inner">46%</div>
-                    </div>
-                    <p class="text-[10px] text-center mt-2 font-semibold">White</p>
+                <p class="text-[10px] text-center mt-2 font-semibold">Black</p>
+              </div>
+              <!-- Chart 3 -->
+              <div class="flex flex-col items-center">
+                <div
+                  class="donut-chart"
+                  style="
+                    background: conic-gradient(#3b1e54 46%, #e5e7eb 0 100%);
+                  "
+                >
+                  <div class="donut-inner">46%</div>
                 </div>
-                <!-- Row 2 Charts -->
-                <div class="flex flex-col items-center">
-                    <div class="donut-chart" style="background: conic-gradient(#3b1e54 4%, #e5e7eb 0 100%);">
-                        <div class="donut-inner">4%</div>
-                    </div>
-                    <p class="text-[10px] text-center mt-2 font-semibold">Two or More</p>
+                <p class="text-[10px] text-center mt-2 font-semibold">White</p>
+              </div>
+              <!-- Row 2 Charts -->
+              <div class="flex flex-col items-center">
+                <div
+                  class="donut-chart"
+                  style="background: conic-gradient(#3b1e54 4%, #e5e7eb 0 100%)"
+                >
+                  <div class="donut-inner">4%</div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="donut-chart" style="background: conic-gradient(#3b1e54 9%, #e5e7eb 0 100%);">
-                        <div class="donut-inner">9%</div>
-                    </div>
-                    <p class="text-[10px] text-center mt-2 font-semibold">Asian</p>
+                <p class="text-[10px] text-center mt-2 font-semibold">
+                  Two or More
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <div
+                  class="donut-chart"
+                  style="background: conic-gradient(#3b1e54 9%, #e5e7eb 0 100%)"
+                >
+                  <div class="donut-inner">9%</div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="donut-chart" style="background: conic-gradient(#3b1e54 1%, #e5e7eb 0 100%);">
-                        <div class="donut-inner">&lt;1%</div>
-                    </div>
-                    <p class="text-[10px] text-center mt-2 font-semibold">American Indian / Native Alaskan</p>
+                <p class="text-[10px] text-center mt-2 font-semibold">Asian</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <div
+                  class="donut-chart"
+                  style="background: conic-gradient(#3b1e54 1%, #e5e7eb 0 100%)"
+                >
+                  <div class="donut-inner">&lt;1%</div>
                 </div>
+                <p class="text-[10px] text-center mt-2 font-semibold">
+                  American Indian / Native Alaskan
+                </p>
+              </div>
             </div>
-        </div>
+          </div>
+        </section>
 
         <!-- SECTION 4: EARLY CHILDHOOD -->
-        <div class="text-center mb-16 relative">
+        <section>
+          <div class="text-center md:mb-16 relative">
             <!-- Center Icon -->
-            <div class="inline-block  rounded-full mb-4 shadow-lg">
-                <img src="assets/earlychildhood 1.png" class="size-[80px] ">
+            <div class="inline-block rounded-full mb-4 shadow-lg">
+              <img src="assets/earlychildhood 1.png" class="size-[80px]" />
             </div>
-            <h2 class="text-3xl my-5 font-normal lg:text-5xl text-purple-800">Early Childhood & <span class=" font-bold">Development</span></h2>
+            <h2 class="text-3xl my-5 font-normal lg:text-5xl text-purple-800">
+              Early Childhood & <span class="font-bold">Development</span>
+            </h2>
             <!-- center line -->
-            <img src="/assets/early childhood timeline gray.png" alt="Logo" class="hidden md:block top-[300px] w-[280px] -z-10 left-[50%] absolute h-max">
-        </div>
+            <div
+              class="hidden md:flex flex-col absolute top-[300px] md:left-[70%] lg:left-[64%] xl:left-[62%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+            >
+              <svg
+                class="w-[290px] h-auto"
+                viewBox="0 0 1288 4093"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M707.5 5H205C94.5431 5 5 94.5431 5 205V1971C5 2081.46 94.5431 2171 205 2171H1082.5C1192.96 2171 1282.5 2260.54 1282.5 2371V2673.5C1282.5 2783.96 1192.96 2873.5 1082.5 2873.5H205C94.5431 2873.5 5 2963.04 5 3073.5V4093"
+                  stroke="#43285D"
+                  stroke-width="10"
+                />
+              </svg>
+            </div>
+            <div
+              class="hidden md:flex flex-col absolute top-[300px] md:left-[70%] lg:left-[64%] xl:left-[62%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+            >
+              <svg
+                class="w-[290px] h-auto"
+                viewBox="0 0 1288 4093"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M707.5 5H205C94.5431 5 5 94.5431 5 205V1971C5 2081.46 94.5431 2171 205 2171H1082.5C1192.96 2171 1282.5 2260.54 1282.5 2371V2673.5C1282.5 2783.96 1192.96 2873.5 1082.5 2873.5H205C94.5431 2873.5 5 2963.04 5 3073.5V4093"
+                  stroke="#D0D0CE"
+                  stroke-width="10"
+                />
+              </svg>
+            </div>
+          </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
             <!-- Left: 23.6% Box -->
             <div class="flex flex-col gap-8 mx-auto justify- md:pr-12">
-                  <div class="card mt-20">
-                    <h3 class="card-header">23.6%</h3>
-                    <p class="text-xs text-gray-500 my-2">of children aged 0-5 live below the poverty level in NYS.</p>
-                </div>
-                <img src="assets/earlychildhood 2.png" class="w-[190px] mx-auto" alt="Books">
+              <div class="card w-full md:mt-20">
+                <h3 class="card-header">23.6%</h3>
+                <p class="text-xs text-gray-500 my-2">
+                  of children aged 0-5 live below the poverty level in NYS.
+                </p>
+              </div>
+              <img
+                src="assets/earlychildhood 2.png"
+                class="w-[190px] mx-auto"
+                alt="Books"
+              />
             </div>
-              <!-- Right: 90% Box -->
-              <div class="flex flex-col gap-8 mx-auto justify md:pl-12">
-                  <div class="card mr-24 h-max">
-                    <h3 class="card-header">90%</h3>
-                    <p class="text-xs text-gray-500 my-2">of brain growth occurs by age 5.</p>
-                </div>
-                <img src="assets/earlychildhood 3.png" alt="Reading" class="max-w-[290px]">
+            <!-- Right: 90% Box -->
+            <div class="flex z-10 flex-col gap-8 mx-auto justify md:pl-12">
+              <div class="card w-full md:mr-24 h-max">
+                <h3 class="card-header">90%</h3>
+                <p class="text-xs text-gray-500 my-2">
+                  of brain growth occurs by age 5.
+                </p>
+              </div>
+              <img
+                src="assets/earlychildhood 3.png"
+                alt="Reading"
+                class="max-w-[290px]"
+              />
             </div>
-        </div>
+          </div>
 
-        <!-- Illustration & Licensed Slots -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
-              <!-- Left Column: Illustration then Slots -->
-              
-              <div class="flex flex-col md:pr-12 gap-10">
-                  <!-- Licensed Slots --> 
-                  <div class="w-full mx-auto">
-                    <h4 class="text-purple-800 text-3xl text-center font-bold mb-4">Licensed/Regulated<br>Child Care Slots</h4>
-                    
-                    <!-- Slot Bar 1 -->
-                    <div class="space-y-6 w-full max-w-md">
-                      <!-- 1st bar -->
-                      <div>
-                        <div class="relative h-8 w-full bg-gray-300 rounded-lg">
-                          <div class="h-full bg-purple-800 rounded-lg" style="width: 100%;"></div>
-                          <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
-                            296,540
-                          </span>
-                        </div>
-                        <p class="text-sm mt-1">Day Care Center (DCC)</p>
-                      </div>
+          <!-- Illustration & Licensed Slots -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+            <!-- Left Column: Illustration then Slots -->
 
-                      <!-- 2nd bar -->
-                      <div>
-                        <div class="relative h-8 w-full bg-gray-300 rounded-lg">
-                          <div class="h-full bg-purple-800 rounded-lg" style="width: 50%;"></div>
-                          <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
-                            152,368
-                          </span>
-                        </div>
-                        <p class="text-sm mt-1">School Age Child Care (SACC)</p>
-                      </div>
+            <div class="flex flex-col md:pr-12 gap-10">
+              <!-- Licensed Slots -->
+              <div class="w-full mx-auto">
+                <h4 class="text-purple-800 text-3xl text-center font-bold mb-4">
+                  Licensed/Regulated<br />Child Care Slots
+                </h4>
 
-                      <!-- 3rd bar -->
-                      <div>
-                        <div class="relative h-8 w-full bg-gray-300 rounded-lg">
-                          <div class="h-full bg-purple-800 rounded-lg" style="width: 70%;"></div>
-                          <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
-                            105,203
-                          </span>
-                        </div>
-                        <p class="text-sm mt-1">Family Child Care / Group Family Day Care</p>
-                      </div>
-
-                      <!-- 4th bar -->
-                      <div>
-                        <div class="relative h-8 w-full bg-gray-300 rounded-lg">
-                          <div class="h-full bg-purple-800 rounded-lg" style="width: 25%;"></div>
-                          <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
-                            45,824
-                          </span>
-                        </div>
-                        <p class="text-sm mt-1">Head Start and Early Head Start</p>
-                      </div>
+                <!-- Slot Bar 1 -->
+                <div class="space-y-6 w-full max-w-md">
+                  <!-- 1st bar -->
+                  <div>
+                    <div class="relative h-8 w-full bg-gray-300 rounded-lg">
+                      <div
+                        class="h-full bg-purple-800 rounded-lg"
+                        style="width: 100%"
+                      ></div>
+                      <span
+                        class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm"
+                      >
+                        296,540
+                      </span>
                     </div>
-
+                    <p class="text-sm mt-1">Day Care Center (DCC)</p>
                   </div>
-              </div>
 
-              <!-- Right Column: Teacher Illustration and 63.8% -->
-              <div class="md:pl-12 flex flex-col xl:mt-[130px] items-start gap-10">
-                  <!-- 63.8% Box -->
-                  <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 w-full max-w-xs text-center">
-                    <h3 class="text-3xl font-bold text-purple-900">63.8%</h3>
-                    <p class="text-xs text-gray-500 mt-2">Children (9 to 35 months) receive developmental screenings.</p>
+                  <!-- 2nd bar -->
+                  <div>
+                    <div class="relative h-8 w-full bg-gray-300 rounded-lg">
+                      <div
+                        class="h-full bg-purple-800 rounded-lg"
+                        style="width: 50%"
+                      ></div>
+                      <span
+                        class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm"
+                      >
+                        152,368
+                      </span>
+                    </div>
+                    <p class="text-sm mt-1">School Age Child Care (SACC)</p>
+                  </div>
+
+                  <!-- 3rd bar -->
+                  <div>
+                    <div class="relative h-8 w-full bg-gray-300 rounded-lg">
+                      <div
+                        class="h-full bg-purple-800 rounded-lg"
+                        style="width: 70%"
+                      ></div>
+                      <span
+                        class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm"
+                      >
+                        105,203
+                      </span>
+                    </div>
+                    <p class="text-sm mt-1">
+                      Family Child Care / Group Family Day Care
+                    </p>
+                  </div>
+
+                  <!-- 4th bar -->
+                  <div>
+                    <div class="relative h-8 w-full bg-gray-300 rounded-lg">
+                      <div
+                        class="h-full bg-purple-800 rounded-lg"
+                        style="width: 25%"
+                      ></div>
+                      <span
+                        class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm"
+                      >
+                        45,824
+                      </span>
+                    </div>
+                    <p class="text-sm mt-1">Head Start and Early Head Start</p>
+                  </div>
                 </div>
               </div>
-        </div>
+            </div>
+
+            <!-- Right Column: Teacher Illustration and 63.8% -->
+            <div
+              class="md:pl-12 flex flex-col xl:mt-[130px] items-start gap-10"
+            >
+              <!-- 63.8% Box -->
+              <div
+                class="bg-white z-10 p-6 rounded-2xl shadow-xl border border-gray-100 w-full md:max-w-xs text-center"
+              >
+                <h3 class="text-3xl font-bold text-purple-900">63.8%</h3>
+                <p class="text-xs text-gray-500 mt-2">
+                  Children (9 to 35 months) receive developmental screenings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- SECTION 5: ACCESS & SUPPORT PROGRAMS -->
-        <div class="text-center mb-20 relative">
+        <section>
+          <div class="text-center mb-20 relative">
             <div class="inline-block rounded-full mb-4 shadow-lg">
-                <img src="assets/access 1.png" class="size-[80px] ">
+              <img src="assets/access 1.png" class="size-[80px]" />
             </div>
-            <h2 class="text-3xl lg:text-5xl font-normal text-purple-800">Access & <span class="font-bold">Support Programs</span></h2>
+            <h2 class="text-3xl lg:text-5xl font-normal text-purple-800">
+              Access & <span class="font-bold">Support Programs</span>
+            </h2>
 
             <!-- :::::: CENTER LINE::::: -->
-            <img src="/assets/access timeline gray.png" alt="Logo" class="hidden md:block top-[220px] w-[460px] -z-10 left-[29%] absolute h-max">
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mt-8 pb-20 items-start relative">
-          <div class="w-full mt-20">
-            <!-- Box 1: Temp Assistance (Left) -->
-            <div class="flex mx-auto justify-center md:pr-12 md:mt-10">
-                <div class="card py-10 ml-16">
-                    <h4 class="card-header">Temporary Assistance</h4>
-                    <p class="text-[10px] text-gray-400 mb-4">Monthly Average (2023)</p>
-                    <h3 class="text-lg font-bold text-gray-700">201,139</h3>
-                    <p class="text-xs text-gray-500">Children</p>
-                </div>
+            <div
+              class="hidden md:flex flex-col absolute top-[200px] md:left-[50%] lg:left-[50%] xl:left-[50%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+            >
+              <svg
+                class="w-[490px] h-auto"
+                viewBox="0 0 1642 4094"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M882 0V134.5C882 217.343 814.843 284.5 732 284.5H155C72.1573 284.5 5 351.657 5 434.5V622.5C5 705.343 72.1573 772.5 155 772.5H732C814.843 772.5 882 839.657 882 922.5V1516.5C882 1599.34 949.157 1666.5 1032 1666.5H1487C1569.84 1666.5 1637 1733.66 1637 1816.5V2056.5C1637 2139.34 1569.84 2206.5 1487 2206.5H434C351.157 2206.5 284 2273.66 284 2356.5V2875.5C284 2958.34 351.157 3025.5 434 3025.5H1336C1418.84 3025.5 1486 3092.66 1486 3175.5V3537.5C1486 3620.34 1418.84 3687.5 1336 3687.5H1032C949.157 3687.5 882 3754.66 882 3837.5V4094"
+                  stroke="#43285D"
+                  stroke-width="10"
+                />
+              </svg>
             </div>
-
-            <!-- Box:2 SNAP (Left) -->
-            <div class="flex my-28 relative justify-end md:pr-12">
-              
-                  <div class="card">
-                    <!-- Decorative Yellow Circle -->
-                    <img src="assets/access 3.png" class="absolute size-[65px] right-16 -top-[45px]" alt="access-home">
-
-                    <h4 class="card-header">SNAP Food <br> Assistance</h4>
-                    <p class="text-[10px] text-gray-400 mb-2">Monthly Average (2023)</p>
-                    
-                    <div class="mb-2">
-                        <h3 class="text-xl font-bold text-gray-700">1,019,004</h3>
-                        <p class="text-xs text-gray-500">Households</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-700">2,569,567</h3>
-                        <p class="text-xs text-gray-500">Persons</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Illustration: Gardening Kids (Left Bottom) -->
-            <div class="flex justify-end md:pr-12 md:col-start-1 -mt-10">
-                <div class="bg-yellow-50 rounded-full p-4 w-64 h-64 flex items-center justify-center">
-                    <img src="assets/access 5.png" alt="Gardening">
-                </div>
+            <div
+              class="hidden md:flex flex-col absolute top-[200px] md:left-[50%] lg:left-[50%] xl:left-[50%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+            >
+              <svg
+                class="w-[490px] h-auto"
+                viewBox="0 0 1642 4094"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.4"
+                  d="M882 0V134.5C882 217.343 814.843 284.5 732 284.5H155C72.1573 284.5 5 351.657 5 434.5V622.5C5 705.343 72.1573 772.5 155 772.5H732C814.843 772.5 882 839.657 882 922.5V1516.5C882 1599.34 949.157 1666.5 1032 1666.5H1487C1569.84 1666.5 1637 1733.66 1637 1816.5V2056.5C1637 2139.34 1569.84 2206.5 1487 2206.5H434C351.157 2206.5 284 2273.66 284 2356.5V2875.5C284 2958.34 351.157 3025.5 434 3025.5H1336C1418.84 3025.5 1486 3092.66 1486 3175.5V3537.5C1486 3620.34 1418.84 3687.5 1336 3687.5H1032C949.157 3687.5 882 3754.66 882 3837.5V4094"
+                  stroke="#D0D0CE"
+                  stroke-width="10"
+                />
+              </svg>
             </div>
           </div>
 
-          <div class="w-full">
-            <!-- Box 1 Cube Icon (Right Center) -->
-            <img src="assets/access 2.png" class="mx-auto size-[100px]">
-
-            <!-- Box 2: Head Start (Right - center) -->
-            <div class="flex justify-center mt-14 mr-24 md:pl-12 row-span-2">
-                <div class="card mr-12">
-                    <h4 class="card-header">Head Start</h4>
-                    
-                    <div class="mb-2">
-                        <div class="text-[14px] font-medium text-gray-700">274</div>
-                        <div class="text-[13px] text-gray-500">Grants</div>
-                    </div>
-                    <div class="mb-2">
-                        <div class="text-lg font-semibold text-gray-700">927</div>
-                        <div class="text-[13px] text-gray-500">Sites</div>
-                    </div>
-                    <div class="mb-2">
-                        <div class="text-lg font-semibold text-gray-700">$796.5M</div>
-                        <div class="text-[13px] text-gray-500">Total Funding</div>
-                    </div>
-                    <div class="mb-2">
-                        <div class="text-lg font-semibold text-gray-700">16,605</div>
-                        <div class="text-[13px] text-gray-500">Staff</div>
-                    </div>
-                    <div>
-                        <div class="text-lg font-semibold text-gray-700">43,337</div>
-                        <div class="text-[13px] text-gray-500">Children Served</div>
-                    </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:mt-8 pb-20 items-start relative"
+          >
+            <div class="w-full md:mt-20">
+              <!-- Box 1: Temp Assistance (Left) -->
+              <div class="flex mx-auto justify-center md:pr-12 md:mt-10">
+                <div class="card py-10 md:ml-16">
+                  <h4 class="card-header">Temporary Assistance</h4>
+                  <p class="text-[10px] text-gray-400 mb-4">
+                    Monthly Average (2023)
+                  </p>
+                  <h3 class="text-lg font-bold text-gray-700">201,139</h3>
+                  <p class="text-xs text-gray-500">Children</p>
                 </div>
-            </div>
-
-            <!-- Box 3: Early Intervention (Right ) -->
-            <div class="flex justify-start mt-48 relative md:pl-12 md:col-start-2">
-                <div class="card relative ">
-                    <!-- Decorative Tape -->
-                    <img src="assets/access 4.png" alt="access-4" class="absolute size-[65px]  right-1 -top-[40px]">
-
-                  <h4 class="card-header">Early <br> Intervention</h4>
-                  <p class="text-[14px] text-gray-400 mb-2">Children Under Age 3</p>
-                  <h3 class="text-xl font-bold text-gray-700">5.9%</h3>
-                  <p class="text-[14px] text-gray-500">Of Children Served</p>
               </div>
-            </div>
-          </div>
 
-        </div>
+              <!-- Box:2 SNAP (Left) -->
+              <div
+                class="flex my-10 md:my-28 relative justify-center md:justify-end md:pr-12"
+              >
+                <div class="card">
+                  <!-- Decorative Yellow Circle -->
+                  <img
+                    src="assets/access 3.png"
+                    class="absolute size-[65px] right-16 -top-[45px]"
+                    alt="access-home"
+                  />
 
-        <!-- THREE FEATURE CARDS (End of flow) -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-32">
-            <!-- Card 1 -->
-            <div class="bg-white relative rounded-2xl shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20  flex-col items-center">
-                <img src="assets/countyreports .png" class="size-[80px] -top-[40px] absolute">
-                <h3 class="text-purple-900 font-bold text-lg mb-2">County Reports</h3>
-                <p class="text-xs text-gray-500 mb-6">Compare data across 62 counties.</p>
-                <button class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800">EXPLORE</button>
-            </div>
-            <!-- Card 2 -->
-            <div class="bg-white relative rounded-2xl shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20  flex-col items-center">
-                <img src="assets/countyreports .png" class="size-[80px] -top-[40px] absolute">
-                <h3 class="text-purple-900 font-bold text-lg mb-2">Map Builder</h3>
-                <p class="text-xs text-gray-500 mb-6">Visualize child well-being across NYS.</p>
-                <button class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800">EXPLORE</button>
-            </div>
-            <!-- Card 3 -->
-            <div class="bg-white relative rounded-2xl shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20  flex-col items-center">
-                <img src="assets/countyreports .png" class="size-[80px] -top-[40px] absolute">
-                <h3 class="text-purple-900 font-bold text-lg mb-2">Indicator Data</h3>
-                <p class="text-xs text-gray-500 mb-6">Access the full database of well-being indicators.</p>
-                <button class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800">EXPLORE</button>
-            </div>
-        </div>
-      </div>
+                  <h4 class="card-header">
+                    SNAP Food <br />
+                    Assistance
+                  </h4>
+                  <p class="text-[10px] text-gray-400 mb-2">
+                    Monthly Average (2023)
+                  </p>
 
-
-    
-  </div>
-    <!-- HOW TO USE KWIC SECTION -->
-    <section class="bg-[#FCCD03] py-16">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center">
-            <div>
-                <div class="bg-purple-900 p-3 rounded-full size-12 xl:size-16 flex items-center justify-center mb-6 shadow-lg">
-                  <span class="text-white text-2xl xl:text-3xl font-bold">?</span>
-              </div>
-              <h2 class="text-3xl xl:text-4xl font-bold text-purple-900 mb-2">How to</h2>
-              <h2 class="text-3xl xl:text-4xl font-bold text-purple-900 mb-6">Use KWIC</h2>
-              <p class="text-purple-900 font-medium mb-8 max-w-sm">Watch this video for a quick tutorial and learn about additional resources on KWIC's tools.</p>
-              <button class="bg-purple-900 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-purple-800">WATCH NOW</button>
-            </div>
-            <div class="flex relative w-full justify-center md:justify-end">
-              <img src="/assets/play button.png" alt="Logo" class="-top-[40px] w-[100px] z-10 -left-[50px] absolute h-max">
-              <!-- Video Placeholder -->
-              <div class="bg-white rounded-xl shadow-2xl w-full w-full aspect-video flex items-center justify-center">
-                  <span class="text-gray-400 font-bold">[ VIDEO PLAYER PLACEHOLDER ]</span>
-              </div>
-            </div>
-        </div>
-    </section>
-  <!-- EXPLORE FOOTER CTA -->
-    <section class="relative bg-purple-800 py-28 overflow-hidden">zzzzzzzzz
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0 opacity-20">
-            <img src="assets/hero.png" class="w-full h-full object-cover">
-        </div>
-        
-        <div class="relative z-10 text-center max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl  xl:text-4xl text-white font-bold mb-4">Explore Child<br>Well-being Data</h2>
-            <p class="text-purple-100 text-[12px] lg:text-[14px] mb-8">Explore more than 500 indicators from state and federal sources and create custom reports to improve outcomes for every New York child.</p>
-            <button class="bg-[#FCCD03cc] text-purple-900 px-8 py-2 rounded-full font-bold hover:bg-[#FCCD03] transition">VIEW DATA</button>
-        </div>
-    </section>
-    <!-- MAIN FOOTER -->
-    <footer class="bg-[#333333] text-white pt-16 pb- text-[10px] xl:text-[12px] xxl:text-[14px]">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <!-- Col 1 -->
-            <div>
-                <h5 class="font-bold mb-4 uppercase text-gray-400">Kids' Well-being<br>Indicators Clearinghouse</h5>
-                <p class="text-gray-500 mb-4">52 Washington Street, West Building<br>Rensselaer, New York 12144</p>
-                <a href="mailto:KWIC@ccf.ny.gov" class="text-gray-400 hover:text-white block mb-4">KWIC@ccf.ny.gov</a>
-                <div class="flex gap-4">
-                    <a href="#" class="text-gray-400 hover:text-white text-lg"></a>
-                </div>
-            </div>
-            <!-- Col 2 -->
-            <div>
-                <h5 class="font-bold mb-4 uppercase text-gray-400">About</h5>
-                <ul class="space-y-2 text-gray-500">
-                    <li><a href="#" class="hover:text-white">Partners</a></li>
-                    <li><a href="#" class="hover:text-white">Touchstones</a></li>
-                    <li><a href="#" class="hover:text-white">Contact Us</a></li>
-                    <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-white">User Agreement</a></li>
-                </ul>
-            </div>
-            <!-- Col 3 -->
-            <div>
-                <h5 class="font-bold mb-4 uppercase text-gray-400">Features</h5>
-                <ul class="space-y-2 text-gray-500">
-                    <li><a href="#" class="hover:text-white">Compare Data (County)</a></li>
-                    <li><a href="#" class="hover:text-white">Map Builder</a></li>
-                    <li><a href="#" class="hover:text-white">Map Builder</a></li>
-                    <li><a href="#" class="hover:text-white">Region Profiles</a></li>
-                    <li><a href="#" class="hover:text-white">NYS Data Center</a></li>
-                </ul>
-            </div>
-              <!-- Col 4 -->
-              <div>
-                <h5 class="font-bold mb-4 uppercase text-gray-400">Key Data</h5>
-                <ul class="space-y-2 text-gray-500">
-                    <li><a href="#" class="hover:text-white">Economic Security</a></li>
-                    <li><a href="#" class="hover:text-white">Physical & Emotional Health</a></li>
-                    <li><a href="#" class="hover:text-white">Education</a></li>
-                    <li><a href="#" class="hover:text-white">Civic Engagement</a></li>
-                    <li><a href="#" class="hover:text-white">Family & Community</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="bg-[#110B19]">
-          <div class="border-t py-1.5 border-gray-800 bg-[#0F0913] flex justify-center items-center max-w-7xl mx-auto px-4">
-              <div class="flex gap-4 opacity-50 mr-2 xl:mr-8">
-                    <img src="assets/logo 1.png" class="w-[60px]" alt="Partner Logo">
-              </div>
-              <div class="">
-                <div class="hidden md:flex items-center gap-6 xl:gap-10 text-[11px] xl:text-[12px] font-">
-                  <a href="#" class="hover:text-yellow-400">About Us</a>
-                  <a href="#" class="hover:text-yellow-400">Key Data</a>
-                  <a href="#" class="hover:text-yellow-400">Resources</a>
-                  <a href="#" class="hover:text-yellow-400">Contact</a>
-                  <div class="bg-white rounded-full flex items-center pl-3 pr-[1px] py-[1px]">
-                      <input type="text" placeholder="Search...." class="text-gray-700 outline-none text-[10px] w-24 lg:w-32">
-                      <span class="text-purple-900 bg-indigo-900 rounded-full p-0.5">🔍</span>
+                  <div class="mb-2">
+                    <h3 class="text-xl font-bold text-gray-700">1,019,004</h3>
+                    <p class="text-xs text-gray-500">Households</p>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold text-gray-700">2,569,567</h3>
+                    <p class="text-xs text-gray-500">Persons</p>
                   </div>
                 </div>
               </div>
+
+              <!-- Illustration: Gardening Kids (Left Bottom) -->
+              <div
+                class="flex justify-center md:justify-end md:pr-12 md:col-start-1 mt-10 md:-mt-10"
+              >
+                <div
+                  class="bg-yellow-50 rounded-full p-4 w-64 h-64 flex items-center justify-center"
+                >
+                  <img src="assets/access 5.png" alt="Gardening" />
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full">
+              <!-- Box 1 Cube Icon (Right Center) -->
+              <img src="assets/access 2.png" class="mx-auto size-[100px]" />
+
+              <!-- Box 2: Head Start (Right - center) -->
+              <div
+                class="flex justify-center mt-10 md:mt-14 md:mr-24 md:pl-12 row-span-2"
+              >
+                <div class="card md:mr-12">
+                  <h4 class="card-header">Head Start</h4>
+
+                  <div class="mb-2">
+                    <div class="text-[14px] font-medium text-gray-700">274</div>
+                    <div class="text-[13px] text-gray-500">Grants</div>
+                  </div>
+                  <div class="mb-2">
+                    <div class="text-lg font-semibold text-gray-700">927</div>
+                    <div class="text-[13px] text-gray-500">Sites</div>
+                  </div>
+                  <div class="mb-2">
+                    <div class="text-lg font-semibold text-gray-700">
+                      $796.5M
+                    </div>
+                    <div class="text-[13px] text-gray-500">Total Funding</div>
+                  </div>
+                  <div class="mb-2">
+                    <div class="text-lg font-semibold text-gray-700">
+                      16,605
+                    </div>
+                    <div class="text-[13px] text-gray-500">Staff</div>
+                  </div>
+                  <div>
+                    <div class="text-lg font-semibold text-gray-700">
+                      43,337
+                    </div>
+                    <div class="text-[13px] text-gray-500">Children Served</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Box 3: Early Intervention (Right ) -->
+              <div
+                class="flex justify-center md:justify-start mt-12 md:mt-48 relative md:pl-12 md:col-start-2"
+              >
+                <div class="card relative">
+                  <!-- Decorative Tape -->
+                  <img
+                    src="assets/access 4.png"
+                    alt="access-4"
+                    class="absolute size-[65px] right-1 -top-[40px]"
+                  />
+
+                  <h4 class="card-header">
+                    Early <br />
+                    Intervention
+                  </h4>
+                  <p class="text-[14px] text-gray-400 mb-2">
+                    Children Under Age 3
+                  </p>
+                  <h3 class="text-xl font-bold text-gray-700">5.9%</h3>
+                  <p class="text-[14px] text-gray-500">Of Children Served</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- THREE FEATURE CARDS (End of flow) -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-0 md:mt-32"
+        >
+          <!-- Card 1 -->
+          <div
+            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+          >
+            <img
+              src="assets/countyreports .png"
+              class="size-[80px] -top-[40px] absolute"
+            />
+            <h3 class="text-purple-900 font-bold text-lg mb-2">
+              County Reports
+            </h3>
+            <p class="text-xs text-gray-500 mb-6">
+              Compare data across 62 counties.
+            </p>
+            <button
+              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+            >
+              EXPLORE
+            </button>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+          >
+            <img
+              src="assets/countyreports .png"
+              class="size-[80px] -top-[40px] absolute"
+            />
+            <h3 class="text-purple-900 font-bold text-lg mb-2">Map Builder</h3>
+            <p class="text-xs text-gray-500 mb-6">
+              Visualize child well-being across NYS.
+            </p>
+            <button
+              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+            >
+              EXPLORE
+            </button>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+          >
+            <img
+              src="assets/countyreports .png"
+              class="size-[80px] -top-[40px] absolute"
+            />
+            <h3 class="text-purple-900 font-bold text-lg mb-2">
+              Indicator Data
+            </h3>
+            <p class="text-xs text-gray-500 mb-6">
+              Access the full database of well-being indicators.
+            </p>
+            <button
+              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+            >
+              EXPLORE
+            </button>
           </div>
         </div>
-        
-    </footer>
+      </div>
+    </div>
+    <!-- HOW TO USE KWIC SECTION -->
+    <section class="bg-[#FCCD03] py-16">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center"
+      >
+        <div>
+          <div
+            class="bg-purple-900 p-3 rounded-full size-12 xl:size-16 flex items-center justify-center mb-6 shadow-lg"
+          >
+            <span class="text-white text-2xl xl:text-3xl font-bold">?</span>
+          </div>
+          <h2 class="text-3xl xl:text-4xl font-bold text-purple-900 mb-2">
+            How to
+          </h2>
+          <h2 class="text-3xl xl:text-4xl font-bold text-purple-900 mb-6">
+            Use KWIC
+          </h2>
+          <p class="text-purple-900 font-medium mb-8 max-w-sm">
+            Watch this video for a quick tutorial and learn about additional
+            resources on KWIC's tools.
+          </p>
+          <button
+            class="bg-purple-900 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-purple-800"
+          >
+            WATCH NOW
+          </button>
+        </div>
+        <div class="flex relative w-full justify-center md:justify-end">
+          <img
+            src="/assets/play button.png"
+            alt="Logo"
+            class="-top-[40px] w-[100px] z-10 -left-[50px] absolute h-max"
+          />
+          <!-- Video Placeholder -->
+          <div
+            class="bg-white rounded-xl shadow-2xl w-full w-full aspect-video flex items-center justify-center"
+          >
+            <span class="text-gray-400 font-bold"
+              >[ VIDEO PLAYER PLACEHOLDER ]</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EXPLORE FOOTER CTA -->
+    <section class="relative bg-purple-800 py-28 overflow-hidden">
+      zzzzzzzzz
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 z-0 opacity-20">
+        <img src="assets/hero.png" class="w-full h-full object-cover" />
+      </div>
 
-</body>
+      <div class="relative z-10 text-center max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl xl:text-4xl text-white font-bold mb-4">
+          Explore Child<br />Well-being Data
+        </h2>
+        <p class="text-purple-100 text-[12px] lg:text-[14px] mb-8">
+          Explore more than 500 indicators from state and federal sources and
+          create custom reports to improve outcomes for every New York child.
+        </p>
+        <button
+          class="bg-[#FCCD03cc] text-purple-900 px-8 py-2 rounded-full font-bold hover:bg-[#FCCD03] transition"
+        >
+          VIEW DATA
+        </button>
+      </div>
+    </section>
+    <!-- MAIN FOOTER -->
+    <footer
+      class="bg-[#333333] text-white pt-16 pb- text-[10px] xl:text-[12px] xxl:text-[14px]"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
+      >
+        <!-- Col 1 -->
+        <div>
+          <h5 class="font-bold mb-4 uppercase text-gray-400">
+            Kids' Well-being<br />Indicators Clearinghouse
+          </h5>
+          <p class="text-gray-500 mb-4">
+            52 Washington Street, West Building<br />Rensselaer, New York 12144
+          </p>
+          <a
+            href="mailto:KWIC@ccf.ny.gov"
+            class="text-gray-400 hover:text-white block mb-4"
+            >KWIC@ccf.ny.gov</a
+          >
+          <div class="flex gap-4">
+            <a href="#" class="text-gray-400 hover:text-white text-lg"></a>
+          </div>
+        </div>
+        <!-- Col 2 -->
+        <div>
+          <h5 class="font-bold mb-4 uppercase text-gray-400">About</h5>
+          <ul class="space-y-2 text-gray-500">
+            <li><a href="#" class="hover:text-white">Partners</a></li>
+            <li><a href="#" class="hover:text-white">Touchstones</a></li>
+            <li><a href="#" class="hover:text-white">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white">User Agreement</a></li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div>
+          <h5 class="font-bold mb-4 uppercase text-gray-400">Features</h5>
+          <ul class="space-y-2 text-gray-500">
+            <li>
+              <a href="#" class="hover:text-white">Compare Data (County)</a>
+            </li>
+            <li><a href="#" class="hover:text-white">Map Builder</a></li>
+            <li><a href="#" class="hover:text-white">Map Builder</a></li>
+            <li><a href="#" class="hover:text-white">Region Profiles</a></li>
+            <li><a href="#" class="hover:text-white">NYS Data Center</a></li>
+          </ul>
+        </div>
+        <!-- Col 4 -->
+        <div>
+          <h5 class="font-bold mb-4 uppercase text-gray-400">Key Data</h5>
+          <ul class="space-y-2 text-gray-500">
+            <li><a href="#" class="hover:text-white">Economic Security</a></li>
+            <li>
+              <a href="#" class="hover:text-white"
+                >Physical & Emotional Health</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-white">Education</a></li>
+            <li><a href="#" class="hover:text-white">Civic Engagement</a></li>
+            <li><a href="#" class="hover:text-white">Family & Community</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-[#110B19]">
+        <div
+          class="border-t py-1.5 border-gray-800 bg-[#0F0913] flex justify-center items-center max-w-7xl mx-auto px-4"
+        >
+          <div class="flex gap-4 opacity-50 mr-2 xl:mr-8">
+            <img src="assets/logo 1.png" class="w-[60px]" alt="Partner Logo" />
+          </div>
+          <div class="">
+            <div
+              class="hidden md:flex items-center gap-6 xl:gap-10 text-[11px] xl:text-[12px] font-"
+            >
+              <a href="#" class="hover:text-yellow-400">About Us</a>
+              <a href="#" class="hover:text-yellow-400">Key Data</a>
+              <a href="#" class="hover:text-yellow-400">Resources</a>
+              <a href="#" class="hover:text-yellow-400">Contact</a>
+              <div
+                class="bg-white rounded-full flex items-center pl-3 pr-[1px] py-[1px]"
+              >
+                <input
+                  type="text"
+                  placeholder="Search...."
+                  class="text-gray-700 outline-none text-[10px] w-24 lg:w-32"
+                />
+                <span class="text-purple-900 bg-indigo-900 rounded-full p-0.5"
+                  >🔍</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

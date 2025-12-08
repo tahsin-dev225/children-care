@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365.9 335.5">
+  <path
+    d="M364.9,4.1
+       v13.5
+       c0,32.4-26.3,58.7-58.7,58.7
+       H59.6
+       C27.2,76.3,1,102.5,1,134.9
+       V219
+       c0,32.3,26.2,58.5,58.5,58.5
+       h246.8
+       c32,0,58,26,58,58"
+    fill="none"
+    stroke="#D0D0CE"
+    stroke-width="2"
+    stroke-miterlimit="10"
+  />
+</svg>
