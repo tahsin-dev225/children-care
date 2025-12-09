@@ -3,6 +3,21 @@ const lenis = new Lenis({
   autoRaf: true,
 });
 
+
+// Mobile Nav Menu
+ const mobileMenu = document.getElementById("mobileMenu");
+  const openMenu = document.getElementById("openMenu");
+  const closeMenu = document.getElementById("closeMenu");
+
+  openMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("-translate-x-full");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("-translate-x-full");
+  });
+
+
 // Listen for the scroll event and log the event data
 // lenis.on('scroll', (e) => {
 //   // console.log(e);
@@ -40,7 +55,7 @@ let svgConfig = [
   // reace
   {
     start: 32,
-    end: 50
+    end: 45
   },
   // early childhood
   {
@@ -53,7 +68,33 @@ let svgConfig = [
     end: 86
   }
 ]
+
 // based on window screen size change svgConfig
+if (window.innerWidth < 1540) {
+  svgConfig = [
+    // childhood population
+    {
+      start: 15,
+      end: 30
+    },
+    // reace
+    {
+      start: 35,
+      end: 43
+    },
+    // early childhood
+    {
+      start: 44,
+      end: 57
+    },
+    // Access & Support Programs 
+    {
+      start: 60,
+      end: 78
+    }
+  ]
+}
+
 if (window.innerWidth < 1024) {
   svgConfig = [
     // childhood population
@@ -65,6 +106,31 @@ if (window.innerWidth < 1024) {
     {
       start: 32,
       end: 50
+    },
+    // early childhood
+    {
+      start: 51,
+      end: 65
+    },
+    // Access & Support Programs 
+    {
+      start: 65,
+      end: 86
+    }
+  ]
+}
+
+if (window.innerWidth < 780) {
+  svgConfig = [
+    // childhood population
+    {
+      start: 18,
+      end: 35
+    },
+    // reace
+    {
+      start: 37,
+      end: 46
     },
     // early childhood
     {
@@ -110,23 +176,23 @@ allAnimatedSvgs.forEach((svg, i) => {
 const phoneSvgConfig = [
   // childhood population
   {
-    start: 15,
-    end: 30
+    start: 10,
+    end: 24
   },
   // reace
   {
-    start: 31,
-    end: 40
+    start: 26,
+    end: 37
   },
   // early childhood
   {
-    start: 41,
-    end: 56
+    start: 38,
+    end: 50
   },
   // Access & Support Programs 
   {
-    start: 57,
-    end: 77
+    start: 52,
+    end: 72
   }
 ]
 allPhoneAnimatedSvgs.forEach((svg, i) => {

@@ -33,14 +33,14 @@
                 400: "#ffcf00", // Brand yellow
                 100: "#fff9db", // Light yellow bg
               },
-              screen: {
-                mmd: "850px",
-                mdmd: "950px",
-                xlg: "1100px",
-                xll: "1170px",
-                xxl: "1370px",
-                xxll: "1470px",
-              },
+            },
+            screen: {
+              mmd: "850px",
+              mdmd: "950px",
+              xlg: "1100px",
+              xll: "1170px",
+              xxl: "1370px",
+              xxll: "1470px",
             },
           },
         },
@@ -64,16 +64,42 @@
           <a href="#" class="hover:text-yellow-400">Resources</a>
           <a href="#" class="hover:text-yellow-400">Contact</a>
         </div>
-        <div class="bg-white rounded-full flex items-center pl-3 pr-1 py-[1px]">
-          <input
-            type="text"
-            placeholder="Search...."
-            class="text-gray-700 outline-none text-[10px] lg:text-[13px] w-24 lg:w-32 xl:w-44"
-          />
-          <span class="text-purple-900 bg-[#41285F] rounded-full p-1.5"
-            >🔍</span
-          >
+        <div class="flex gap-3.5 items-center">
+          <div class="bg-white rounded-full flex max-h-[36px] items-center pl-3 pr-1 py-[1px]">
+            <input
+              type="text"
+              placeholder="Search...."
+              class="text-gray-700 outline-none text-[10px] lg:text-[13px] w-24 lg:w-32 xl:w-44"
+            />
+            <span class="text-purple-900 bg-[#41285F] size-[30px] flex justify-center items-center rounded-full p-1.5"
+              >🔍</span
+            >
+          </div>
+          <button id="openMenu" class="md:hidden text-3xl">
+            ☰
+          </button>
         </div>
+
+        <!-- Mobile nav -->
+         <div
+            id="mobileMenu"
+            class="fixed top-12 left-0 h-max w-full rounded bg-[#4c1d95ee] shadow-lg -translate-x-full transition-all duration-300 z-50"
+          >
+            <div class="flex justify-between items-center p-3 border-b">
+              <h2 class="text-lg font-semibold">Menu</h2>
+              <button id="closeMenu" class="text-3xl">&times;</button>
+            </div>
+
+            <ul class="flex flex-col p-4 text-[15px] space-y-4">
+              <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+              <li><a href="#" class="hover:text-yellow-400">Key Data</a></li>
+              <li><a href="#" class="hover:text-yellow-400">Resources</a></li>
+              <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+
+            
+          </div>
+          
       </nav>
       <!-- Hero Content -->
       <div
@@ -151,7 +177,7 @@
 
     <!-- TIMELINE / CONTENT WRAPPER -->
     <div
-      class="max-w-6xl xl:max-w-7xl xl:mx-auto p-3 md:px-4 md:pt-20 relative"
+      class="max-w-6xl xl:max-w-7xl lg:mx-auto p-3 md:px-4 md:pt-20 relative"
     >
       <!-- Childhood Population 2nd section  -->
       <section class="relative">
@@ -420,7 +446,7 @@
           <!--:::: center line::: -->
 
           <div
-            class="hidden md:flex flex-col absolute top-[100px] md:left-[35%] lg:left-[39%] xl:left-[41%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+            class="hidden md:flex flex-col absolute race-mid top-[100px] md:left-[36%] lg:left-[39%] xl:left-[41%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
           >
             <svg
               class="w-[250px] animated-svg h-auto"
@@ -563,12 +589,12 @@
             <div class="inline-block rounded-full mb-4 shadow-lg">
               <img src="assets/earlychildhood 1.png" class="size-[80px]" />
             </div>
-            <h2 class="text-3xl my-5 font-normal lg:text-5xl text-purple-800">
+            <h2 class="text-3xl my-5 font-normal  lg:text-5xl text-purple-800">
               Early Childhood & <span class="font-bold">Development</span>
             </h2>
             <!-- center line -->
             <div
-              class="hidden md:flex flex-col absolute top-[300px] md:left-[70%] lg:left-[64%] xl:left-[61%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+              class="hidden md:flex flex-col absolute early-mid top-[300px] md:left-[68%] lg:left-[63%] xl:left-[60.8%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
             >
               <svg
                 class="w-[300px] animated-svg h-auto"
@@ -750,7 +776,7 @@
 
             <!-- :::::: CENTER LINE::::: -->
             <div
-              class="hidden md:flex flex-col absolute top-[200px] md:left-[50%] lg:left-[50%] xl:left-[50%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+              class="hidden md:flex flex-col absolute top-[200px] md:left-[49%] lg:left-[49%] xl:left-[49%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
             >
               <svg
                 class="w-[490px] animated-svg h-auto"
