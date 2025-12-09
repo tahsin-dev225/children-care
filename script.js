@@ -4,9 +4,9 @@ const lenis = new Lenis({
 });
 
 // Listen for the scroll event and log the event data
-lenis.on('scroll', (e) => {
-  console.log(e);
-});
+// lenis.on('scroll', (e) => {
+//   // console.log(e);
+// });
 let allAnimatedSvgs = document.querySelectorAll('.animated-svg');
 let allPhoneAnimatedSvgs = document.querySelectorAll('.phone-animated-svg');
 // const svgConfig = [
