@@ -70,6 +70,30 @@ let svgConfig = [
 ]
 
 // based on window screen size change svgConfig
+if (window.innerWidth > 1540) {
+  svgConfig = [
+  // childhood population
+  {
+    start: 15,
+    end: 32
+  },
+  // reace
+  {
+    start: 32,
+    end: 45
+  },
+  // early childhood
+  {
+    start: 51,
+    end: 65
+  },
+  // Access & Support Programs 
+  {
+    start: 69,
+    end: 88
+  }
+]
+}
 if (window.innerWidth < 1540) {
   svgConfig = [
     // childhood population
@@ -85,11 +109,11 @@ if (window.innerWidth < 1540) {
     // early childhood
     {
       start: 44,
-      end: 57
+      end: 60
     },
     // Access & Support Programs 
     {
-      start: 60,
+      start: 62,
       end: 78
     }
   ]
