@@ -1,6 +1,7 @@
 /* Hide purple line initially using clip-path */
 .line-purple {
-  clip-path: inset(0 0 100% 0); /* hide from bottom */
+  clip-path: inset(0 0 100% 0);
+  /* hide from bottom */
 }
 
 .timeline-dot {
@@ -48,7 +49,8 @@
 /* LG breakpoint padding (lg:px-14 → 56px left/right) */
 @media (min-width: 1024px) {
   .card {
-    padding-left: 3.5rem; /* 56px */
+    padding-left: 3.5rem;
+    /* 56px */
     padding-right: 3.5rem;
   }
 }
@@ -64,10 +66,14 @@
 }
 
 .card-header {
-  color: #4c1d95; /* text-purple-900 */
-  font-size: 24px; /* text-[24px] */
-  font-weight: 700; /* font-bold */
-  margin-bottom: 0.5rem; /* mb-2 (8px) */
+  color: #4c1d95;
+  /* text-purple-900 */
+  font-size: 24px;
+  /* text-[24px] */
+  font-weight: 700;
+  /* font-bold */
+  margin-bottom: 0.5rem;
+  /* mb-2 (8px) */
 }
 
 .text-color {
@@ -78,10 +84,54 @@
 body::-webkit-scrollbar {
   width: 8px;
 }
+
 body::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 body::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 4px;
+}
+
+.base-line {
+  stroke: rgb(129, 129, 129);
+  stroke-width: 8px;
+}
+
+.line-running {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: line-animation 5s linear forwards;
+  animation-timeline: scroll();
+  stroke: #4c1d95;
+  stroke-width: 10;
+
+}
+
+.line-circle {
+  transform-box: fill-box;
+  offset-anchor: 50% 50%;
+  fill: #4c1d95;
+  /* 	offset-path: url('#line-base'); */
+  animation: move 5s forwards linear;
+  animation-timeline: scroll();
+}
+
+
+
+@keyframes move {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+@keyframes line-animation {
+  from {
+    stroke-dashoffset: 1;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
 }
