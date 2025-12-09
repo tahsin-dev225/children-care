@@ -9,15 +9,37 @@ lenis.on('scroll', (e) => {
 });
 let allAnimatedSvgs = document.querySelectorAll('.animated-svg');
 let allPhoneAnimatedSvgs = document.querySelectorAll('.phone-animated-svg');
-const svgConfig = [
+// const svgConfig = [
+//   // childhood population
+//   {
+//     start: 15,
+//     end: 40
+//   },
+//   // reace
+//   {
+//     start: 41,
+//     end: 50
+//   },
+//   // early childhood
+//   {
+//     start: 51,
+//     end: 65
+//   },
+//   // Access & Support Programs 
+//   {
+//     start: 65,
+//     end: 86
+//   }
+// ]
+let svgConfig = [
   // childhood population
   {
     start: 15,
-    end: 40
+    end: 32
   },
   // reace
   {
-    start: 41,
+    start: 32,
     end: 50
   },
   // early childhood
@@ -31,7 +53,31 @@ const svgConfig = [
     end: 86
   }
 ]
-
+// based on window screen size change svgConfig
+if (window.innerWidth < 1024) {
+  svgConfig = [
+    // childhood population
+    {
+      start: 15,
+      end: 32
+    },
+    // reace
+    {
+      start: 32,
+      end: 50
+    },
+    // early childhood
+    {
+      start: 51,
+      end: 65
+    },
+    // Access & Support Programs 
+    {
+      start: 65,
+      end: 86
+    }
+  ]
+}
 allAnimatedSvgs.forEach((svg, i) => {
 
   // duplicate the path inside svg and add class line-running
