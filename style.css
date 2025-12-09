@@ -96,7 +96,7 @@ body::-webkit-scrollbar-thumb {
 
 .base-line {
   stroke: rgb(129, 129, 129);
-  stroke-width: 8px;
+  stroke-width: 2px;
 }
 
 .line-running {
@@ -105,7 +105,7 @@ body::-webkit-scrollbar-thumb {
   animation: line-animation 5s linear forwards;
   animation-timeline: scroll();
   stroke: #4c1d95;
-  stroke-width: 10;
+  stroke-width: 3;
 
 }
 

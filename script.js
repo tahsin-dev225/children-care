@@ -49,7 +49,7 @@ allAnimatedSvgs.forEach((svg, i) => {
   circle.classList.add('line-circle');
   circle.setAttribute('cx', '176.22');
   circle.setAttribute('cy', '80');
-  circle.setAttribute('r', '20');
+  circle.setAttribute('r', '8');
   circle.setAttribute('style', `offset-path: path('${pathValue}'); animation-range-start: ${svgConfig[i].start}%; animation-range-end: ${svgConfig[i].end}%;`);
   // circle.setAttribute('offset-path', pathValue);
 
