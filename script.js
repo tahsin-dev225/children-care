@@ -236,7 +236,7 @@ allPhoneAnimatedSvgs.forEach((svg, i) => {
   circle.classList.add('line-circle');
   circle.setAttribute('cx', '176.22');
   circle.setAttribute('cy', '80');
-  circle.setAttribute('r', '20');
+  circle.setAttribute('r', '5');
   circle.setAttribute('style', `offset-path: path('${pathValue}'); animation-range-start: ${phoneSvgConfig[i].start}%; animation-range-end: ${phoneSvgConfig[i].end}%;`);
   // circle.setAttribute('offset-path', pathValue);
 

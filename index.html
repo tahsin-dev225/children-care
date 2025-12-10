@@ -54,7 +54,11 @@
       <nav class="flex justify-between items-center px-3 py-1 xl:py-2">
         <div class="flex items-center gap-1.5">
           <img src="assets/logo 1.png" alt="Logo" class="h-8 xl:h-10" />
-          <img src="assets/logo 2.png" alt="Logo" class="h-10 xl:h-12" />
+          <img
+            src="assets/logo 2.png"
+            alt="Logo"
+            class="h-10 hidden md:block xl:h-12"
+          />
         </div>
         <div
           class="hidden md:flex items-center gap-6 text-[11px] xl:text-[14px] font-"
@@ -65,41 +69,39 @@
           <a href="#" class="hover:text-yellow-400">Contact</a>
         </div>
         <div class="flex gap-3.5 items-center">
-          <div class="bg-white rounded-full flex max-h-[36px] items-center pl-3 pr-1 py-[1px]">
+          <div
+            class="bg-white rounded-full flex max-h-[36px] items-center pl-3 pr-1 py-[1px]"
+          >
             <input
               type="text"
               placeholder="Search...."
               class="text-gray-700 outline-none text-[10px] lg:text-[13px] w-24 lg:w-32 xl:w-44"
             />
-            <span class="text-purple-900 bg-[#41285F] size-[30px] flex justify-center items-center rounded-full p-1.5"
+            <span
+              class="text-purple-900 bg-[#41285F] size-[30px] flex justify-center items-center rounded-full p-1.5"
               >🔍</span
             >
           </div>
-          <button id="openMenu" class="md:hidden text-3xl">
-            ☰
-          </button>
+          <button id="openMenu" class="md:hidden text-3xl">☰</button>
         </div>
 
         <!-- Mobile nav -->
-         <div
-            id="mobileMenu"
-            class="fixed top-12 left-0 h-max w-full rounded bg-[#4c1d95ee] shadow-lg -translate-x-full transition-all duration-300 z-50"
-          >
-            <div class="flex justify-between items-center p-3 border-b">
-              <h2 class="text-lg font-semibold">Menu</h2>
-              <button id="closeMenu" class="text-3xl">&times;</button>
-            </div>
-
-            <ul class="flex flex-col p-4 text-[15px] space-y-4">
-              <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
-              <li><a href="#" class="hover:text-yellow-400">Key Data</a></li>
-              <li><a href="#" class="hover:text-yellow-400">Resources</a></li>
-              <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
-            </ul>
-
-            
+        <div
+          id="mobileMenu"
+          class="fixed top-12 left-0 h-max w-full rounded bg-[#4c1d95ee] shadow-lg -translate-x-full transition-all duration-300 z-50"
+        >
+          <div class="flex justify-between items-center p-3 border-b">
+            <h2 class="text-lg font-semibold">Menu</h2>
+            <button id="closeMenu" class="text-3xl">&times;</button>
           </div>
-          
+
+          <ul class="flex flex-col p-4 text-[15px] space-y-4">
+            <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Key Data</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Resources</a></li>
+            <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+          </ul>
+        </div>
       </nav>
       <!-- Hero Content -->
       <div
@@ -183,40 +185,42 @@
       <section class="relative">
         <!-- mobile side line   -->
 
-        <div class="absolute top-[165px] sm:hidden">
+        <div class="absolute top-[165px] left-[-10px] sm:hidden">
           <div class="relative">
             <div
-              class="bg-[#43285D] absolute top-0 right-0 left-[-2px] rounded-full size-[10px]"
+              class="bg-[#43285D] absolute top-[2px] ml-[1px] rounded-full size-[10px] -translate-x-1/2 left-[50%]"
             ></div>
             <div
-              class="bg-[#43285D] absolute bottom-0 right-0 left-[-2px] rounded-full size-[10px]"
+              class="bg-[#43285D] absolute top-[2px] ml-[1px] rounded-full size-[10px] -translate-x-1/2 left-[50%]"
             ></div>
             <svg
-              class="phone-animated-svg"
-              width="5"
-              height="1430"
-              viewBox="0 0 5 4054"
+              class="phone-animated-svg w-[20px] h-auto"
+              viewBox="0 0 21 1451"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M2.5 0V4054" stroke="#43285D" stroke-width="5" />
+              <path
+                d="M11.4831 10L10.5136 1440"
+                stroke="#D0D0CE"
+                stroke-width="4"
+              />
             </svg>
           </div>
         </div>
 
         <!--===== FULL WIDTH TIMELINE LINE =====-->
         <div
-          class="hidden md:flex flex-col absolute top-[160px] left-[47%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+          class="hidden md:flex flex-col absolute top-[160px] left-[46%] lg:left-[47%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
         >
           <svg
             class="w-[490px] animated-svg h-auto"
-            viewBox="0 0 510 1275"
+            viewBox="0 0 510 1320"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
               opacity="0.44"
-              d="M133.501 10H241.949C264.04 10 281.948 27.9086 281.948 50V315.324C281.948 337.416 264.04 355.324 241.948 355.324H50C27.9086 355.324 10 373.233 10 395.324V463.08C10 485.171 27.9086 503.079 50 503.079H241.948C264.04 503.079 281.948 520.988 281.948 543.079V815.454C281.948 837.546 299.857 855.454 321.948 855.454H460C482.091 855.454 500 873.363 500 895.454V970.413C500 992.505 482.091 1010.41 460 1010.41H321.948C299.857 1010.41 281.948 1028.32 281.948 1050.41V1265"
+              d="M133.501 7H241.948C264.04 7 281.948 24.9086 281.948 47V319.203C281.948 341.295 264.04 359.203 241.948 359.203H50C27.9086 359.203 10 377.112 10 399.203V469.902C10 491.993 27.9086 509.902 50 509.902H241.948C264.04 509.902 281.948 527.81 281.948 549.902V829.296C281.948 851.387 299.857 869.296 321.948 869.296H460C482.091 869.296 500 887.205 500 909.296V987.342C500 1009.43 482.091 1027.34 460 1027.34H321.948C299.857 1027.34 281.948 1045.25 281.948 1067.34V1287"
               stroke="#D0D0CE"
               stroke-width="2"
             />
@@ -414,7 +418,7 @@
       </section>
 
       <!-- SECTION 3: RACE & ETHNICITY -->
-      <div class="text-center mb-12 mt-10 relative">
+      <div class="text-center mb-12 lg:mt-8 relative">
         <!-- Center Icon -->
         <div class="inline-block rounded-full mb-4 mr-5 shadow-lg">
           <img src="assets/raceandethnicity 1.png" class="w-[80px]" />
@@ -422,23 +426,25 @@
 
         <!-- Race and Ethicity -->
         <section class="relative">
-          <div class="absolute top-[80px] sm:hidden">
+          <div class="absolute top-[80px] left-[-10px] sm:hidden">
             <div class="relative">
               <div
-                class="bg-[#43285D] absolute top-0 right-0 left-[-2px] rounded-full size-[10px]"
+                class="bg-[#43285D] absolute top-[4px] mr-[1px] rounded-full size-[10px] -translate-x-1/2 left-[50%]"
               ></div>
               <div
-                class="bg-[#43285D] absolute bottom-0 right-0 left-[-2px] rounded-full size-[10px]"
+                class="bg-[#43285D] absolute bottom-[4px] mr-[1px] rounded-full size-[10px] -translate-x-1/2 left-[50%]"
               ></div>
               <svg
-                class="phone-animated-svg"
-                width="5"
-                height="500"
-                viewBox="0 0 5 4054"
+                class="phone-animated-svg w-[20px] h-[500px]"
+                viewBox="0 0 21 521"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M2.5 0V4054" stroke="#43285D" stroke-width="5" />
+                <path
+                  d="M9.85254 10L9.51356 510"
+                  stroke="#D0D0CE"
+                  stroke-width="4"
+                />
               </svg>
             </div>
           </div>
@@ -446,7 +452,7 @@
           <!--:::: center line::: -->
 
           <div
-            class="hidden md:flex flex-col absolute race-mid top-[100px] md:left-[36%] lg:left-[39%] xl:left-[41%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+            class="hidden md:flex flex-col absolute race-mid top-[100px] md:left-[35%] lg:left-[39%] xl:left-[41%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
           >
             <svg
               class="w-[250px] animated-svg h-auto"
@@ -564,23 +570,25 @@
 
         <!-- SECTION 4: EARLY CHILDHOOD -->
         <section class="relative">
-          <div class="absolute top-[255px] sm:hidden">
+          <div class="absolute top-[255px] left-[-10px] sm:hidden">
             <div class="relative">
               <div
-                class="bg-[#43285D] absolute top-0 right-0 left-[-2px] rounded-full size-[10px]"
+                class="bg-[#43285D] absolute top-[4px] mr-[1px] rounded-full size-[10px] -translate-x-1/2 left-[50%]"
               ></div>
               <div
-                class="bg-[#43285D] absolute bottom-0 right-0 left-[-2px] rounded-full size-[10px]"
+                class="bg-[#43285D] absolute bottom-[4px] mr-[1px] rounded-full size-[10px] -translate-x-1/2 left-[50%]"
               ></div>
               <svg
-                class="phone-animated-svg"
-                width="5"
-                height="1360"
-                viewBox="0 0 5 4054"
+                class="phone-animated-svg w-[20px] h-auto"
+                viewBox="0 0 21 1381"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M2.5 0V4054" stroke="#43285D" stroke-width="5" />
+                <path
+                  d="M11.4356 10L10.5136 1370"
+                  stroke="#D0D0CE"
+                  stroke-width="4"
+                />
               </svg>
             </div>
           </div>
@@ -589,12 +597,12 @@
             <div class="inline-block rounded-full mb-4 shadow-lg">
               <img src="assets/earlychildhood 1.png" class="size-[80px]" />
             </div>
-            <h2 class="text-3xl my-5 font-normal  lg:text-5xl text-purple-800">
+            <h2 class="text-3xl my-5 font-normal lg:text-5xl text-purple-800">
               Early Childhood & <span class="font-bold">Development</span>
             </h2>
             <!-- center line -->
             <div
-              class="hidden md:flex flex-col absolute early-mid top-[300px] md:left-[68%] lg:left-[63%] xl:left-[60.8%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+              class="hidden md:flex flex-col absolute early-mid top-[300px] md:left-[68%] lg:left-[64%] xl:left-[60.8%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
             >
               <svg
                 class="w-[300px] animated-svg h-auto"
@@ -745,24 +753,24 @@
         </section>
 
         <!-- SECTION 5: ACCESS & SUPPORT PROGRAMS -->
+        <section class="relative">
+          <div class="absolute top-[260px] left-[-10px] sm:hidden">
         <section class="relative pb-8">
           <div class="absolute top-[260px] sm:hidden">
             <div class="relative">
               <div
-                class="bg-[#43285D] absolute top-0 right-0 left-[-2px] rounded-full size-[10px]"
+                class="bg-[#43285D] absolute top-[4px] mr-[1px] rounded-full size-[10px] -translate-x-1/2 left-[50%]"
               ></div>
               <div
-                class="bg-[#43285D] absolute bottom-0 right-0 left-[-2px] rounded-full size-[10px]"
+                class="bg-[#43285D] absolute bottom-[4px] mr-[1px] rounded-full size-[10px] -translate-x-1/2 left-[50%]"
               ></div>
               <svg
-                class="phone-animated-svg"
-                width="5"
-                height="1600"
-                viewBox="0 0 5 4054"
+                class="phone-animated-svg w-[20px] h-auto"
+                viewBox="0 0 22 1621"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M2.5 0V4054" stroke="#43285D" stroke-width="5" />
+                <path d="M10.5983 10L9.51356 1610" stroke="#D0D0CE" stroke-width="4"/>
               </svg>
             </div>
           </div>
@@ -776,17 +784,17 @@
 
             <!-- :::::: CENTER LINE::::: -->
             <div
-              class="hidden md:flex flex-col absolute top-[200px] md:left-[49%] lg:left-[49%] xl:left-[49%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
+              class="hidden md:flex flex-col absolute top-[200px] lg:top-[210px] md:left-[48%] lg:left-[48%] xl:left-[49%] -translate-x-1/2 whitespace-nowrap gap-none z-0 pointer-events-none"
             >
               <svg
                 class="w-[490px] animated-svg h-auto"
-                viewBox="0 0 500 1300"
+                viewBox="0 0 512 1323"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   opacity="0.4"
-                  d="M268.315 29V75.309C268.315 97.4004 250.406 115.309 228.315 115.309H45C22.9086 115.309 5 133.218 5 155.309V223.354C5 245.445 22.9086 263.354 45 263.354H228.315C250.406 263.354 268.315 281.263 268.315 303.354V494.567C268.315 516.659 286.224 534.567 308.315 534.567H455C477.091 534.567 495 552.476 495 574.567V658.388C495 680.479 477.091 698.388 455 698.388H128.768C106.677 698.388 88.7684 716.296 88.7684 738.388V906.848C88.7684 928.94 106.677 946.848 128.768 946.848H409.663C431.754 946.848 449.663 964.757 449.663 986.848V1107.68C449.663 1129.77 431.754 1147.68 409.663 1147.68H308.315C286.224 1147.68 268.315 1165.59 268.315 1187.68V1271"
+                  d="M274.315 11V61.3395C274.315 83.4309 256.406 101.34 234.315 101.34H51C28.9086 101.34 11 119.248 11 141.34V216.298C11 238.389 28.9086 256.298 51 256.298H234.315C256.406 256.298 274.315 274.207 274.315 296.298V500.177C274.315 522.268 292.224 540.177 314.315 540.177H461C483.091 540.177 501 558.085 501 580.177V671.647C501 693.739 483.091 711.647 461 711.647H134.768C112.677 711.647 94.7684 729.556 94.7684 751.647V931.711C94.7684 953.802 112.677 971.711 134.768 971.711H415.663C437.754 971.711 455.663 989.619 455.663 1011.71V1141.92C455.663 1164.01 437.754 1181.92 415.663 1181.92H314.315C292.224 1181.92 274.315 1199.83 274.315 1221.92V1311"
                   stroke="#D0D0CE"
                   stroke-width="2"
                 />
@@ -1081,7 +1089,9 @@
         </div>
         <!-- Col 2 -->
         <div>
-          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">About</h5>
+          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
+            About
+          </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
             <li><a href="#" class="hover:text-white">Partners</a></li>
             <li><a href="#" class="hover:text-white">Touchstones</a></li>
@@ -1092,7 +1102,9 @@
         </div>
         <!-- Col 3 -->
         <div>
-          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">Features</h5>
+          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
+            Features
+          </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
             <li>
               <a href="#" class="hover:text-white">Compare Data (County)</a>
@@ -1105,11 +1117,13 @@
         </div>
         <!-- Col 4 -->
         <div>
-          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">Key Data</h5>
+          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
+            Key Data
+          </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
             <li><a href="#" class="hover:text-white">Economic Security</a></li>
             <li>
-              <a href="#" class="hover:text-white "
+              <a href="#" class="hover:text-white"
                 >Physical & Emotional Health</a
               >
             </li>
