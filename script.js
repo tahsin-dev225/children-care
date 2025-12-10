@@ -85,12 +85,12 @@ if (window.innerWidth > 1540) {
   // early childhood
   {
     start: 51,
-    end: 64
+    end: 65
   },
   // Access & Support Programs 
   {
-    start: 65,
-    end: 83
+    start: 69,
+    end: 88
   }
 ]
 }
@@ -109,11 +109,11 @@ if (window.innerWidth < 1540) {
     // early childhood
     {
       start: 44,
-      end: 57
+      end: 60
     },
     // Access & Support Programs 
     {
-      start: 60,
+      start: 62,
       end: 78
     }
   ]
