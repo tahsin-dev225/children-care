@@ -75,22 +75,22 @@ if (window.innerWidth > 1540) {
   // childhood population
   {
     start: 15,
-    end: 32
+    end: 33
   },
   // reace
   {
-    start: 32,
-    end: 45
+    start: 33,
+    end: 42
   },
   // early childhood
   {
-    start: 51,
-    end: 65
+    start: 42,
+    end: 60
   },
   // Access & Support Programs 
   {
-    start: 69,
-    end: 88
+    start: 60,
+    end: 78
   }
 ]
 }
@@ -98,22 +98,22 @@ if (window.innerWidth < 1540) {
   svgConfig = [
     // childhood population
     {
-      start: 15,
-      end: 30
+      start: 13,
+      end: 32
     },
     // reace
     {
-      start: 35,
-      end: 43
+      start: 33,
+      end: 42
     },
     // early childhood
     {
-      start: 44,
+      start: 43,
       end: 60
     },
     // Access & Support Programs 
     {
-      start: 62,
+      start: 61,
       end: 78
     }
   ]
@@ -123,12 +123,12 @@ if (window.innerWidth < 1024) {
   svgConfig = [
     // childhood population
     {
-      start: 15,
-      end: 32
+      start: 18,
+      end: 35
     },
     // reace
     {
-      start: 32,
+      start: 36,
       end: 50
     },
     // early childhood

@@ -33,6 +33,32 @@
   color: #3b1e54;
 }
 
+.progress-fill {
+  width: 0;
+  transition: width 1.4s ease-in-out;
+}
+
+/* when AOS adds class */
+[data-aos].aos-animate .progress-fill {
+  width: var(--target);
+}
+[data-aos].aos-animate span {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50%) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+
+
 .card {
   background-color: #ffffff;
   padding: 1.5rem;
