@@ -80,9 +80,9 @@
               placeholder="Search KWIC"
               class="text-gray-800 outline-none text-[10px] lg:text-[14px] w-24 lg:w-32 xl:w-48"
             />
-            <span
-              class="text-purple-900 bg-[#41285F] size-[30px] flex justify-center items-center rounded-full p-1.5"
-              >🔍</span
+            <div
+              class="bg-[#41285F] size-[30px] flex justify-center items-center rounded-full p-2"
+              ><img class="" src="/assets/search.png" alt="search"></div
             >
           </div>
           <button id="openMenu" class="md:hidden text-3xl">☰</button>
@@ -113,26 +113,26 @@
         <div data-aos="fade-up" class="container max-w-6xl xl:max-w-7xl  mx-auto flex flex-col md:flex-row gap-10 items-center">
           <div class="fonts-roboto">
             <h4
-              class="text-yellow-100 uppercase tracking-widest text-sm font-bold mb-2"
+              class="text-yellow-100 uppercase tracking-widest  lg:text-lg font-medium mb-2"
             >
               Council on Children & Families
             </h4>
             <h1
-              class="text-3xl md:text-4xl lg:text-5xl font- leading-tight mb-4"
+              class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font- leading-tight mb-4"
             >
               Kids' Well-being <br />Indicators <br />Clearinghouse
             </h1>
-            <p class="text-lg text-gray-200 mb-8 max-w-sm">
+            <p class="text-lg xl:text-xl text-gray-200 my-8 font-light max-w-sm">
               Explore data and insights to help every New York child thrive.
             </p>
-            <div class="flex gap-4 flex-col sm:flex-row">
+            <div class="flex gap-4 flex-col my-5 sm:flex-row">
               <button
-                class="bg-yellow-400 md:text-sm w-max text-purple-900 px-8 py-2 rounded-full hover:bg-yellow-300 transition"
+                class="bg-[#FBCD02] md:text-sm w-max text-purple-900 px-8 py-2 rounded-full hover:bg-yellow-300 transition"
               >
                 START NOW
               </button>
               <button
-                class="border border-yellow-400 w-max text-yellow-500/90 px-8 py-2 rounded-full  hover:bg-white hover:text-purple-900 transition"
+                class="border border-yellow-400 w-max text-yellow-500/90 px-8 py-2 rounded-full  hover:bg-white/5 hover:text-yellow-500 transition"
               >
                 Learn More
               </button>
@@ -146,24 +146,24 @@
     </header>
 
     <!-- YELLOW NYC BANNER -->
-    <section class="bg-[#FCCD03] pt-16 xl:pb-8 text-center relative">
+    <section class="bg-[#FBCD02] pt-16 xl:pb-8 text-center relative">
       <div
-        class="max-w-4xl mx-auto px-4 md:w-[65%] lg:w-[45%] py-6 pb-[80px] xl:py-10"
+        class="max-w-4xl mx-auto px-4 md:w-[65%] lg:w-[45%] py-6 pb-[80px] xl:py-24"
       >
-        <h2 class="text-3xl md:text-4xl text-purple-900 font-bold mb-2">
+        <h2 class="text-3xl md:text-5xl text-primary font-medium mb-2">
           NYS By The Numbers
         </h2>
-        <h3 class="text-2xl md:text-3xl text-purple-900 font-bold mb-4">
+        <h3 class="text-2xl md:text-5xl text-primary font-semibold my-4">
           2024 Snapshot
         </h3>
-        <p class="text-purple-900 mb-8 max-w-2xl mx-auto">
-          A quick look at child well-being updates, monitoring, and facts about
-          current trends in New York.
+        <p class="text-primary my-8 max-w-md  mx-auto">
+          A data-driven look at child demographics, well-bein,
+          and early development acroos New York.
         </p>
         <button
-          class="bg-purple-800 text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-purple-700 shadow-lg"
+          class="bg-primary text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-purple-700 shadow-lg"
         >
-          Learn More...
+          EXPLORE ALL DATA
         </button>
       </div>
       <!-- Decorative Icon  -->
@@ -630,7 +630,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-7">
             <!-- Left: 23.6% Box -->
             <div  class="flex flex-col gap-8 mx-auto px-8 sm:px-0 justify- md:pr-12">
               <div data-aos="fade-right" class="card w-full md:mt-20">
@@ -670,75 +670,73 @@
             <div class="flex flex-col md:pr-12  gap-10">
               <!-- Licensed Slots -->
               <div class="w-full mx-auto px-4 sm:px-0">
-                <h4 class="text-purple-800 text-3xl text-center font-bold mb-4">
-                  Licensed/Regulated<br />Child Care Slots
+                <h4 class="text-purple-800 text-3xl text-center mb-4">
+                  Licensed/Regulated <br><span class="font-semibold">Child Care Slots </span>
                 </h4>
 
                 <!-- Slot Bar 1 -->
-                <div class="space-y-6 w-full mx-auto lg:mx-0 max-w-md">
-                  <!-- 1st bar -->
+                <div class="space-y-3 w-full mx-auto text-start lg:mx-0 max-w-lg">
+                  <!-- bar 1 -->
                   <div class="">
-                    <div data-aos="fade-right" class="bg-gray-300 h-8 rounded-lg relative overflow-hidden"
-                      >
+                    <div data-aos="fade-right" class="bg-gray-100 flex h-8 md:h-10 lg:h-[44px] rounded-lg relative overflow-hidden">
                       <div
-                        class="progress-fill bg-purple-700 h-full rounded-lg"
+                        class="bg-purple-700 progress-fill h-full w-[40%] rounded-lg"
                         style="--target: 100%"
                       ></div>
-
-                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm lg:text-[16px]">
                         296,540
                       </span>
                     </div>
                     <p class="text-sm mt-1">Day Care Center (DCC)</p>
                   </div>
-
-                  <!-- 2nd bar -->
+                  
+                  <!-- bar 2 -->
                   <div class="">
-                    <div data-aos="fade-right" class="bg-gray-300 h-8 rounded-lg relative overflow-hidden"
-                      >
+                    <div data-aos="fade-right" class="bg-gray-100 flex justify-between h-8 md:h-10 lg:h-[44px] rounded-lg relative overflow-hidden">
                       <div
-                        class="progress-fill bg-purple-700 h-full rounded-lg"
-                        style="--target: 47%"
+                        class="bg-purple-700 progress-fill h-full w-[58%] rounded-lg"
+                        style="--target: 58%"
                       ></div>
-
-                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
+                      <div  class="bg-gray-300 h-full w-[40%] rounded-lg"></div>
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm lg:text-[16px]">
                         152,368
                       </span>
                     </div>
                     <p class="text-sm mt-1">School Age Child Care (SACC)</p>
                   </div>
-
-                  <!-- 3rd bar -->
+                  
+                  <!-- bar 3 -->
                   <div class="">
-                    <div data-aos="fade-right" class="bg-gray-300 h-8 rounded-lg relative overflow-hidden"
-                      >
+                    <div data-aos="fade-right" class="bg-gray-100 flex justify-between h-8 md:h-10 lg:h-[44px] rounded-lg relative overflow-hidden">
                       <div
-                        class="progress-fill bg-purple-700 h-full rounded-lg"
-                        style="--target: 76%"
+                        class="bg-purple-700 progress-fill h-full w-[39%] rounded-lg"
+                        style="--target: 39%"
                       ></div>
+                      <div class="bg-gray-300 h-full w-[59%] rounded-lg" ></div>
 
-                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm lg:text-[16px]">
                         105,203
                       </span>
                     </div>
                     <p class="text-sm mt-1">Family Child Care / Group Family Day Care</p>
                   </div>
-
-                  <!-- 4th bar -->
+                  
+                  <!-- bar 4 -->
                   <div class="">
-                    <div data-aos="fade-right" class="bg-gray-300 h-8 rounded-lg relative overflow-hidden"
-                      >
+                    <div data-aos="fade-right" class="bg-gray-100 flex justify-between h-8 md:h-10 lg:h-[44px] rounded-lg relative overflow-hidden">
                       <div
-                        class="progress-fill bg-purple-700 h-full rounded-lg"
+                        class="bg-purple-700 progress-fill h-full w-[27%] rounded-lg"
                         style="--target: 27%"
                       ></div>
+                      <div class="bg-gray-300 h-full w-[71%] rounded-lg" ></div>
 
-                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm lg:text-[16px]">
                         45,824
                       </span>
                     </div>
                     <p class="text-sm mt-1">Head Start and Early Head Start</p>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -1003,30 +1001,30 @@
       </div>
     </div>
     <!-- HOW TO USE KWIC SECTION -->
-    <section class="bg-[#FCCD03] py-16">
+    <section class="bg-[#FBCD02] py-16">
       <div
-        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center"
+        class="max-w-6xl xl:max-w-7xl  mx-auto px-4 flex flex-col md:flex-row gap-12 items-center"
       >
         <div>
           <div
-            class="bg-purple-900 p-3 rounded-full size-12 xl:size-16 flex items-center justify-center mb-6 shadow-lg"
+            class="bg-primary p-3 rounded-full size-12 xl:size-16 flex items-center justify-center mb-6 shadow-lg"
           >
             <span class="text-white text-2xl xl:text-3xl font-bold">?</span>
           </div>
-          <h2 class="text-3xl xl:text-4xl font-bold text-purple-900 mb-2">
-            How to
+          <h2 class="text-3xl xl:text-4xl text-primary mb-2">
+            How to <br> Use
+            <span class="text-3xl xl:text-4xl font-bold mb-6">
+              KWIC
+            </span>
           </h2>
-          <h2 class="text-3xl xl:text-4xl font-bold text-purple-900 mb-6">
-            Use KWIC
-          </h2>
-          <p class="text-purple-900 font-medium mb-8 max-w-sm">
+          <p class="text-primary font-medium mb-8 max-w-sm">
             Watch this video for a quick tutorial and learn about additional
             resources on KWIC's tools.
           </p>
           <button
-            class="bg-purple-900 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-purple-800"
+            class="bg-primary text-white px-6 py-2 rounded-full uppercase text-xs hover:bg-purple-800"
           >
-            WATCH NOW
+            learn more
           </button>
         </div>
         <div class="flex relative w-full justify-center md:justify-end">
@@ -1048,24 +1046,25 @@
     </section>
     <!-- EXPLORE FOOTER CTA -->
     <section class="relative bg-purple-800 py-28 overflow-hidden">
-      zzzzzzzzz
       <!-- Background Image with Overlay -->
-      <div class="absolute inset-0 z-0 opacity-20">
-        <img src="assets/hero.png" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 z-0 opacity-20 top-0!">
+        <img src="assets/hero.png" class="w-full h-full object-top object-cover" />
       </div>
 
-      <div class="relative z-10 text-center max-w-3xl mx-auto px-4">
-        <h2 class="text-3xl xl:text-4xl text-white font-bold mb-4">
-          Explore Child<br />Well-being Data
+      <div class="relative z-10 text-center py-8 max-w-lg mx-auto px-4">
+        <h2 class="text-3xl xl:text-5xl text-white mb-4 leading-[20]">
+          Explore Child
         </h2>
-        <p class="text-purple-100 text-[12px] lg:text-[14px] mb-8">
-          Explore more than 500 indicators from state and federal sources and
-          create custom reports to improve outcomes for every New York child.
+        <h1 class="my-4 font-semibold text-3xl xl:text-5xl text-white ">Well-being Data</h1>
+        <p class="text-purple-100 text-[14px] lg:text-[16px] font-light leading-6 mb-8">
+          Explore more than 500 indicators from health and education to family and economic security.
+           Access the full database and uncover insights that help shape better outcomes for
+           children in New York.
         </p>
         <button
-          class="bg-[#FCCD03cc] text-purple-900 px-8 py-2 rounded-full font-bold hover:bg-[#FCCD03] transition"
+          class="bg-[#FCCD03cc] text-purple-900 px-10  py-1.5 rounded-full  hover:bg-[#FCCD03] transition"
         >
-          VIEW DATA
+          Get Started
         </button>
       </div>
     </section>
@@ -1162,9 +1161,9 @@
                   placeholder="Search KWIC"
                   class="text-gray-700 outline-none text-[10px] w-24 lg:w-32"
                 />
-                <span class="text-purple-900 bg-indigo-900 rounded-full p-1"
-                  >🔍</span
-                >
+                <div class="bg-[#41285F] size-[30px] flex justify-center items-center rounded-full p-2" >
+                  <img class="" src="/assets/search.png" alt="search">
+                </div>
               </div>
             </div>
           </div>

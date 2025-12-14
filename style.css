@@ -57,7 +57,13 @@
   }
 }
 
+.text-primary{
+  color: #43285D;
+}
 
+.bg-primary{
+  background-color: #43285D;
+}
 
 .card {
   background-color: #ffffff;
