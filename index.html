@@ -6,6 +6,10 @@
     <title>Kids' Well-being Indicators Clearinghouse</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
@@ -113,7 +117,7 @@
         <div data-aos="fade-up" class="container max-w-6xl xl:max-w-7xl  mx-auto flex flex-col md:flex-row gap-10 items-center">
           <div class="fonts-roboto">
             <h4
-              class="text-yellow-100 uppercase tracking-widest  lg:text-lg font-medium mb-2"
+              class="text-white uppercase tracking-widest  lg:text-[20px] font-medium mb-2"
             >
               Council on Children & Families
             </h4>
@@ -252,7 +256,7 @@
                 3,982,279
               </h3>
               <p class="text-xs font-semibold text-gray-500 my-3">
-                Total Children Ages 0-17<br />Live in New York State
+                3.98M children (ages 0-17)<br />Live in New York State
               </p>
             </div>
             <img
@@ -284,7 +288,7 @@
 
         <!-- Row 2 (Trend & Illustration) -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-20 lg:mb-16 items-center"
+          class="grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-20 lg:mb-16 xl:mb-8 items-center"
         >
           <!-- Left: Trend Box -->
           <div class="flex mx-auto relative px-8 sm:px-0 justify-end md:pr-12">
@@ -294,7 +298,7 @@
               class="absolute hidden md:block size-[65px] right-10 lg:right-1 -top-[100px] lg:-top-[110px] transform"
             />
             <div data-aos="fade-right"
-              class="bg-white p-6 rounded-2xl shadow-2xl px-12 lg:px-14 border-t-4 border-t-gray-200/40 w-full max-w-[330px]"
+              class="bg-white py-6 rounded-2xl shadow-2xl px-8 lg:px-10 border-t-4 border-t-gray-200/40 w-full max-w-[330px]"
             >
               <h4
                 class="text-purple-900 text-[24px] text-center mx-auto font-bold mb-2"
@@ -302,14 +306,14 @@
                 Trend
               </h4>
               <p class="text-xs font-semibold text-gray-500 my-3 text-center">
-                Child share of population stable at near 20% from 2010 to 2024.
+                Child share of population decreased from 22% in 2010 to 20% in 2024
               </p>
             </div>
           </div>
           <!-- Right: Illustration -->
           <div class="flex justify-start md:pl-12 mx-auto">
             <div
-              class="bg-yellow-100 rounded-full p-8 relative w-64 h-64 flex items-center justify-center"
+              class="bg-yellow-100 rounded-full p-8 relative w-64 h-64 xl:w-72 xl:h-72 flex items-center justify-center"
             >
               <img
                 src="assets/childhoodpopulation 5.png"
@@ -321,7 +325,7 @@
         </div>
 
         <!-- SECTION 2: CHILD POPULATION BREAKDOWN -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 px-8 sm:px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12 px-8 sm:px-4">
           <!-- Left: Progress Bars -->
           <div class="md:text- md:pr-12">
             <img
@@ -336,48 +340,48 @@
             </h3>
 
             <!-- Bar 1 -->
-            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative overflow-hidden"
+            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 lg:h-14 xl:h-16 rounded-lg p-1 relative overflow-hidden"
             >
               <div
                 class="progress-fill bg-purple-700 h-full rounded-lg"
                 style="--target: 26%"
               ></div>
 
-              <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold">
+              <span class="absolute text-3xl xl:text-4xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold">
                 26%
               </span>
             </div>
             <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">
-              1,018,413 Children Ages 0-5 
+              1,043,811 Children Ages 0-4
             </p>
             <!-- Bar 2 -->
-            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative overflow-hidden"
+            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 lg:h-14 xl:h-16 rounded-lg p-1 relative overflow-hidden"
             >
               <div
                 class="progress-fill bg-purple-700 h-full rounded-lg"
                 style="--target: 39%"
               ></div>
 
-              <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold" >
+              <span class="absolute text-3xl xl:text-4xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold" >
                 39%
               </span>
             </div>
             <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">
-              1,556,052 Children Ages 6-11 
+              1,552,682 Children Ages 5-11 
             </p>
             <!-- Bar 3 -->
-            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative overflow-hidden">
+            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 lg:h-14 xl:h-16 rounded-lg p-1 relative overflow-hidden">
               <div
                 class="progress-fill bg-purple-700 h-full rounded-lg"
                 style="--target: 35%"
               ></div>
 
-              <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold">
+              <span class="absolute text-3xl xl:text-4xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold">
                 35%
               </span>
             </div>
             <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">
-              1,386,786 Children Ages 12-17
+              1,385,786 Children Ages 12-17
             </p>
           </div>
 
@@ -391,10 +395,10 @@
                 alt="Logo"
                 class="absolute hidden md:block size-[65px] -left-4 -top-[120px] transform"
               />
-              <div class="absolute -top-4 right-4">
+              <div class="absolute -top-10 right-4">
                 <img
-                  src="https://placehold.co/30x30/yellow/white?text=Toy"
-                  class="w-8"
+                  src="assets/childhoodpopulation 7.png"
+                  class="w-16"
                 />
               </div>
               <h4
@@ -403,8 +407,8 @@
                 Trend
               </h4>
               <p class="text-xs font-semibold text-gray-500 text-center my-3">
-                Proportion of younger children (0-5) has gradually declined
-                since 2010.
+                Proportion of youngest children (0-4) has gradually declined
+                since 2012.
               </p>
             </div>
           </div>
@@ -636,7 +640,7 @@
               <div data-aos="fade-right" class="card w-full md:mt-20">
                 <h3 class="card-header">23.6%</h3>
                 <p class="text-xs text-gray-500 my-2">
-                  of children aged 0-5 live below the poverty level in NYS.
+                  of children aged 9-35 months had Developmental Screening in the past 12 months
                 </p>
               </div>
               <img
@@ -647,7 +651,7 @@
             </div>
             <!-- Right: 90% Box -->
             <div  class="flex z-10 flex-col gap-8 mx-auto justify md:pl-12">
-              <div data-aos="fade-left" class="card w-full md:mr-24 h-max">
+              <div data-aos="fade-left" class="card w-full lg:mr-24 h-max">
                 <h3 class="card-header">90%</h3>
                 <p class="text-xs text-gray-500 my-2">
                   of brain growth occurs by age 5.
@@ -684,10 +688,10 @@
                         style="--target: 100%"
                       ></div>
                       <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm lg:text-[16px]">
-                        296,540
+                        296,548
                       </span>
                     </div>
-                    <p class="text-sm mt-1">Day Care Center (DCC)</p>
+                    <p class="text-sm mt-1">Day Care Center (2021)</p>
                   </div>
                   
                   <!-- bar 2 -->
@@ -699,10 +703,10 @@
                       ></div>
                       <div  class="bg-gray-300 h-full w-[40%] rounded-lg"></div>
                       <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm lg:text-[16px]">
-                        152,368
+                        151,988
                       </span>
                     </div>
-                    <p class="text-sm mt-1">School Age Child Care (SACC)</p>
+                    <p class="text-sm mt-1">Universal Pre-kindergarten (2021-2022)</p>
                   </div>
                   
                   <!-- bar 3 -->
@@ -715,10 +719,10 @@
                       <div class="bg-gray-300 h-full w-[59%] rounded-lg" ></div>
 
                       <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm lg:text-[16px]">
-                        105,203
+                        105,285
                       </span>
                     </div>
-                    <p class="text-sm mt-1">Family Child Care / Group Family Day Care</p>
+                    <p class="text-sm mt-1">Family Child Care / Group Family Day Care (2021)</p>
                   </div>
                   
                   <!-- bar 4 -->
@@ -731,12 +735,11 @@
                       <div class="bg-gray-300 h-full w-[71%] rounded-lg" ></div>
 
                       <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm lg:text-[16px]">
-                        45,824
+                        44,638
                       </span>
                     </div>
-                    <p class="text-sm mt-1">Head Start and Early Head Start</p>
+                    <p class="text-sm mt-1">Head Start and Early Head Start (2020)</p>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -751,7 +754,7 @@
               >
                 <h3 class="text-3xl font-bold text-purple-900">63.8%</h3>
                 <p class="text-xs text-gray-500 mt-2">
-                  Children (9 to 35 months) receive developmental screenings.
+                  Of Children 24 to 35 months old who have had a full immunization series
                 </p>
               </div>
             </div>
@@ -815,9 +818,9 @@
                 <div data-aos="fade-right" class="card py-10 md:ml-16">
                   <h4 class="card-header">Temporary Assistance</h4>
                   <p class="text-[10px] text-gray-400 mb-4">
-                    Monthly Average (2023)
+                    Monthly Average (2024)
                   </p>
-                  <h3 class="text-lg font-bold text-gray-700">201,139</h3>
+                  <h3 class="text-lg font-bold text-gray-700">265,179</h3>
                   <p class="text-xs text-gray-500">Children</p>
                 </div>
               </div>
@@ -826,28 +829,28 @@
               <div
                 class="flex my-10 md:my-28 relative justify-center md:justify-end md:pr-12"
               >
-                <div data-aos="fade-right" class="card">
+                <div data-aos="fade-right" class="card xl:px-8!">
                   <!-- Decorative Yellow Circle -->
                   <img
                     src="assets/access 3.png"
-                    class="absolute size-[65px] right-16 -top-[45px]"
+                    class="absolute size-[65px] right-8 -top-[45px]"
                     alt="access-home"
                   />
 
-                  <h4 class="card-header">
-                    SNAP Food <br />
+                  <h4 class="card-header pt-5">
+                    <span class="font-normal">SNAP</span> Food <br />
                     Assistance
                   </h4>
-                  <p class="text-[10px] text-gray-400 mb-2">
-                    Monthly Average (2023)
+                  <p class="text-[12px] text-gray-700 mb-5">
+                    Monthly Average (2024)
                   </p>
 
-                  <div class="mb-2">
-                    <h3 class="text-xl font-bold text-gray-700">1,019,004</h3>
+                  <div class="mb-5">
+                    <h3 class="text-lg font-medium text-primary">1,731,025</h3>
                     <p class="text-xs text-gray-500">Households</p>
                   </div>
-                  <div>
-                    <h3 class="text-xl font-bold text-gray-700">2,569,567</h3>
+                  <div class="pb-5">
+                    <h3 class="text-lg font-medium text-primary">2,958,343</h3>
                     <p class="text-xs text-gray-500">Persons</p>
                   </div>
                 </div>
@@ -874,36 +877,36 @@
 
               <!-- Box 2: Head Start (Right - center) -->
               <div
-                class="flex justify-center mt-10 smd:mt-14 md:mr-24 md:pl-12 xl:ml-16 md:mt-24 md:w-[350px] xl:max-w-[350px] row-span-2"
+                class="flex justify-center overflow-hidden mt-10 smd:mt-14 md:mr-24 md:pl-12 xl:ml-16 md:mt-24 md:w-[350px] xl:max-w-[350px] row-span-2"
               >
                 <div data-aos="fade-left" class="card md:mr-12">
                   <h4 class="card-header">Head Start</h4>
 
                   <div class="mb-2">
-                    <div class="text-[14px] font-medium text-gray-700">274</div>
-                    <div class="text-[13px] text-gray-500">Grants</div>
+                    <div class="text-[14px] font-medium text-primary">274</div>
+                    <div class="text-[13px] text-gray-800">Grants</div>
                   </div>
                   <div class="mb-2">
                     <div class="text-lg font-semibold text-gray-700">927</div>
-                    <div class="text-[13px] text-gray-500">Sites</div>
+                    <div class="text-[13px] text-gray-800">Sites</div>
                   </div>
                   <div class="mb-2">
-                    <div class="text-lg font-semibold text-gray-700">
-                      $796.5M
+                    <div class="text-lg font-semibold text-primary">
+                      $706.5M
                     </div>
-                    <div class="text-[13px] text-gray-500">Total Funding</div>
+                    <div class="text-[13px] text-gray-800">Total Funding</div>
                   </div>
                   <div class="mb-2">
-                    <div class="text-lg font-semibold text-gray-700">
-                      16,605
+                    <div class="text-lg font-semibold text-primary">
+                      14,400
                     </div>
-                    <div class="text-[13px] text-gray-500">Staff</div>
+                    <div class="text-[13px] text-gray-800">Staff</div>
                   </div>
                   <div>
-                    <div class="text-lg font-semibold text-gray-700">
-                      43,337
+                    <div class="text-lg font-semibold text-primary">
+                      43,327
                     </div>
-                    <div class="text-[13px] text-gray-500">Children Served</div>
+                    <div class="text-[13px] text-gray-700">Children Served</div>
                   </div>
                 </div>
               </div>
@@ -924,11 +927,11 @@
                     Early <br />
                     Intervention
                   </h4>
-                  <p class="text-[14px] text-gray-400 mb-2">
+                  <p class="text-[14px] text-gray-800 mb-2">
                     Children Under Age 3
                   </p>
-                  <h3 class="text-xl font-bold text-gray-700">5.9%</h3>
-                  <p class="text-[14px] text-gray-500">Of Children Served</p>
+                  <h3 class="text-xl font-semibold text-gray-700">5.19%</h3>
+                  <p class="text-[14px] text-gray-800">Of Children Served</p>
                 </div>
               </div>
             </div>
@@ -937,66 +940,71 @@
 
         <!-- THREE FEATURE CARDS (End of flow) -->
         <div data-aos="fade-up"
-          class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 sm:px-4 md:px-0 md:mt-32"
+          class="grid grid-cols-1 md:grid-cols-3 gap-5 px-8 sm:px-4 md:px-0 md:mt-32"
         >
           <!-- Card 1 -->
           <div
-            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+            class="bg-white relative rounded-2xl mb-10 md:mb-0  shadow-2xl p-6 pt-16 lg:pb-10 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
           >
             <img
               src="assets/countyreports .png"
               class="size-[80px] -top-[40px] absolute"
             />
-            <h3 class="text-purple-900 font-bold text-lg mb-2">
-              County Reports
+            <h3 class="text-primary font-bold text-2xl lg:text-3xl xl:text-4xl mb-5">
+             <span class="font-normal">County</span> Reports
             </h3>
-            <p class="text-xs text-gray-500 mb-6">
+            <p class="text-[16px] lg:max-w-[180px] text-gray-700 mb-6">
               Compare data across 62 counties.
             </p>
             <button
-              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+              class="mt-auto bg-primary text-white text-xs px-10 font-extralight py-2 rounded-full hover:bg-purple-800"
             >
               EXPLORE
             </button>
           </div>
+          
           <!-- Card 2 -->
           <div
-            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+            class="bg-white relative rounded-2xl mb-10 md:mb-0  shadow-2xl p-6 pt-16 lg:pb-10 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
           >
             <img
-              src="assets/countyreports .png"
+              src="assets/mapbuilder.png"
               class="size-[80px] -top-[40px] absolute"
             />
-            <h3 class="text-purple-900 font-bold text-lg mb-2">Map Builder</h3>
-            <p class="text-xs text-gray-500 mb-6">
+            <h3 class="text-primary font-bold  text-2xl lg:text-3xl xl:text-4xl mb-5">
+             <span class="font-normal">Map</span> Builder
+            </h3>
+            <p class="text-[16px] lg:max-w-[220px] text-gray-700 mb-6">
               Visualize child well-being across NYS.
             </p>
             <button
-              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+              class="mt-auto bg-primary text-white text-xs px-10 font-extralight py-2 rounded-full hover:bg-purple-800"
             >
               EXPLORE
             </button>
           </div>
+          
           <!-- Card 3 -->
           <div
-            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+            class="bg-white relative rounded-2xl mb-10 md:mb-0  shadow-2xl p-6 pt-16 lg:pb-10 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
           >
             <img
-              src="assets/countyreports .png"
+              src="assets/indicatordata.png"
               class="size-[80px] -top-[40px] absolute"
             />
-            <h3 class="text-purple-900 font-bold text-lg mb-2">
-              Indicator Data
+            <h3 class="text-primary font-bold text-2xl lg:text-3xl xl:text-4xl mb-5">
+             <span class="font-normal">Indicator</span> Data
             </h3>
-            <p class="text-xs text-gray-500 mb-6">
+            <p class="text-[16px] text-gray-700 mb-6">
               Access the full database of well-being indicators.
             </p>
             <button
-              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+              class="mt-auto bg-primary text-white text-xs px-10 font-extralight py-2 rounded-full hover:bg-purple-800"
             >
               EXPLORE
             </button>
           </div>
+          
         </div>
       </div>
     </div>
@@ -1018,8 +1026,8 @@
             </span>
           </h2>
           <p class="text-primary font-medium mb-8 max-w-sm">
-            Watch this video for a quick tutorial and learn about additional
-            resources on KWIC's tools.
+            Watch the video for a quick tutorial and learn about additional
+            resources at the link below.
           </p>
           <button
             class="bg-primary text-white px-6 py-2 rounded-full uppercase text-xs hover:bg-purple-800"
@@ -1052,12 +1060,12 @@
       </div>
 
       <div class="relative z-10 text-center py-8 max-w-lg mx-auto px-4">
-        <h2 class="text-3xl xl:text-5xl text-white mb-4 leading-[20]">
+        <h2 class="text-3xl xl:text-5xl text-white mb-4">
           Explore Child
         </h2>
         <h1 class="my-4 font-semibold text-3xl xl:text-5xl text-white ">Well-being Data</h1>
         <p class="text-purple-100 text-[14px] lg:text-[16px] font-light leading-6 mb-8">
-          Explore more than 500 indicators from health and education to family and economic security.
+          Explore more than 200 indicators from health and education to family and economic security.
            Access the full database and uncover insights that help shape better outcomes for
            children in New York.
         </p>
@@ -1073,23 +1081,26 @@
       class="bg-[#333333] text-white pt-16 pb- text-[10px] xl:text-[12px] xxl:text-[14px]"
     >
       <div
-        class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12"
       >
         <!-- Col 1 -->
-        <div>
-          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
+        <div class="lg:col-span-2">
+          <h5 class="font-bold font-sans mb-4 uppercase text-gray-400 text-xs lg:text-lg">
             Kids' Well-being<br />Indicators Clearinghouse
           </h5>
           <p class="text-gray-500 mb-4 text-xs lg:text-sm">
-            52 Washington Street, West Building<br />Rensselaer, New York 12144
+            52 Washington Street, West Building<br />Suite 99 Renssealaer, New York 12144
           </p>
           <a
             href="mailto:KWIC@ccf.ny.gov"
             class="text-gray-400 hover:text-white block mb-4 text-xs lg:text-sm"
-            >KWIC@ccf.ny.gov</a
+            >NYS.KWIC@CCF.NY.GOV</a
           >
           <div class="flex gap-4">
-            <a href="#" class="text-gray-400 hover:text-white text-lg"></a>
+            <a class="text-lg" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="text-lg" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="text-lg" href="#"><i class="fa-brands fa-threads"></i></a>
+            <a class="text-lg" href="#"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
         <!-- Col 2 -->
@@ -1098,43 +1109,51 @@
             About
           </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
+            <li><a href="#" class="hover:text-white">Purpose</a></li>
+            <li><a href="#" class="hover:text-white">Life Areas</a></li>
+            <li><a href="#" class="hover:text-white">Report Types</a></li>
             <li><a href="#" class="hover:text-white">Partners</a></li>
-            <li><a href="#" class="hover:text-white">Touchstones</a></li>
-            <li><a href="#" class="hover:text-white">Contact Us</a></li>
-            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-white">User Agreement</a></li>
+            <li><a href="#" class="hover:text-white">Member Agencies</a></li>
           </ul>
         </div>
         <!-- Col 3 -->
         <div>
           <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
-            Features
+            public info
           </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
             <li>
-              <a href="#" class="hover:text-white">Compare Data (County)</a>
+              <a href="#" class="hover:text-white">Language & Accessibility</a>
             </li>
-            <li><a href="#" class="hover:text-white">Map Builder</a></li>
-            <li><a href="#" class="hover:text-white">Map Builder</a></li>
-            <li><a href="#" class="hover:text-white">Region Profiles</a></li>
-            <li><a href="#" class="hover:text-white">NYS Data Center</a></li>
+            <li><a href="#" class="hover:text-white">Disclaimer</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Statement</a></li>
+            <li><a href="#" class="hover:text-white">FOIL</a></li>
+            <li><a href="#" class="hover:text-white">Data Terms</a></li>
           </ul>
         </div>
         <!-- Col 4 -->
         <div>
           <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
-            Key Data
+            data tools
           </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
-            <li><a href="#" class="hover:text-white">Economic Security</a></li>
-            <li>
-              <a href="#" class="hover:text-white"
-                >Physical & Emotional Health</a
-              >
-            </li>
-            <li><a href="#" class="hover:text-white">Education</a></li>
-            <li><a href="#" class="hover:text-white">Civic Engagement</a></li>
-            <li><a href="#" class="hover:text-white">Family & Community</a></li>
+            <li><a href="#" class="hover:text-white">Map Builder</a></li>
+            <li> <a href="#" class="hover:text-white">Graph Builder</a></li>
+            <li><a href="#" class="hover:text-white">Custom Query</a></li>
+            <li><a href="#" class="hover:text-white">MyKWIC logic</a></li>
+          </ul>
+        </div>
+        <!-- Col 5 -->
+        <div>
+          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
+            get data
+          </h5>
+          <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
+            <li><a href="#" class="hover:text-white">Indicator Data</a></li>
+            <li> <a href="#" class="hover:text-white">KWIC Country Report</a></li>
+            <li><a href="#" class="hover:text-white">KWIC CityTown Data</a></li>
+            <li><a href="#" class="hover:text-white">KWIC Indicator Narratives</a></li>
+            <li><a href="#" class="hover:text-white">2024 Country Data Book</a></li>
           </ul>
         </div>
       </div>
