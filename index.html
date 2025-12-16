@@ -233,9 +233,7 @@
         </div>
 
         <!-- Row 1 -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 md:mb-5 mmd:mb-8 xll:mb-1 items-center relative"
-        >
+        <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 md:mb-5 mmd:mb-8 xll:mb-1 items-center relative" >
           <!-- Left -->
           <div class="flex md:flex-col w-max min-w-[320px] mx-5 px-4 sm:px-0 mx-auto md:pr-12">
             <div  data-aos="fade-right"
@@ -278,9 +276,7 @@
         </div>
 
         <!-- Row 2 (Trend & Illustration) -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-20 lg:mb-16 items-center"
-        >
+        <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-20 lg:mb-16 items-center" >
           <!-- Left: Trend Box -->
           <div class="flex mx-auto relative px-8 sm:px-0 justify-end md:pr-12">
             <img
@@ -316,7 +312,7 @@
         </div>
 
         <!-- SECTION 2: CHILD POPULATION BREAKDOWN -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 px-8 sm:px-4">
+        <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 px-8 sm:px-4">
           <!-- Left: Progress Bars -->
           <div class="md:text- md:pr-12">
             <img
@@ -456,17 +452,13 @@
             </svg>
           </div>
 
-          <h2
-            class="text-3xl lg:text-5xl my-10 md:mb-20 font-bold text-center text-purple-800"
-          >
+          <h2 class="text-3xl lg:text-5xl my-10 md:mb-20 font-bold text-center text-purple-800">
             Race & <span class="font-normal">Ethnicity</span>
           </h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 md:mt-28 md:mb-3 lg:mb-8 xl:mb-13 px-1 items-center">
+          <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 md:mt-28 md:mb-3 px-1 items-center">
             <!-- Left: Trend -->
-            <div
-              class="flex mx-auto z-10 pb-10 md:pb-0 px-8 sm:px-0 md:mt-8 justify-end md:pr-12"
-            >
+            <div class="flex mx-auto z-10 pb-10 md:pb-0 px-8 sm:px-0 md:mt-8 justify-end md:pr-12">
               <div data-aos="fade-right" class="card">
                 <h4 class="text-purple-900 text-[24px] font-bold mb-2">
                   Trend
@@ -479,97 +471,97 @@
             </div>
 
             <!-- Right: Donut Charts Grid -->
-            <div data-aos="fade-left" class="md:px-12 grid grid-cols-3 px-5 overflow-hidden sm:px-0 gap-6">
+            <div class="md:px-4 lg:px-12 grid grid-cols-3 px-5 overflow-hidden sm:px-0 gap-6">
 
-    <!-- 1. Hispanic or Latino (26%) -->
-    <div class="chart-container flex flex-col items-center" data-percent="26">
-        <div class="relative size-20">
-            <svg class="size-full -rotate-90" viewBox="0 0 36 36">
-                <!-- Background Ring -->
-                <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                <!-- Progress Ring: Added 'circle-progress' and 'transition' classes -->
-                <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" 
-                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
-                      fill="none" stroke="currentColor" stroke-width="4" 
-                      stroke-dasharray="0, 100" stroke-linecap="round" />
-            </svg>
-            <div class="absolute inset-0 flex top-7 items-center justify-center">
-                <span class="text-[22px] font-bold text-[#3E2456]">26%</span>
-            </div>
-        </div>
-        <p class="mt-4 text-center text-[10px] font-medium text-gray-700">Hispanic or Latino</p>
-    </div>
+              <!-- 1. Hispanic or Latino (26%) -->
+              <div class="chart-container flex flex-col items-center" data-percent="26">
+                  <div class="relative size-[84px] lg:size-[104px]">
+                      <svg class="size-full -rotate-90" viewBox="0 0 36 36">
+                          <!-- Background Ring -->
+                          <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
+                          <!-- Progress Ring: Added 'circle-progress' and 'transition' classes -->
+                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" 
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
+                                fill="none" stroke="currentColor" stroke-width="4" 
+                                stroke-dasharray="0, 100" stroke-linecap="round" />
+                      </svg>
+                      <div class="absolute inset-0 flex top-0 items-center justify-center">
+                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">26%</span>
+                      </div>
+                  </div>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800">Hispanic or Latino</p>
+              </div>
 
-    <!-- 2. Black (14%) -->
-    <div class="chart-container flex flex-col items-center" data-percent="14">
-        <div class="relative size-20">
-            <svg class="size-full -rotate-90" viewBox="0 0 36 36">
-                <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
-            </svg>
-            <div class="absolute inset-0 top-7 flex items-center justify-center">
-                <span class="text-[22px] font-bold text-[#3E2456]">14%</span>
-            </div>
-        </div>
-        <p class="mt-4 text-center text-[10px] font-medium text-gray-700">Black</p>
-    </div>
+              <!-- 2. Black (14%) -->
+              <div class="chart-container flex flex-col items-center" data-percent="14">
+                  <div class="relative size-[84px] lg:size-[104px]">
+                      <svg class="size-full -rotate-90" viewBox="0 0 36 36">
+                          <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
+                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                      </svg>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">14%</span>
+                      </div>
+                  </div>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800">Black</p>
+              </div>
 
-    <!-- 3. White (46%) -->
-    <div class="chart-container flex flex-col items-center" data-percent="46">
-        <div class="relative size-20">
-            <svg class="size-full -rotate-90" viewBox="0 0 36 36">
-                <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
-            </svg>
-            <div class="absolute inset-0 top-7 flex items-center justify-center">
-                <span class="text-[22px] font-bold text-[#3E2456]">46%</span>
-            </div>
-        </div>
-        <p class="mt-4 text-center text-[10px] font-medium text-gray-700">White</p>
-    </div>
+              <!-- 3. White (46%) -->
+              <div class="chart-container flex flex-col items-center" data-percent="46">
+                  <div class="relative size-[84px] lg:size-[104px]">
+                      <svg class="size-full -rotate-90" viewBox="0 0 36 36">
+                          <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
+                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                      </svg>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">46%</span>
+                      </div>
+                  </div>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800">White</p>
+              </div>
 
-    <!-- 4. Two or More Races (4%) -->
-    <div class="chart-container flex flex-col items-center" data-percent="4">
-        <div class="relative size-20">
-            <svg class="size-full -rotate-90" viewBox="0 0 36 36">
-                <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
-            </svg>
-            <div class="absolute inset-0 top-7 flex items-center justify-center">
-                <span class="text-[22px] font-bold text-[#3E2456]">4%</span>
-            </div>
-        </div>
-        <p class="mt-4 text-center text-[10px] font-medium text-gray-700 px-4">Two or More Races</p>
-    </div>
+              <!-- 4. Two or More Races (4%) -->
+              <div class="chart-container flex flex-col items-center" data-percent="4">
+                  <div class="relative size-[84px] lg:size-[104px]">
+                      <svg class="size-full -rotate-90" viewBox="0 0 36 36">
+                          <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
+                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                      </svg>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">4%</span>
+                      </div>
+                  </div>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800 px-4">Two or More Races</p>
+              </div>
 
-    <!-- 5. Asian (9%) -->
-    <div class="chart-container flex flex-col items-center" data-percent="9">
-        <div class="relative size-20">
-            <svg class="size-full -rotate-90" viewBox="0 0 36 36">
-                <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
-            </svg>
-            <div class="absolute inset-0 top-7 flex items-center justify-center">
-                <span class="text-[22px] font-bold text-[#3E2456]">9%</span>
-            </div>
-        </div>
-        <p class="mt-4 text-center text-[10px] font-medium text-gray-700">Asian</p>
-    </div>
+              <!-- 5. Asian (9%) -->
+              <div class="chart-container flex flex-col items-center" data-percent="9">
+                  <div class="relative size-[84px] lg:size-[104px]">
+                      <svg class="size-full -rotate-90" viewBox="0 0 36 36">
+                          <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
+                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                      </svg>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">9%</span>
+                      </div>
+                  </div>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800">Asian</p>
+              </div>
 
-    <!-- 6. Native / Other (<1%) -->
-    <div class="chart-container flex flex-col items-center" data-percent="0.1">
-        <div class="relative size-20">
-            <svg class="size-full -rotate-90" viewBox="0 0 36 36">
-                <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
-            </svg>
-            <div class="absolute inset-0 top-7 flex items-center justify-center">
-                <span class="text-[22px] font-bold text-[#3E2456]">&lt;1%</span>
+              <!-- 6. Native / Other (<1%) -->
+              <div class="chart-container flex flex-col items-center" data-percent="0.1">
+                  <div class="relative size-[84px] lg:size-[104px]">
+                      <svg class="size-full -rotate-90" viewBox="0 0 36 36">
+                          <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
+                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                      </svg>
+                      <div class="absolute inset-0 flex items-center justify-center">
+                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">&lt;1%</span>
+                      </div>
+                  </div>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800 max-w-[200px]">American Indian or Alaska Native & Hawaiian Native or Pacific Highlander</p>
+              </div>
             </div>
-        </div>
-        <p class="mt-4 text-center text-[10px] font-medium text-gray-700 max-w-[200px]">American Indian or Alaska Native & Hawaiian Native or Pacific Highlander</p>
-    </div>
-</div>
           </div>
         </section>
 
@@ -620,7 +612,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
+          <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
             <!-- Left: 23.6% Box -->
             <div  class="flex flex-col gap-8 mx-auto px-8 sm:px-0 justify- md:pr-12">
               <div data-aos="fade-right" class="card w-full md:mt-20">
@@ -652,16 +644,14 @@
           </div>
 
           <!-- Illustration & Licensed Slots -->
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 px-4 w-full px-2 md:px-0 gap-12 mb-20"
-          >
+          <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 px-4 w-full px-2 md:px-0 gap-12 mb-20">
             <!-- Left Column: Illustration then Slots -->
 
             <div class="flex flex-col md:pr-12  gap-10">
               <!-- Licensed Slots -->
               <div class="w-full mx-auto px-4 sm:px-0">
-                <h4 class="text-purple-800 text-3xl text-center font-bold mb-4">
-                  Licensed/Regulated<br />Child Care Slots
+                <h4 class="text-purple-800 text-[26px] sm:text-3xl text-center font-bold mb-4">
+                  Licensed / Regulated<br />Child Care Slots
                 </h4>
 
                 <!-- Slot Bar 1 -->
@@ -799,7 +789,7 @@
           </div>
 
           <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:mt-8 pb-20 items-start relative"
+            class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:mt-8 pb-20 items-start relative"
           >
             <div class="w-full md:mt-20 px-8 sm:px-0">
               <!-- Box 1: Temp Assistance (Left) -->
@@ -928,9 +918,7 @@
         </section>
 
         <!-- THREE FEATURE CARDS (End of flow) -->
-        <div data-aos="fade-up"
-          class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 sm:px-4 md:px-0 md:mt-32"
-        >
+        <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 sm:px-4 md:px-0 md:mt-32" >
           <!-- Card 1 -->
           <div
             class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
