@@ -6,6 +6,10 @@
     <title>Kids' Well-being Indicators Clearinghouse</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
@@ -15,6 +19,7 @@
     />
     <!-- 1. AOS CSS in <head> -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/poc5fli.css">
 
     <link rel="stylesheet" href="./style.css" />
     <script>
@@ -24,8 +29,20 @@
             fontFamily: {
               sans: ["Poppins", "sans-serif"],
               roboto: ["Roboto", "sans-serif"],
+              primary: ['"proxima-nova"', 'sans-serif'],
+              secondary: ['"proxima-nova"', 'sans-serif'],
+              text: ['"proxima-nova"', 'sans-serif'],
+              accent: ['"proxima-nova"', 'sans-serif'],
             },
             colors: {
+              "primary": "#43285d",
+              "secondary": "#face00",
+              "para": '#100a18',
+              "light-yellow": "#fef8d9",
+              "cool-gray": "#ededed",
+              "gray-text": "#6b7280",
+              "light-gray": "#d0d0ce",
+              "light-pink": "#f2768f",
               purple: {
                 900: "#2a1745", // Deep hero purple
                 800: "#3b1e54", // Main brand purple
@@ -51,10 +68,10 @@
     </script>
   </head>
 
-  <body class="bg-white text-gray-800 font-sans antialiased overflow-x-hidden">
-    <header class="relative bg-[#43285D] text-white overflow-hidden">
+  <body class="bg-white text-pera font-primary antialiased overflow-x-hidden">
+    <header class=" bg-primary text-white ">
       <!-- Nav -->
-      <nav class="flex justify-between items-center px-3 lg:px-8 py-1 xl:py-2">
+      <nav class="flex relative justify-between z-30 bg-primary items-center px-3 lg:px-8 py-1 xl:py-2">
         <div class="flex items-center gap-1.5">
           <img src="assets/logo 1.png" alt="Logo" class="h-8 xl:h-10" />
           <img
@@ -63,14 +80,238 @@
             class="h-10 hidden sm:block xl:h-12"
           />
         </div>
-        <div
-          class="hidden md:flex items-center gap-6 text-[11px] xl:text-[14px] font-"
-        >
-          <a href="#" class="hover:text-yellow-400">About Us</a>
-          <a href="#" class="hover:text-yellow-400">Key Data</a>
-          <a href="#" class="hover:text-yellow-400">Resources</a>
-          <a href="#" class="hover:text-yellow-400">Contact</a>
+        <!-- big screen nav -->
+        <div class=" hidden md:flex items-center gap-6 text-[11px] xl:text-[14px]">
+          <!-- About Us -->
+          <div class="group">
+            <a href="" class="hover:text-secondary flex items-center gap-1
+            font-medium">
+              About Us 
+              <span>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-3 h-3 ml-1"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+              <path d="M216 96l-88 88-88-88z"></path>
+            </svg>
+            </span></a>
+            <!-- Mega Menu -->
+            <div  class="absolute left-0 top-full text-primary mt-4 md:w-[700px] lg:w-[1000px] xl:w-[1200px] -translate-x-1/2 left-[50%] z-50 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300" >
+              <div class="grid md:grid-cols-3 lg:grid-cols-4 w-full gap-3 p-4 text-sm">
+                <!-- Mission -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px]  mb-4">Mission</h4>
+                  <ul class="space-y-6 pt-4 text-[17px]">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="target" class="w-4 h-4"></i> Purpose
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="map-pin" class="w-4 h-4"></i> Touchstones
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- Data Framework -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px] mb-4 text-primary">Data Framework</h4>
+                  <ul class="space-y-6 pt-4 text-[17px] font-medium">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="bar-chart-3" class="w-4 h-4"></i> Life Areas
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="file-text" class="w-4 h-4"></i> Report Types
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- Our Network -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px] mb-4 text-primary">Our Network</h4>
+                  <ul class="space-y-6 pt-4 text-[17px] font-medium">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="handshake" class="w-4 h-4"></i> Partners
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="building-2" class="w-4 h-4"></i> Member Agencies
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="bg-white hidden lg:block shadow-2xl py-10 rounded-xl p-4">
+                  <h4 class="font-bold text-[24px] text-center mb-2 text-primary">
+                    Learn to Use KWIC
+                  </h4>
+                  <p class="text-[15px] text-center font-semibold text-gray-700 my-8">
+                    Explore quick guides and tutorials to help you leverage data tools.
+                  </p>
+                  <div class="flex justify-center w-full">
+                    <a href="" class="bg-primary text-[16px] text-white mx-auto font-semibold hover:text-secondary px-10 py-2.5 rounded-full  hover:bg-primary" >
+                      Get Started
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Our Data -->
+          <div class="group">
+            <a href="" class="hover:text-secondary flex items-center gap-1
+            font-medium">
+              Our Data 
+              <span>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-3 h-3 ml-1"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+              <path d="M216 96l-88 88-88-88z"></path>
+            </svg>
+            </span></a>
+            <!-- Mega Menu -->
+            <div  class="absolute left-0 top-full text-primary mt-4 md:w-[700px] lg:w-[1000px] xl:w-[1200px] -translate-x-1/2 left-[50%] z-50 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300" >
+              <div class="grid md:grid-cols-3 lg:grid-cols-4 w-full gap-3 p-4 text-sm">
+                <!-- Mission -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px]  mb-4">Mission</h4>
+                  <ul class="space-y-6 pt-4 text-[17px]">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="target" class="w-4 h-4"></i> Purpose
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="map-pin" class="w-4 h-4"></i> Touchstones
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- Data Framework -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px] mb-4 text-primary">Data Framework</h4>
+                  <ul class="space-y-6 pt-4 text-[17px] font-medium">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="bar-chart-3" class="w-4 h-4"></i> Life Areas
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="file-text" class="w-4 h-4"></i> Report Types
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- Our Network -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px] mb-4 text-primary">Our Network</h4>
+                  <ul class="space-y-6 pt-4 text-[17px] font-medium">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="handshake" class="w-4 h-4"></i> Partners
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="building-2" class="w-4 h-4"></i> Member Agencies
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="bg-white hidden lg:block shadow-2xl py-10 rounded-xl p-4">
+                  <h4 class="font-bold text-[24px] text-center mb-2 text-primary">
+                    Learn to Use KWIC
+                  </h4>
+                  <p class="text-[15px] text-center font-semibold text-gray-700 my-8">
+                    Explore quick guides and tutorials to help you leverage data tools.
+                  </p>
+                  <div class="flex justify-center w-full">
+                    <a href="" class="bg-primary text-[16px] text-white mx-auto font-semibold hover:text-secondary px-10 py-2.5 rounded-full  hover:bg-primary" >
+                      Get Started
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resources -->
+          <div class="group">
+            <a href="" class="hover:text-secondary flex items-center gap-1
+            font-medium">
+            Recources
+              <span>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-3 h-3 ml-1"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+              <path d="M216 96l-88 88-88-88z"></path>
+            </svg>
+            </span></a>
+            <!-- Mega Menu -->
+            <div  class="absolute left-0 top-full text-primary mt-4 md:w-[700px] lg:w-[1000px] xl:w-[1200px] -translate-x-1/2 left-[50%] z-50 bg-white rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300" >
+              <div class="grid md:grid-cols-3 lg:grid-cols-4 w-full gap-3 p-4 text-sm">
+                <!-- Mission -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px]  mb-4">Mission</h4>
+                  <ul class="space-y-6 pt-4 text-[17px]">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="target" class="w-4 h-4"></i> Purpose
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="map-pin" class="w-4 h-4"></i> Touchstones
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- Data Framework -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px] mb-4 text-primary">Data Framework</h4>
+                  <ul class="space-y-6 pt-4 text-[17px] font-medium">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="bar-chart-3" class="w-4 h-4"></i> Life Areas
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="file-text" class="w-4 h-4"></i> Report Types
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- Our Network -->
+                <div class="p-6">
+                  <h4 class="font-bold text-[22px] mb-4 text-primary">Our Network</h4>
+                  <ul class="space-y-6 pt-4 text-[17px] font-medium">
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="handshake" class="w-4 h-4"></i> Partners
+                    </a>
+                    <a href="" class="flex hover:text-secondary items-center gap-2">
+                      <i data-lucide="building-2" class="w-4 h-4"></i> Member Agencies
+                    </a>
+                  </ul>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="bg-white hidden lg:block shadow-2xl py-10 rounded-xl p-4">
+                  <h4 class="font-bold text-[24px] text-center mb-2 text-primary">
+                    Learn to Use KWIC
+                  </h4>
+                  <p class="text-[15px] text-center font-semibold text-gray-700 my-8">
+                    Explore quick guides and tutorials to help you leverage data tools.
+                  </p>
+                  <div class="flex justify-center w-full">
+                    <a href="" class="bg-primary text-[16px] text-white mx-auto font-semibold hover:text-secondary px-10 py-2.5 rounded-full  hover:bg-primary" >
+                      Get Started
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Normal links -->
+          <a href="#" class="hover:text-secondary font-medium">Contact</a>
+          <a href="#" class="hover:text-secondary font-medium">Login</a>
         </div>
+
         <div class="flex gap-3.5 items-center">
           <div
             class="bg-white rounded-full flex max-h-[36px] items-center pl-3 pr-1 py-[4px]"
@@ -85,86 +326,327 @@
               >🔍</span
             >
           </div>
-          <button id="openMenu" class="md:hidden text-3xl">☰</button>
+          <button id="openMenu" class="md:hidden text-3xl"><i data-lucide="menu" class="size-7"></i></button>
         </div>
 
-        <!-- Mobile nav -->
+        <!-- Mobile Menu -->
         <div
           id="mobileMenu"
-          class="fixed top-12 left-0 h-max w-full rounded bg-[#4c1d95ee] shadow-lg -translate-x-full transition-all duration-300 z-50"
+          class="fixed md:hidden top-12 left-0 h-max w-full text-primary rounded bg-white shadow-lg -translate-x-full transition-all duration-300 z-50"
         >
-          <div class="flex justify-between items-center p-3 border-b">
-            <h2 class="text-lg font-semibold">Menu</h2>
-            <button id="closeMenu" class="text-3xl">&times;</button>
+          <div class="flex justify-end items-center p-3 border-b">
+            <button id="closeMenu" ><i data-lucide="x" class="size-7"></i></button>
           </div>
+          <!-- About Us -->
+          <div class="py-2 px-4 shadow">
+            <button
+              class="w-full flex justify-between items-center font-semibold text-lg"
+              onclick="toggleMenu('about')"
+            >
+              About Us
+              <svg
+                class="w-4 h-4 transition-transform"
+                id="icon-about"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+              >
+                <path d="M216 96l-88 88-88-88z"></path>
+              </svg>
+            </button>
 
-          <ul class="flex flex-col p-4 text-[15px] space-y-4">
-            <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
-            <li><a href="#" class="hover:text-yellow-400">Key Data</a></li>
-            <li><a href="#" class="hover:text-yellow-400">Resources</a></li>
-            <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Hero Content -->
-      <div
-        class="grid items-center h-screen bg-[url('./assets/hero.png')] bg-cover bg-top relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-"
-      >
-        <div data-aos="fade-up" class="container max-w-6xl xl:max-w-7xl  mx-auto flex flex-col md:flex-row gap-10 items-center">
-          <div class="fonts-roboto">
-            <h4
-              class="text-yellow-100 uppercase tracking-widest text-sm font-bold mb-2"
-            >
-              Council on Children & Families
-            </h4>
-            <h1
-              class="text-3xl md:text-4xl lg:text-5xl font- leading-tight mb-4"
-            >
-              Kids' Well-being <br />Indicators <br />Clearinghouse
-            </h1>
-            <p class="text-lg text-gray-200 mb-8 max-w-sm">
-              Explore data and insights to help every New York child thrive.
-            </p>
-            <div class="flex gap-4 flex-col sm:flex-row">
-              <button
-                class="bg-yellow-400 md:text-sm w-max text-purple-900 px-8 py-2 rounded-full hover:bg-yellow-300 transition"
-              >
-                START NOW
-              </button>
-              <button
-                class="border border-yellow-400 w-max text-yellow-500/90 px-8 py-2 rounded-full  hover:bg-white hover:text-purple-900 transition"
-              >
-                Learn More
-              </button>
+            <div id="menu-about" class="hidden mt-4 space-y-6 pl-2">
+              <!-- Mission -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Mission
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="target" class="w-4 h-4"></i>
+                      Purpose
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="map-pin" class="w-4 h-4"></i>
+                      Touchstones
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Data Framework -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Data Framework
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+                      Life Areas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="file-text" class="w-4 h-4"></i>
+                      Report Types
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Our Network -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Our Network
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="handshake" class="w-4 h-4"></i>
+                      Partners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="building-2" class="w-4 h-4"></i>
+                      Member Agencies
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="flex justify-end relative">
-            <!-- Hero Kid Image -->
+          
+          <!-- Our Data -->
+          <div class="py-2 px-4 shadow">
+            <button
+              class="w-full flex justify-between items-center font-semibold text-lg"
+              onclick="toggleMenu('our-data')"
+            >
+              Our Data
+              <svg
+                class="w-4 h-4 transition-transform"
+                id="icon-our-data"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+              >
+                <path d="M216 96l-88 88-88-88z"></path>
+              </svg>
+            </button>
+
+            <div id="menu-our-data" class="hidden mt-4 space-y-6 pl-2">
+              <!-- Mission -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Mission
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="target" class="w-4 h-4"></i>
+                      Purpose
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="map-pin" class="w-4 h-4"></i>
+                      Touchstones
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Data Framework -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Data Framework
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+                      Life Areas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="file-text" class="w-4 h-4"></i>
+                      Report Types
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Our Network -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Our Network
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="handshake" class="w-4 h-4"></i>
+                      Partners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="building-2" class="w-4 h-4"></i>
+                      Member Agencies
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          
+          <!-- Resources -->
+          <div class="py-2 px-4 shadow">
+            <button
+              class="w-full flex justify-between items-center font-semibold text-lg"
+              onclick="toggleMenu('resources')"
+            >
+              Resources
+              <svg
+                class="w-4 h-4 transition-transform"
+                id="icon-resources"
+                viewBox="0 0 256 256"
+                fill="currentColor"
+              >
+                <path d="M216 96l-88 88-88-88z"></path>
+              </svg>
+            </button>
+
+            <div id="menu-resources" class="hidden mt-4 space-y-6 pl-2">
+              <!-- Mission -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Mission
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="target" class="w-4 h-4"></i>
+                      Purpose
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="map-pin" class="w-4 h-4"></i>
+                      Touchstones
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Data Framework -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Data Framework
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+                      Life Areas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="file-text" class="w-4 h-4"></i>
+                      Report Types
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Our Network -->
+              <div>
+                <h4 class="font-bold text-sm mb-3 text-gray-600 uppercase">
+                  Our Network
+                </h4>
+                <ul class="space-y-3 text-sm">
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="handshake" class="w-4 h-4"></i>
+                      Partners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="flex items-center gap-3 hover:text-secondary">
+                      <i data-lucide="building-2" class="w-4 h-4"></i>
+                      Member Agencies
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- Contact -->
+          <a href="#" class="block py-2 px-4 shadow font-semibold text-lg">Contact</a>
+
+          <!-- Login -->
+          <a href="#" class="block py-2 px-4 shadow font-semibold text-lg">Login</a>
         </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div  class="grid items-center h-screen bg-[url('./assets/hero.png')] bg-cover bg-top relative z-10 mx-auto px- sm:px-6 lg:px-8 pt-6 pb-" >
+        <div data-aos="fade-up" class="container z-20 max-w-6xl xl:max-w-7xl  mx-auto flex flex-col md:flex-row gap-10 items-center">
+          <div class="w-full">
+            <div class="w-full px-5 py-5 sm:py-0 bg-primary/30  sm:p-0 sm:bg-primary/10 rounded-xl">
+              <h4  class="text-white uppercase tracking-widest  lg:text-[21px] font-medium mb-4"  >
+                Council on Children & Families
+              </h4>
+              <h1  class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font- leading-tight mb-4"  >
+                Kids' Well-being <br />Indicators <br />Clearinghouse
+              </h1>
+              <p class="text-lg xl:text-[22px] text-gray-200 md:text-light-gray my-8 font-light max-w-sm">
+                Explore data and insights to help every New York child thrive.
+              </p>
+            </div>
+            <div class="flex px-5 sm:px-0 gap-4 flex-col my-5 sm:flex-row">
+              <a href=" https://kwic.ny.gov/get_data/indicator_data.cfm"
+               class="bg-secondary md:text-sm w-max text-primary hover:text-secondary font-semibold px-8 py-2 flex justify-center items-center rounded-full hover:bg-primary transition"  >
+                START NOW
+              </a>
+              <a href="#how-to-use" class="border border-secondary hover:border-primary bont-semibold w-max text-yellow-500/90 px-8 py-2 rounded-full  hover:bg-primary hover:text-white transition" >
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-end relative"></div>
+        </div>
+        <!-- overlay -->
+         <div class="absolute w-full h-full bg-primary/50 md:bg-primary/20 z-10"></div>
       </div>
     </header>
 
     <!-- YELLOW NYC BANNER -->
-    <section class="bg-[#FCCD03] pt-16 xl:pb-8 text-center relative">
+    <section class="bg-secondary pt-16 xl:pb-8 text-center relative">
       <div
-        class="max-w-4xl mx-auto px-4 md:w-[65%] lg:w-[45%] py-6 pb-[80px] xl:py-10"
+        class="max-w-4xl mx-auto px-4 md:w-[65%] lg:w-[45%] py-6 pb-[80px] xl:py-24"
       >
-        <h2 class="text-3xl md:text-4xl text-purple-900 font-bold mb-2">
+        <h2 class="text-3xl md:text-5xl text-primary font-medium mb-2">
           NYS By The Numbers
         </h2>
-        <h3 class="text-2xl md:text-3xl text-purple-900 font-bold mb-4">
+        <h3 class="text-2xl md:text-5xl text-primary font-semibold my-4">
           2024 Snapshot
         </h3>
-        <p class="text-purple-900 mb-8 max-w-2xl mx-auto">
-          A quick look at child well-being updates, monitoring, and facts about
-          current trends in New York.
+        <p class="text-primary text-[18px] my-8 max-w-md  mx-auto">
+          A data-driven look at child demographics, well-bein,
+          and early development acroos New York.
         </p>
-        <button
-          class="bg-purple-800 text-white px-8 py-2 rounded-full font-bold text-sm hover:bg-purple-700 shadow-lg"
+        <a href="https://kwic.ny.gov/get_data/indicator_data.cfm"
+          class="bg-primary text-white font-semibold hover:text-secondary px-8 py-2 rounded-full text-sm hover:bg-purple-700 shadow-lg"
         >
-          Learn More...
-        </button>
+          EXPLORE ALL DATA
+        </a>
       </div>
       <!-- Decorative Icon  -->
       <div
@@ -227,25 +709,25 @@
 
         <!-- SECTION 1: CHILDHOOD POPULATION -->
         <div class="text-center pt-[80px] md:pt-0 mb-12">
-          <h2 class="text-3xl xl:text-4xl font-normal text-purple-800">
+          <h2 class="text-3xl xl:text-4xl font-normal text-primary">
             Childhood <span class="font-bold">Population</span>
           </h2>
         </div>
 
         <!-- Row 1 -->
-        <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 md:mb-5 mmd:mb-8 xll:mb-1 items-center relative" >
+         <div class="overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 md:mb-5 mmd:mb-8 xll:mb-1 items-center relative">
           <!-- Left -->
           <div class="flex md:flex-col w-max min-w-[320px] mx-5 px-4 sm:px-0 mx-auto md:pr-12">
             <div  data-aos="fade-right"
               class="bg-white border-4 border-gray-300/20 p-6 md:ml-6 px-10 md:px-14 rounded-2xl shadow-2xl border-t-4 border-t-gray-200/40 w-full md:max-w-[360px] text-center"
             >
               <h3
-                class="text-3xl lg:text-5xl xl:text-5xl font-bold text-[#43285D]"
+                class="text-3xl lg:text-5xl xl:text-5xl font-bold text-primary"
               >
                 3,982,279
               </h3>
-              <p class="text-xs font-semibold text-gray-500 my-3">
-                Total Children Ages 0-17<br />Live in New York State
+              <p class="text-xs font-semibold text-gray-text my-3">
+                3.98M children (ages 0-17)<br />Live in New York State
               </p>
             </div>
             <img
@@ -264,10 +746,10 @@
                 <img src="assets/childhoodpopulation 2.png" class="w-14 h-20" />
               </div>
               <div>
-                <h3 class="text-4xl font-bold text-center text-[#43285D]">
+                <h3 class="text-4xl font-bold text-center text-primary">
                   20%
                 </h3>
-                <p class="text-xs font-semibold text-gray-500 my-3 text-center">
+                <p class="text-xs font-semibold text-gray my-3 text-center">
                   Children make up 20% of the total population of NYS.
                 </p>
               </div>
@@ -276,31 +758,31 @@
         </div>
 
         <!-- Row 2 (Trend & Illustration) -->
-        <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-20 lg:mb-16 items-center" >
+        <div class="overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 md:mb-20 lg:mb-16 xl:mb-8 items-center">
           <!-- Left: Trend Box -->
           <div class="flex mx-auto relative px-8 sm:px-0 justify-end md:pr-12">
             <img
               src="assets/childhoodpopulation 4.png"
               alt="Logo"
-              class="absolute hidden md:block size-[65px] right-10 lg:right-1 -top-[100px] lg:-top-[110px] transform"
+              class="absolute hidden  right-10 lg:right-1 size-[65px] -top-[100px] z-40 lg:-top-[110px] "
             />
             <div data-aos="fade-right"
-              class="bg-white p-6 rounded-2xl shadow-2xl px-12 lg:px-14 border-t-4 border-t-gray-200/40 w-full max-w-[330px]"
+              class="bg-white py-6 rounded-2xl shadow-2xl px-8 lg:px-10 border-t-4 border-t-gray-200/40 w-full max-w-[330px]"
             >
               <h4
-                class="text-purple-900 text-[24px] text-center mx-auto font-bold mb-2"
+                class="text-primary text-[24px] text-center mx-auto font-bold mb-2"
               >
                 Trend
               </h4>
-              <p class="text-xs font-semibold text-gray-500 my-3 text-center">
-                Child share of population stable at near 20% from 2010 to 2024.
+              <p class="text-xs font-semibold text-gray-text my-3 text-center">
+                Child share of population decreased from 22% in 2010 to 20% in 2024
               </p>
             </div>
           </div>
           <!-- Right: Illustration -->
           <div class="flex justify-start md:pl-12 mx-auto">
             <div
-              class="bg-yellow-100 rounded-full p-8 relative w-64 h-64 flex items-center justify-center"
+              class="bg-light-yellow rounded-full p-8 relative w-64 h-64 xl:w-72 xl:h-72 flex items-center justify-center"
             >
               <img
                 src="assets/childhoodpopulation 5.png"
@@ -312,7 +794,7 @@
         </div>
 
         <!-- SECTION 2: CHILD POPULATION BREAKDOWN -->
-        <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 px-8 sm:px-4">
+        <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 mb-14 px-8 sm:px-4">
           <!-- Left: Progress Bars -->
           <div class="md:text- md:pr-12">
             <img
@@ -320,55 +802,53 @@
               class="mx-auto w-[70px] my-6"
               alt=""
             />
-            <h3
-              class="text-purple-800 text-4xl font-normal mx-auto text-center mb-6"
-            >
+            <h3 class="text-primary text-4xl font-normal mx-auto text-center mb-6">
               Child <span class="font-bold">Population</span>
             </h3>
 
             <!-- Bar 1 -->
-            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative overflow-hidden"
+            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 lg:h-14 xl:h-16 rounded-lg p-1 relative overflow-hidden"
             >
               <div
-                class="progress-fill bg-purple-700 h-full rounded-lg"
+                class="progress-fill bg-primary h-full rounded-lg"
                 style="--target: 26%"
               ></div>
 
-              <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold">
+              <span class="absolute text-3xl xl:text-4xl text-primary right-2 top-1/2 -translate-y-1/2 font-bold">
                 26%
               </span>
             </div>
-            <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">
-              1,018,413 Children Ages 0-5 
+            <p class="text-xs md:text-[14px] my-2 text-gray-text mb-4 text-">
+              1,043,811 Children Ages 0-4
             </p>
             <!-- Bar 2 -->
-            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative overflow-hidden"
+            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 lg:h-14 xl:h-16 rounded-lg p-1 relative overflow-hidden"
             >
               <div
-                class="progress-fill bg-purple-700 h-full rounded-lg"
+                class="progress-fill bg-primary h-full rounded-lg"
                 style="--target: 39%"
               ></div>
 
-              <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold" >
+              <span class="absolute text-3xl xl:text-4xl text-primary right-2 top-1/2 -translate-y-1/2 font-bold" >
                 39%
               </span>
             </div>
-            <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">
-              1,556,052 Children Ages 6-11 
+            <p class="text-xs md:text-[14px] my-2 text-gray-text mb-4 text-">
+              1,552,682 Children Ages 5-11 
             </p>
             <!-- Bar 3 -->
-            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 xxl:h-14 rounded-lg p-1 relative overflow-hidden">
+            <div data-aos="fade-right" class="bg-gray-300 h-10 md:h-12 lg:h-14 xl:h-16 rounded-lg p-1 relative overflow-hidden">
               <div
-                class="progress-fill bg-purple-700 h-full rounded-lg"
+                class="progress-fill bg-primary h-full rounded-lg"
                 style="--target: 35%"
               ></div>
 
-              <span class="absolute text-3xl text-[#43285D] right-2 top-1/2 -translate-y-1/2 font-bold">
+              <span class="absolute text-3xl xl:text-4xl text-primary right-2 top-1/2 -translate-y-1/2 font-bold">
                 35%
               </span>
             </div>
-            <p class="text-xs md:text-[14px] my-2 text-gray-500 mb-4 text-">
-              1,386,786 Children Ages 12-17
+            <p class="text-xs md:text-[14px] my-2 text-gray-text mb-4 text-">
+              1,385,786 Children Ages 12-17
             </p>
           </div>
 
@@ -380,25 +860,26 @@
               <img
                 src="assets/childhoodpopulation 4.png"
                 alt="Logo"
-                class="absolute hidden md:block size-[65px] -left-5 -top-[100px] transform"
+                class="absolute hidden md:block size-[65px] -left-4 -top-[120px] transform"
               />
-              <div class="absolute -top-4 right-4">
+              <div class="absolute -top-10 right-4">
                 <img
-                  src="https://placehold.co/30x30/yellow/white?text=Toy"
-                  class="w-8"
+                  src="assets/childhoodpopulation 7.png"
+                  class="w-16"
                 />
               </div>
               <h4
-                class="text-purple-900 font-bold text-[24px] text-center mb-2"
+                class="text-primary font-bold text-[24px] text-center mb-2"
               >
                 Trend
               </h4>
-              <p class="text-xs font-semibold text-gray-500 text-center my-3">
-                Proportion of younger children (0-5) has gradually declined
-                since 2010.
+              <p class="text-xs font-semibold text-gray text-center my-3">
+                Proportion of youngest children (0-4) has gradually declined
+                since 2012.
               </p>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -452,18 +933,20 @@
             </svg>
           </div>
 
-          <h2 class="text-3xl lg:text-5xl my-10 md:mb-20 font-bold text-center text-purple-800">
+          <h2 class="text-3xl lg:text-5xl my-10 md:mb-20 font-bold text-center text-primary">
             Race & <span class="font-normal">Ethnicity</span>
           </h2>
 
           <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 md:mt-28 md:mb-3 px-1 items-center">
             <!-- Left: Trend -->
-            <div class="flex mx-auto z-10 pb-10 md:pb-0 px-8 sm:px-0 md:mt-8 justify-end md:pr-12">
+            <div
+              class="flex mx-auto z-10 pb-10 md:pb-0 px-8 sm:px-0 md:mt-8 justify-end md:pr-12"
+            >
               <div data-aos="fade-right" class="card">
-                <h4 class="text-purple-900 text-[24px] font-bold mb-2">
+                <h4 class="text-primary text-[24px] font-bold mb-2">
                   Trend
                 </h4>
-                <p class="text-xs font-semibold text-gray-500 my-3">
+                <p class="text-xs font-semibold text-gray-text my-3">
                   Hispanic and Asian populations have increased steadily since
                   2010.
                 </p>
@@ -473,20 +956,20 @@
             <!-- Right: Donut Charts Grid -->
             <div class="md:px-4 lg:px-12 grid grid-cols-3 px-5 overflow-hidden sm:px-0 gap-6">
 
-              <!-- 1. Hispanic or Latino (26%) -->
+              <!-- 2. hispanic (26%) -->
               <div class="chart-container flex flex-col items-center" data-percent="26">
                   <div class="relative size-[84px] lg:size-[104px]">
                       <svg class="size-full -rotate-90" viewBox="0 0 36 36">
                           <!-- Background Ring -->
                           <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
                           <!-- Progress Ring: Added 'circle-progress' and 'transition' classes -->
-                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" 
+                          <path class="circle-progress text-primary transition-all duration-[1500ms] ease-out" 
                                 d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" 
                                 fill="none" stroke="currentColor" stroke-width="4" 
                                 stroke-dasharray="0, 100" stroke-linecap="round" />
                       </svg>
                       <div class="absolute inset-0 flex top-0 items-center justify-center">
-                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">26%</span>
+                          <span class="text-[25px] md:text-[27px] font-bold text-primary">26%</span>
                       </div>
                   </div>
                   <p class="mt-4 text-center text-[11px] font-medium text-gray-800">Hispanic or Latino</p>
@@ -497,13 +980,13 @@
                   <div class="relative size-[84px] lg:size-[104px]">
                       <svg class="size-full -rotate-90" viewBox="0 0 36 36">
                           <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                          <path class="circle-progress text-primary transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
                       </svg>
                       <div class="absolute inset-0 flex items-center justify-center">
-                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">14%</span>
+                          <span class="text-[25px] md:text-[27px] font-bold text-primary">14%</span>
                       </div>
                   </div>
-                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800">Black</p>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-600">Black</p>
               </div>
 
               <!-- 3. White (46%) -->
@@ -511,13 +994,13 @@
                   <div class="relative size-[84px] lg:size-[104px]">
                       <svg class="size-full -rotate-90" viewBox="0 0 36 36">
                           <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                          <path class="circle-progress text-primary transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
                       </svg>
                       <div class="absolute inset-0 flex items-center justify-center">
-                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">46%</span>
+                          <span class="text-[25px] md:text-[27px] font-bold text-primary">46%</span>
                       </div>
                   </div>
-                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800">White</p>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-600">White</p>
               </div>
 
               <!-- 4. Two or More Races (4%) -->
@@ -525,13 +1008,13 @@
                   <div class="relative size-[84px] lg:size-[104px]">
                       <svg class="size-full -rotate-90" viewBox="0 0 36 36">
                           <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                          <path class="circle-progress text-primary transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
                       </svg>
                       <div class="absolute inset-0 flex items-center justify-center">
-                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">4%</span>
+                          <span class="text-[25px] md:text-[27px] font-bold text-primary">4%</span>
                       </div>
                   </div>
-                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800 px-4">Two or More Races</p>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-600 px-4">Two or More Races</p>
               </div>
 
               <!-- 5. Asian (9%) -->
@@ -539,13 +1022,13 @@
                   <div class="relative size-[84px] lg:size-[104px]">
                       <svg class="size-full -rotate-90" viewBox="0 0 36 36">
                           <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                          <path class="circle-progress text-primary transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
                       </svg>
                       <div class="absolute inset-0 flex items-center justify-center">
-                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">9%</span>
+                          <span class="text-[25px] md:text-[27px] font-bold text-primary">9%</span>
                       </div>
                   </div>
-                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800">Asian</p>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-600">Asian</p>
               </div>
 
               <!-- 6. Native / Other (<1%) -->
@@ -553,13 +1036,13 @@
                   <div class="relative size-[84px] lg:size-[104px]">
                       <svg class="size-full -rotate-90" viewBox="0 0 36 36">
                           <path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" />
-                          <path class="circle-progress text-[#3E2456] transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
+                          <path class="circle-progress text-primary transition-all duration-[1500ms] ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="0, 100" stroke-linecap="round" />
                       </svg>
                       <div class="absolute inset-0 flex items-center justify-center">
-                          <span class="text-[25px] md:text-[27px] font-bold text-[#3E2456]">&lt;1%</span>
+                          <span class="text-[25px] md:text-[27px] font-bold text-primary">&lt;1%</span>
                       </div>
                   </div>
-                  <p class="mt-4 text-center text-[11px] font-medium text-gray-800 max-w-[200px]">American Indian or Alaska Native & Hawaiian Native or Pacific Highlander</p>
+                  <p class="mt-4 text-center text-[11px] font-medium text-gray-600 max-w-[200px]">American Indian or Alaska Native & Hawaiian Native or Pacific Highlander</p>
               </div>
             </div>
           </div>
@@ -594,7 +1077,7 @@
             <div class="inline-block rounded-full mb-4 shadow-lg">
               <img src="assets/earlychildhood 1.png" class="size-[80px]" />
             </div>
-            <h2 class="text-3xl my-5 font-normal lg:text-5xl text-purple-800">
+            <h2 class="text-3xl my-5 font-normal lg:text-5xl text-primary">
               Early Childhood & <span class="font-bold">Development</span>
             </h2>
             <!-- center line -->
@@ -612,13 +1095,13 @@
             </div>
           </div>
 
-          <div class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
+          <div class="overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-12 my-7">
             <!-- Left: 23.6% Box -->
             <div  class="flex flex-col gap-8 mx-auto px-8 sm:px-0 justify- md:pr-12">
               <div data-aos="fade-right" class="card w-full md:mt-20">
                 <h3 class="card-header">23.6%</h3>
-                <p class="text-xs text-gray-500 my-2">
-                  of children aged 0-5 live below the poverty level in NYS.
+                <p class="text-xs text-gray-text my-2">
+                  of children aged 9-35 months had Developmental Screening in the past 12 months
                 </p>
               </div>
               <img
@@ -629,9 +1112,9 @@
             </div>
             <!-- Right: 90% Box -->
             <div  class="flex z-10 flex-col gap-8 mx-auto justify md:pl-12">
-              <div data-aos="fade-left" class="card w-full md:mr-24 h-max">
+              <div data-aos="fade-left" class="card w-full lg:mr-24 h-max">
                 <h3 class="card-header">90%</h3>
-                <p class="text-xs text-gray-500 my-2">
+                <p class="text-xs text-gray-text my-2">
                   of brain growth occurs by age 5.
                 </p>
               </div>
@@ -650,75 +1133,74 @@
             <div class="flex flex-col md:pr-12  gap-10">
               <!-- Licensed Slots -->
               <div class="w-full mx-auto px-4 sm:px-0">
-                <h4 class="text-purple-800 text-[26px] sm:text-3xl text-center font-bold mb-4">
+                <h4 class="text-primary text-[26px] sm:text-3xl text-center font-bold mb-4">
                   Licensed / Regulated<br />Child Care Slots
                 </h4>
 
-                <!-- Slot Bar 1 -->
-                <div class="space-y-6 w-full mx-auto lg:mx-0 max-w-md">
-                  <!-- 1st bar -->
+                <!-- Slot Bars -->
+                <div class="space-y-3 w-full mx-auto text-start lg:mx-0 max-w-lg">
+
+                  <!-- bar 1 -->
                   <div class="">
-                    <div data-aos="fade-right" class="bg-gray-300 h-8 rounded-lg relative overflow-hidden"
-                      >
+                    <div data-aos="fade-right" class="bg-cool-gray flex h-8 md:h-10 lg:h-[44px] rounded-lg relative overflow-hidden">
                       <div
-                        class="progress-fill bg-purple-700 h-full rounded-lg"
+                        class="bg-primary progress-fill h-full w-[40%] rounded-lg"
                         style="--target: 100%"
                       ></div>
-
-                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
-                        296,540
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-secondary font-semibold text-sm lg:text-[16px]">
+                        296,548
                       </span>
                     </div>
-                    <p class="text-sm mt-1">Day Care Center (DCC)</p>
+                    <p class="text-sm mt-1">Day Care Center (2021)</p>
                   </div>
 
-                  <!-- 2nd bar -->
+                  <!-- bar 2 -->
                   <div class="">
-                    <div data-aos="fade-right" class="bg-gray-300 h-8 rounded-lg relative overflow-hidden"
-                      >
+                    <div data-aos="fade-right" class="bg-cool-gray flex justify-between h-8 md:h-10 lg:h-[44px] rounded-lg relative overflow-hidden">
                       <div
-                        class="progress-fill bg-purple-700 h-full rounded-lg"
-                        style="--target: 47%"
+                        class="bg-primary progress-fill h-full w-[58%] rounded-lg"
+                        style="--target: 58%"
                       ></div>
-
-                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
-                        152,368
+                      <div  class="bg-gray-300 h-full w-[40%] rounded-lg"></div>
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-secondary font-semibold text-sm lg:text-[16px]">
+                        151,988
                       </span>
                     </div>
-                    <p class="text-sm mt-1">School Age Child Care (SACC)</p>
+                    <p class="text-sm mt-1">Universal Pre-kindergarten (2021-2022)</p>
                   </div>
 
-                  <!-- 3rd bar -->
+                   <!-- bar 3 -->
                   <div class="">
-                    <div data-aos="fade-right" class="bg-gray-300 h-8 rounded-lg relative overflow-hidden"
-                      >
+                    <div data-aos="fade-right" class="bg-cool-gray flex justify-between h-8 md:h-10 lg:h-[44px] rounded-lg relative overflow-hidden">
                       <div
-                        class="progress-fill bg-purple-700 h-full rounded-lg"
-                        style="--target: 76%"
+                        class="bg-primary progress-fill h-full w-[39%] rounded-lg"
+                        style="--target: 39%"
                       ></div>
+                      <div class="bg-gray-300 h-full w-[59%] rounded-lg" ></div>
 
-                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
-                        105,203
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-secondary font-semibold text-sm lg:text-[16px]">
+                        105,285
                       </span>
                     </div>
-                    <p class="text-sm mt-1">Family Child Care / Group Family Day Care</p>
+                    <p class="text-sm mt-1">Family Child Care / Group Family Day Care (2021)</p>
                   </div>
 
-                  <!-- 4th bar -->
+                  <!-- bar 4 -->
                   <div class="">
-                    <div data-aos="fade-right" class="bg-gray-300 h-8 rounded-lg relative overflow-hidden"
-                      >
+                    <div data-aos="fade-right" class="bg-cool-gray flex justify-between h-8 md:h-10 lg:h-[44px] rounded-lg relative overflow-hidden">
                       <div
-                        class="progress-fill bg-purple-700 h-full rounded-lg"
+                        class="bg-primary progress-fill h-full w-[27%] rounded-lg"
                         style="--target: 27%"
                       ></div>
+                      <div class="bg-gray-300 h-full w-[71%] rounded-lg" ></div>
 
-                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-yellow-300 font-semibold text-sm">
-                        45,824
+                      <span class="absolute left-3 top-1/2 -translate-y-1/2 text-secondary font-semibold text-sm lg:text-[16px]">
+                        44,638
                       </span>
                     </div>
-                    <p class="text-sm mt-1">Head Start and Early Head Start</p>
+                    <p class="text-sm mt-1">Head Start and Early Head Start (2020)</p>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -732,8 +1214,8 @@
                 class="bg-white z-10 p-6 rounded-2xl shadow-xl border border-gray-100 w-full md:max-w-xs text-center"
               >
                 <h3 class="text-3xl font-bold text-purple-900">63.8%</h3>
-                <p class="text-xs text-gray-500 mt-2">
-                  Children (9 to 35 months) receive developmental screenings.
+                <p class="text-xs text-gray-text mt-2">
+                  Of Children 24 to 35 months old who have had a full immunization series
                 </p>
               </div>
             </div>
@@ -764,7 +1246,7 @@
             <div class="inline-block rounded-full mb-4 shadow-lg">
               <img src="assets/access 1.png" class="size-[80px]" />
             </div>
-            <h2 class="text-3xl lg:text-5xl font-normal text-purple-800">
+            <h2 class="text-3xl lg:text-5xl font-normal text-primary">
               Access & <span class="font-bold">Support Programs</span>
             </h2>
 
@@ -788,19 +1270,17 @@
             </div>
           </div>
 
-          <div
-            class=" overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:mt-8 pb-20 items-start relative"
-          >
+          <div class="overflow-x-hidden grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:mt-8 pb-20 items-start relative"  >
             <div class="w-full md:mt-20 px-8 sm:px-0">
               <!-- Box 1: Temp Assistance (Left) -->
               <div class="flex mx-auto justify-center md:pr-12 md:mt-10">
                 <div data-aos="fade-right" class="card py-10 md:ml-16">
                   <h4 class="card-header">Temporary Assistance</h4>
-                  <p class="text-[10px] text-gray-400 mb-4">
-                    Monthly Average (2023)
+                  <p class="text-[12px] text-gray-text mb-4">
+                    Monthly Average (2024)
                   </p>
-                  <h3 class="text-lg font-bold text-gray-700">201,139</h3>
-                  <p class="text-xs text-gray-500">Children</p>
+                  <h3 class="text-lg font-bold text-gray-700">265,179</h3>
+                  <p class="text-xs text-gray-text">Children</p>
                 </div>
               </div>
 
@@ -808,29 +1288,29 @@
               <div
                 class="flex my-10 md:my-28 relative justify-center md:justify-end md:pr-12"
               >
-                <div data-aos="fade-right" class="card">
+                <div data-aos="fade-right" class="card xl:px-8!">
                   <!-- Decorative Yellow Circle -->
                   <img
                     src="assets/access 3.png"
-                    class="absolute size-[65px] right-16 -top-[45px]"
+                    class="absolute size-[65px] right-8 -top-[45px]"
                     alt="access-home"
                   />
 
-                  <h4 class="card-header">
-                    SNAP Food <br />
+                  <h4 class="card-header pt-5">
+                    <span class="font-normal">SNAP</span> Food <br />
                     Assistance
                   </h4>
-                  <p class="text-[10px] text-gray-400 mb-2">
-                    Monthly Average (2023)
+                  <p class="text-[12px] text-gray-700 mb-5">
+                    Monthly Average (2024)
                   </p>
 
-                  <div class="mb-2">
-                    <h3 class="text-xl font-bold text-gray-700">1,019,004</h3>
-                    <p class="text-xs text-gray-500">Households</p>
+                  <div class="mb-5">
+                    <h3 class="text-lg font-medium text-primary">1,731,025</h3>
+                    <p class="text-xs text-gray-text">Households</p>
                   </div>
-                  <div>
-                    <h3 class="text-xl font-bold text-gray-700">2,569,567</h3>
-                    <p class="text-xs text-gray-500">Persons</p>
+                  <div class="pb-5">
+                    <h3 class="text-lg font-medium text-primary">2,958,343</h3>
+                    <p class="text-xs text-gray-text">Persons</p>
                   </div>
                 </div>
               </div>
@@ -856,36 +1336,36 @@
 
               <!-- Box 2: Head Start (Right - center) -->
               <div
-                class="flex justify-center mt-10 smd:mt-14 md:mr-24 md:pl-12 xl:ml-16 md:mt-24 md:w-[350px] xl:max-w-[350px] row-span-2"
+                class="flex justify-center overflow-hidden mt-10 smd:mt-14 md:mr-24 md:pl-12 xl:ml-16 md:mt-24 md:w-[350px] xl:max-w-[350px] row-span-2"
               >
                 <div data-aos="fade-left" class="card md:mr-12">
                   <h4 class="card-header">Head Start</h4>
 
                   <div class="mb-2">
-                    <div class="text-[14px] font-medium text-gray-700">274</div>
-                    <div class="text-[13px] text-gray-500">Grants</div>
+                    <div class="text-[14px] font-medium text-primary">274</div>
+                    <div class="text-[13px] text-gray-800">Grants</div>
                   </div>
                   <div class="mb-2">
                     <div class="text-lg font-semibold text-gray-700">927</div>
-                    <div class="text-[13px] text-gray-500">Sites</div>
+                    <div class="text-[13px] text-gray-800">Sites</div>
                   </div>
                   <div class="mb-2">
-                    <div class="text-lg font-semibold text-gray-700">
-                      $796.5M
+                    <div class="text-lg font-semibold text-primary">
+                      $706.5M
                     </div>
-                    <div class="text-[13px] text-gray-500">Total Funding</div>
+                    <div class="text-[13px] text-gray-800">Total Funding</div>
                   </div>
                   <div class="mb-2">
-                    <div class="text-lg font-semibold text-gray-700">
-                      16,605
+                    <div class="text-lg font-semibold text-primary">
+                      14,400
                     </div>
-                    <div class="text-[13px] text-gray-500">Staff</div>
+                    <div class="text-[13px] text-gray-800">Staff</div>
                   </div>
                   <div>
-                    <div class="text-lg font-semibold text-gray-700">
-                      43,337
+                    <div class="text-lg font-semibold text-primary">
+                      43,327
                     </div>
-                    <div class="text-[13px] text-gray-500">Children Served</div>
+                    <div class="text-[13px] text-gray-text">Children Served</div>
                   </div>
                 </div>
               </div>
@@ -906,11 +1386,11 @@
                     Early <br />
                     Intervention
                   </h4>
-                  <p class="text-[14px] text-gray-400 mb-2">
+                  <p class="text-[14px] text-gray-800 mb-2">
                     Children Under Age 3
                   </p>
-                  <h3 class="text-xl font-bold text-gray-700">5.9%</h3>
-                  <p class="text-[14px] text-gray-500">Of Children Served</p>
+                  <h3 class="text-xl font-semibold text-gray-700">5.19%</h3>
+                  <p class="text-[14px] text-gray-800">Of Children Served</p>
                 </div>
               </div>
             </div>
@@ -918,93 +1398,99 @@
         </section>
 
         <!-- THREE FEATURE CARDS (End of flow) -->
-        <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 sm:px-4 md:px-0 md:mt-32" >
+        <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-3 gap-5 px-8 sm:px-4 md:px-0 lg:pt-8 md:mt-32" >
           <!-- Card 1 -->
           <div
-            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+            class="bg-white relative rounded-2xl mb-10 md:mb-0  shadow-2xl p-6 pt-16 lg:pb-10 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
           >
             <img
               src="assets/countyreports .png"
               class="size-[80px] -top-[40px] absolute"
             />
-            <h3 class="text-purple-900 font-bold text-lg mb-2">
-              County Reports
+            <h3 class="text-primary font-bold text-2xl lg:text-3xl xl:text-4xl mb-5">
+             <span class="font-normal">County</span> Reports
             </h3>
-            <p class="text-xs text-gray-500 mb-6">
+            <p class="text-[16px] lg:max-w-[180px] text-gray-700 mb-6">
               Compare data across 62 counties.
             </p>
-            <button
-              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+            <a href="https://ccf.ny.gov/new-york-state-2024-county-data-book"
+              class="mt-auto bg-primary text-white text-xs px-10 font-extralight py-2 rounded-full hover:text-secondary"
             >
               EXPLORE
-            </button>
+            </a>
           </div>
+          
           <!-- Card 2 -->
           <div
-            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+            class="bg-white relative rounded-2xl mb-10 md:mb-0  shadow-2xl p-6 pt-16 lg:pb-10 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
           >
             <img
-              src="assets/countyreports .png"
+              src="assets/mapbuilder.png"
               class="size-[80px] -top-[40px] absolute"
             />
-            <h3 class="text-purple-900 font-bold text-lg mb-2">Map Builder</h3>
-            <p class="text-xs text-gray-500 mb-6">
+            <h3 class="text-primary font-bold  text-2xl lg:text-3xl xl:text-4xl mb-5">
+             <span class="font-normal">Map</span> Builder
+            </h3>
+            <p class="text-[16px] lg:max-w-[220px] text-gray-700 mb-6">
               Visualize child well-being across NYS.
             </p>
-            <button
-              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+            <a href="https://kwic.ny.gov/map/kwicmap.cfm"
+              class="mt-auto bg-primary text-white text-xs px-10 font-extralight py-2 rounded-full hover:text-secondary"
             >
               EXPLORE
-            </button>
+            </a>
           </div>
+          
           <!-- Card 3 -->
           <div
-            class="bg-white relative rounded-2xl mb-10 md:mb-0 shadow-2xl p-6 pt-16 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
+            class="bg-white relative rounded-2xl mb-10 md:mb-0  shadow-2xl p-6 pt-16 lg:pb-10 text-center flex border-4 border-gray-100/20 border-t-gray-300/20 flex-col items-center"
           >
             <img
-              src="assets/countyreports .png"
+              src="assets/indicatordata.png"
               class="size-[80px] -top-[40px] absolute"
             />
-            <h3 class="text-purple-900 font-bold text-lg mb-2">
-              Indicator Data
+            <h3 class="text-primary font-bold text-2xl lg:text-3xl xl:text-4xl mb-5">
+             <span class="font-normal">Indicator</span> Data
             </h3>
-            <p class="text-xs text-gray-500 mb-6">
+            <p class="text-[16px] text-gray-700 mb-6">
               Access the full database of well-being indicators.
             </p>
-            <button
-              class="mt-auto bg-purple-900 text-white text-xs px-6 py-2 rounded-full hover:bg-purple-800"
+            <a href="https://kwic.ny.gov/get_data/indicator_data.cfm"
+              class="mt-auto bg-primary text-white text-xs px-10 font-extralight py-2 rounded-full hover:text-secondary"
             >
               EXPLORE
-            </button>
+            </a>
           </div>
+
         </div>
+
       </div>
     </div>
     <!-- HOW TO USE KWIC SECTION -->
-    <section class="bg-[#FCCD03] py-16">
+    <section id="how-to-use" class="bg-[#FBCD02] py-16">
       <div
-        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center"
+        class="max-w-6xl xl:max-w-7xl  mx-auto px-4 flex flex-col md:flex-row gap-12 items-center"
       >
         <div>
           <div
-            class="bg-purple-900 p-3 rounded-full size-12 xl:size-16 flex items-center justify-center mb-6 shadow-lg"
+            class="bg-primary p-3 rounded-full size-12 xl:size-16 flex items-center justify-center mb-6 shadow-lg"
           >
             <span class="text-white text-2xl xl:text-3xl font-bold">?</span>
           </div>
-          <h2 class="text-3xl xl:text-4xl font-bold text-purple-900 mb-2">
-            How to
+          <h2 class="text-3xl xl:text-4xl text-primary mb-2">
+            How to <br> Use
+            <span class="text-3xl xl:text-4xl font-bold mb-6">
+              KWIC
+            </span>
           </h2>
-          <h2 class="text-3xl xl:text-4xl font-bold text-purple-900 mb-6">
-            Use KWIC
-          </h2>
-          <p class="text-purple-900 font-medium mb-8 max-w-sm">
-            Watch this video for a quick tutorial and learn about additional
-            resources on KWIC's tools.
+          <p class="text-primary font-medium mb-8 max-w-sm">
+            Watch the video for a quick tutorial and learn about additional
+            resources at the link below.
           </p>
           <button
-            class="bg-purple-900 text-white px-6 py-2 rounded-full text-xs font-bold hover:bg-purple-800"
+            class="bg-primary text-white px-6 py-2 rounded-full uppercase text-xs hover:bg-primary"
           >
-            WATCH NOW
+            learn more
           </button>
         </div>
         <div class="flex relative w-full justify-center md:justify-end">
@@ -1025,50 +1511,54 @@
       </div>
     </section>
     <!-- EXPLORE FOOTER CTA -->
-    <section class="relative bg-purple-800 py-28 overflow-hidden">
-      zzzzzzzzz
+    <section class="relative  py-28 overflow-hidden">
       <!-- Background Image with Overlay -->
-      <div class="absolute inset-0 z-0 opacity-20">
-        <img src="assets/hero.png" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 z-0  top-0!">
+        <img src="assets/cta-bg.png" class="w-full h-full  object-cover" />
       </div>
 
-      <div class="relative z-10 text-center max-w-3xl mx-auto px-4">
-        <h2 class="text-3xl xl:text-4xl text-white font-bold mb-4">
-          Explore Child<br />Well-being Data
+      <div class="relative z-10 text-center py-8 max-w-md mx-auto px-4">
+        <h2 class="text-3xl xl:text-5xl text-white mb-3">
+          Explore Child
         </h2>
-        <p class="text-purple-100 text-[12px] lg:text-[14px] mb-8">
-          Explore more than 500 indicators from state and federal sources and
-          create custom reports to improve outcomes for every New York child.
+        <h1 class="mb-7 font-semibold text-3xl xl:text-5xl text-white ">Well-being Data</h1>
+        <p class="text-cool-gray text-[14px] lg:text-[17px] font-light leading-6 mb-8">
+          Explore more than 200 indicators from health and education to family and economic security.
+           Access the full database and uncover insights that help shape better outcomes for
+           children in New York.
         </p>
-        <button
-          class="bg-[#FCCD03cc] text-purple-900 px-8 py-2 rounded-full font-bold hover:bg-[#FCCD03] transition"
+        <a href="https://kwic.ny.gov/get_data/indicator_data.cfm"
+          class="bg-secondary text-primary px-10  py-1.5 rounded-full  hover:bg-primary hover:text-secondary transition"
         >
-          VIEW DATA
-        </button>
+          Get Started
+        </a>
       </div>
     </section>
-    <!-- MAIN FOOTER -->
+     <!-- MAIN FOOTER -->
     <footer
       class="bg-[#333333] text-white pt-16 pb- text-[10px] xl:text-[12px] xxl:text-[14px]"
     >
       <div
-        class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12"
       >
         <!-- Col 1 -->
-        <div>
-          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
+        <div class="lg:col-span-2">
+          <h5 class="font-bold font-sans mb-4 uppercase text-gray-400 text-xs lg:text-lg">
             Kids' Well-being<br />Indicators Clearinghouse
           </h5>
           <p class="text-gray-500 mb-4 text-xs lg:text-sm">
-            52 Washington Street, West Building<br />Rensselaer, New York 12144
+            52 Washington Street, West Building<br />Suite 99 Renssealaer, New York 12144
           </p>
           <a
             href="mailto:KWIC@ccf.ny.gov"
             class="text-gray-400 hover:text-white block mb-4 text-xs lg:text-sm"
-            >KWIC@ccf.ny.gov</a
+            >NYS.KWIC@CCF.NY.GOV</a
           >
           <div class="flex gap-4">
-            <a href="#" class="text-gray-400 hover:text-white text-lg"></a>
+            <a class="text-lg" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="text-lg" href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a class="text-lg" href="#"><i class="fa-brands fa-threads"></i></a>
+            <a class="text-lg" href="#"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
         <!-- Col 2 -->
@@ -1077,43 +1567,51 @@
             About
           </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
+            <li><a href="#" class="hover:text-white">Purpose</a></li>
+            <li><a href="#" class="hover:text-white">Life Areas</a></li>
+            <li><a href="#" class="hover:text-white">Report Types</a></li>
             <li><a href="#" class="hover:text-white">Partners</a></li>
-            <li><a href="#" class="hover:text-white">Touchstones</a></li>
-            <li><a href="#" class="hover:text-white">Contact Us</a></li>
-            <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-            <li><a href="#" class="hover:text-white">User Agreement</a></li>
+            <li><a href="#" class="hover:text-white">Member Agencies</a></li>
           </ul>
         </div>
         <!-- Col 3 -->
         <div>
           <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
-            Features
+            public info
           </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
             <li>
-              <a href="#" class="hover:text-white">Compare Data (County)</a>
+              <a href="#" class="hover:text-white">Language & Accessibility</a>
             </li>
-            <li><a href="#" class="hover:text-white">Map Builder</a></li>
-            <li><a href="#" class="hover:text-white">Map Builder</a></li>
-            <li><a href="#" class="hover:text-white">Region Profiles</a></li>
-            <li><a href="#" class="hover:text-white">NYS Data Center</a></li>
+            <li><a href="#" class="hover:text-white">Disclaimer</a></li>
+            <li><a href="#" class="hover:text-white">Privacy Statement</a></li>
+            <li><a href="#" class="hover:text-white">FOIL</a></li>
+            <li><a href="#" class="hover:text-white">Data Terms</a></li>
           </ul>
         </div>
         <!-- Col 4 -->
         <div>
           <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
-            Key Data
+            data tools
           </h5>
           <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
-            <li><a href="#" class="hover:text-white">Economic Security</a></li>
-            <li>
-              <a href="#" class="hover:text-white"
-                >Physical & Emotional Health</a
-              >
-            </li>
-            <li><a href="#" class="hover:text-white">Education</a></li>
-            <li><a href="#" class="hover:text-white">Civic Engagement</a></li>
-            <li><a href="#" class="hover:text-white">Family & Community</a></li>
+            <li><a href="#" class="hover:text-white">Map Builder</a></li>
+            <li> <a href="#" class="hover:text-white">Graph Builder</a></li>
+            <li><a href="#" class="hover:text-white">Custom Query</a></li>
+            <li><a href="#" class="hover:text-white">MyKWIC logic</a></li>
+          </ul>
+        </div>
+        <!-- Col 5 -->
+        <div>
+          <h5 class="font-bold mb-4 uppercase text-gray-400 text-xs lg:text-sm">
+            get data
+          </h5>
+          <ul class="space-y-2 text-gray-500 text-xs lg:text-sm">
+            <li><a href="#" class="hover:text-white">Indicator Data</a></li>
+            <li> <a href="#" class="hover:text-white">KWIC Country Report</a></li>
+            <li><a href="#" class="hover:text-white">KWIC CityTown Data</a></li>
+            <li><a href="#" class="hover:text-white">KWIC Indicator Narratives</a></li>
+            <li><a href="#" class="hover:text-white">2024 Country Data Book</a></li>
           </ul>
         </div>
       </div>
@@ -1140,9 +1638,9 @@
                   placeholder="Search KWIC"
                   class="text-gray-700 outline-none text-[10px] w-24 lg:w-32"
                 />
-                <span class="text-purple-900 bg-indigo-900 rounded-full p-1"
-                  >🔍</span
-                >
+                <div class="bg-[#41285F] size-[30px] flex justify-center items-center rounded-full p-2" >
+                  <img class="" src="/assets/search.png" alt="search">
+                </div>
               </div>
             </div>
           </div>
@@ -1165,39 +1663,41 @@
 
 
     <script>
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // Create the Intersection Observer
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            // Check if the element is in view
-            if (entry.isIntersecting) {
-                const container = entry.target;
-                const percent = container.getAttribute('data-percent');
-                const circle = container.querySelector('.circle-progress');
-                
-                // Update the stroke-dasharray to trigger the CSS transition
-                // The delay ensures the fade-left animation (AOS) happens slightly before filling starts
-                setTimeout(() => {
-                    if(circle) {
-                        circle.style.strokeDasharray = `${percent}, 100`;
-                    }
-                }, 200); 
+      document.addEventListener('DOMContentLoaded', () => {
+          
+          // Create the Intersection Observer
+          const observer = new IntersectionObserver((entries, observer) => {
+              entries.forEach(entry => {
+                  // Check if the element is in view
+                  if (entry.isIntersecting) {
+                      const container = entry.target;
+                      const percent = container.getAttribute('data-percent');
+                      const circle = container.querySelector('.circle-progress');
+                      
+                      // Update the stroke-dasharray to trigger the CSS transition
+                      // The delay ensures the fade-left animation (AOS) happens slightly before filling starts
+                      setTimeout(() => {
+                          if(circle) {
+                              circle.style.strokeDasharray = `${percent}, 100`;
+                          }
+                      }, 200); 
 
-                // Stop observing this element after it has animated once
-                observer.unobserve(container);
-            }
-        });
-    }, {
-        threshold: 0.5 // Trigger when 50% of the element is visible
-    });
+                      // Stop observing this element after it has animated once
+                      observer.unobserve(container);
+                  }
+              });
+          }, {
+              threshold: 0.5 // Trigger when 50% of the element is visible
+          });
 
-    // Target all elements with the class 'chart-container'
-    const charts = document.querySelectorAll('.chart-container');
-    charts.forEach(chart => {
-        observer.observe(chart);
-    });
-});
-</script>
+          // Target all elements with the class 'chart-container'
+          const charts = document.querySelectorAll('.chart-container');
+          charts.forEach(chart => {
+              observer.observe(chart);
+          });
+      });
+      </script>
+    <!-- lucide icon -->
+    <script src="https://unpkg.com/lucide@latest"></script>
   </body>
 </html>

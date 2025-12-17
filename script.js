@@ -3,19 +3,29 @@ const lenis = new Lenis({
   autoRaf: true,
 });
 
+// initialize lucide icon
+lucide.createIcons();
 
 // Mobile Nav Menu
  const mobileMenu = document.getElementById("mobileMenu");
-  const openMenu = document.getElementById("openMenu");
-  const closeMenu = document.getElementById("closeMenu");
+const openMenu = document.getElementById("openMenu");
+const closeMenu = document.getElementById("closeMenu");
 
-  openMenu.addEventListener("click", () => {
-    mobileMenu.classList.remove("-translate-x-full");
-  });
+openMenu.addEventListener("click", () => {
+  mobileMenu.classList.remove("-translate-x-full");
+});
 
-  closeMenu.addEventListener("click", () => {
-    mobileMenu.classList.add("-translate-x-full");
-  });
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("-translate-x-full");
+});
+
+function toggleMenu(id) {
+  const menu = document.getElementById(`menu-${id}`);
+  const icon = document.getElementById(`icon-${id}`);
+
+  menu.classList.toggle("hidden");
+  icon.classList.toggle("rotate-180");
+}
 
 
 // Listen for the scroll event and log the event data
@@ -109,12 +119,12 @@ if (window.innerWidth < 1540) {
     // early childhood
     {
       start: 43,
-      end: 60
+      end: 58
     },
     // Access & Support Programs 
     {
-      start: 61,
-      end: 78
+      start: 58,
+      end: 75
     }
   ]
 }

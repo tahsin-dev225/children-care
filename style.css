@@ -57,13 +57,26 @@
   }
 }
 
-.text-primary{
-  color: #43285D;
+/* .text-primary{
+  color: #43285d;
 }
 
 .bg-primary{
-  background-color: #43285D;
+  background-color: #43285d;
 }
+
+.text-secondary{
+  color:  #face00;
+}
+
+.bg-secondary{
+  background-color:  #face00;
+} */
+
+body{
+  scroll-behavior: smooth;
+}
+
 
 .card {
   background-color: #ffffff;
@@ -99,7 +112,7 @@
 }
 
 .card-header {
-  color: #4c1d95;
+  color: #43285d;
   /* text-purple-900 */
   font-size: 24px;
   /* text-[24px] */
